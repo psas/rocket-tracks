@@ -1,0 +1,25 @@
+Pin Freeze File:  version O.61xd
+
+9572XL44VQ XC9572XL-7-VQ44
+sw1_output_L S:PIN39
+sw1_output_H S:PIN5
+sw2_output_L S:PIN29
+sw2_output_H S:PIN42
+sw3_output_L S:PIN32
+sw3_output_H S:PIN13
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_2 sw1_output_H_OBUF
+PARTITION FB1_8 sw2_output_H_OBUF$BUF0
+
+PARTITION FB2_2 sw2_output_H_OBUF
+PARTITION FB2_8 sw3_output_H_OBUF
+
+PARTITION FB3_2 sw1_output_H_OBUF$BUF0
+PARTITION FB3_14 sw3_output_H_OBUF$BUF0
+
+
+

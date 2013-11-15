@@ -1,0 +1,36 @@
+Pin Freeze File:  version O.61xd
+
+9572XL44VQ XC9572XL-7-VQ44
+clk S:PIN43
+enable S:PIN8
+sw1_input S:PIN28
+sw2_input S:PIN31
+sw3_input S:PIN33
+watchdog S:PIN34
+sw1_n S:PIN19
+sw1_p S:PIN29
+sw2_n S:PIN32
+sw2_p S:PIN39
+sw3_n S:PIN5
+sw3_p S:PIN13
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_2 sw2_p_OBUF
+PARTITION FB1_14 watch_rst watch_cnt<1> watch_cnt<4> watch_cnt<3>
+		 watch_cnt<2>
+PARTITION FB2_1 switch3/count<2> sw1_p_OBUF switch3/count<0> switch2/count<2>
+		 switch2/count<0> switch1/count<2> switch1/count<0> sw2_n_OBUF
+		 switch3/out_p switch3/out_n switch3/count<1> switch2/out_p
+		 switch2/out_n switch2/count<1> switch1/out_p switch1/out_n
+		 switch1/count<1> watch_cnt<7>
+PARTITION FB3_1 output_enable_watchdog sw3_n_OBUF watch_cnt<0> watch_cnt<9>
+		 watch_cnt<8> watch_cnt<6> watch_cnt<5> watch_cnt<19>
+		 watch_cnt<18> watch_cnt<17> watch_cnt<16> watch_cnt<15>
+		 watch_cnt<14> sw3_p_OBUF watch_cnt<13> watch_cnt<12>
+		 watch_cnt<11> watch_cnt<10>
+PARTITION FB4_2 sw1_n_OBUF
+
+

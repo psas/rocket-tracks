@@ -1,0 +1,252 @@
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+bitgen -intstyle ise -f h_bridge_wrapper.ut h_bridge_wrapper.ncd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc h_bridge_wrapper.ucf -p xc3s200-ft256-4 h_bridge_wrapper.ngc h_bridge_wrapper.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o h_bridge_wrapper_map.ncd h_bridge_wrapper.ngd h_bridge_wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 h_bridge_wrapper_map.ncd h_bridge_wrapper.ncd h_bridge_wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf 
+XSLTProcess h_bridge_wrapper_build.xml 
+XSLTProcess h_bridge_wrapper_build.xml 
+XSLTProcess h_bridge_wrapper_build.xml 
+XSLTProcess h_bridge_wrapper_build.xml 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Rob\Projects\RocketTracks_HDL\RocketTracks_Test\h_bridge_wrapper.ncd
+OUTFILE=C:\Users\Rob\Projects\RocketTracks_HDL\RocketTracks_Test\h_bridge_wrapper.bit
+FAMILY=Spartan3
+PART=xc3s200-4ft256
+WORKINGDIR=C:\Users\Rob\Projects\RocketTracks_HDL\RocketTracks_Test
+LICENSE=WebPack
+USER_INFO=205358261_0_0_434

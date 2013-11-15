@@ -1,0 +1,103 @@
+--------------------------------------------------------------------------------
+Release 13.2 Trace  (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\13.2\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml h_bridge_wrapper.twx h_bridge_wrapper.ncd -o
+h_bridge_wrapper.twr h_bridge_wrapper.pcf -ucf h_bridge_wrapper.ucf
+
+Design file:              h_bridge_wrapper.ncd
+Physical constraint file: h_bridge_wrapper.pcf
+Device,package,speed:     xc3s200,ft256,-4 (PRODUCTION 1.39 2011-06-20)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+clk_select  |    5.840(R)|    0.121(R)|clk_BUFGP         |   0.000|
+enable      |    4.915(R)|   -1.746(R)|clk_BUFGP         |   0.000|
+watchdog_in |    3.019(R)|    1.563(R)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+D14         |   11.085(R)|clk_BUFGP         |   0.000|
+E13         |   10.997(R)|clk_BUFGP         |   0.000|
+E14         |   11.783(R)|clk_BUFGP         |   0.000|
+F13         |   10.749(R)|clk_BUFGP         |   0.000|
+F14         |   11.885(R)|clk_BUFGP         |   0.000|
+G13         |   11.166(R)|clk_BUFGP         |   0.000|
+G14         |   11.688(R)|clk_BUFGP         |   0.000|
+N15         |   13.015(R)|clk_BUFGP         |   0.000|
+N16         |   12.299(R)|clk_BUFGP         |   0.000|
+P15         |   12.633(R)|clk_BUFGP         |   0.000|
+R16         |   12.736(R)|clk_BUFGP         |   0.000|
+sample_clk  |   11.288(R)|clk_BUFGP         |   0.000|
+watchdog    |    7.781(R)|clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    8.845|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+enable         |sw1_n          |   10.520|
+enable         |sw1_p          |   10.772|
+enable         |sw2_n          |   11.221|
+enable         |sw2_p          |   10.639|
+enable         |sw3_n          |    9.315|
+enable         |sw3_p          |    8.809|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Aug 31 13:14:08 2011 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 113 MB
+
+
+

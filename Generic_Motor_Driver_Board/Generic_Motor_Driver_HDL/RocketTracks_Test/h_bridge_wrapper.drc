@@ -1,0 +1,8 @@
+Release 13.2 Drc O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Wed Aug 31 12:15:11 2011
+
+drc -z h_bridge_wrapper.ncd h_bridge_wrapper.pcf
+
+DRC detected 0 errors and 0 warnings.

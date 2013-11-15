@@ -1,0 +1,860 @@
+<html><body>
+<pre>
+ 
+cpldfit:  version O.61xd                            Xilinx Inc.
+                                  Fitter Report
+Design Name: h_bridge                            Date:  8-29-2011,  9:33PM
+Device Used: XC9572XL-7-VQ44
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+43 /72  ( 60%) 156 /360  ( 43%) 66 /216 ( 31%)   37 /72  ( 51%) 12 /34  ( 35%)
+
+** Function Block Resources **
+
+Function    Mcells      FB Inps     Pterms      IO          
+Block       Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+FB1           6/18        9/54       22/90       2/ 9
+FB2          18/18*      30/54       55/90       5/ 9
+FB3          18/18*      25/54       78/90       3/ 9
+FB4           1/18        2/54        1/90       2/ 7
+             -----       -----       -----      -----    
+             43/72       66/216     156/360     12/34 
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+Signal 'clk' mapped onto global clock net GCK1.
+Global output enable net(s) unused.
+Global set/reset net(s) unused.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :    5           5    |  I/O              :     9      28
+Output        :    6           6    |  GCK/IO           :     1       3
+Bidirectional :    0           0    |  GTS/IO           :     1       2
+GCK           :    1           1    |  GSR/IO           :     1       1
+GTS           :    0           0    |
+GSR           :    0           0    |
+                 ----        ----
+        Total     12          12
+
+** Power Data **
+
+There are 43 macrocells in high performance mode (MCHP).
+There are 0 macrocells in low power mode (MCLP).
+End of Mapped Resource Summary
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'h_bridge.ise'.
+*************************  Summary of Mapped Logic  ************************
+
+** 6 Outputs **
+
+Signal                  Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                    Pts   Inps          No.  Type    Use     Mode Rate State
+sw2_p                   1     2     FB1_2   39   I/O     O       STD  FAST 
+sw1_p                   1     2     FB2_2   29   I/O     O       STD  FAST 
+sw2_n                   1     2     FB2_8   32   I/O     O       STD  FAST 
+sw3_n                   1     2     FB3_2   5    I/O     O       STD  FAST 
+sw3_p                   1     2     FB3_14  13   I/O     O       STD  FAST 
+sw1_n                   1     2     FB4_2   19   I/O     O       STD  FAST 
+
+** 37 Buried Nodes **
+
+Signal                  Total Total Loc     Pwr  Reg Init
+Name                    Pts   Inps          Mode State
+watch_rst               2     2     FB1_14  STD  RESET
+watch_cnt<1>            4     5     FB1_15  STD  RESET
+watch_cnt<4>            5     8     FB1_16  STD  RESET
+watch_cnt<3>            5     7     FB1_17  STD  RESET
+watch_cnt<2>            5     6     FB1_18  STD  RESET
+switch3/count<2>        2     7     FB2_1   STD  RESET
+switch3/count<0>        2     6     FB2_3   STD  RESET
+switch2/count<2>        2     7     FB2_4   STD  RESET
+switch2/count<0>        2     6     FB2_5   STD  RESET
+switch1/count<2>        2     7     FB2_6   STD  RESET
+switch1/count<0>        2     6     FB2_7   STD  RESET
+switch3/out_p           4     8     FB2_9   STD  RESET
+switch3/out_n           4     8     FB2_10  STD  RESET
+switch3/count<1>        4     7     FB2_11  STD  RESET
+switch2/out_p           4     8     FB2_12  STD  RESET
+switch2/out_n           4     8     FB2_13  STD  RESET
+switch2/count<1>        4     7     FB2_14  STD  RESET
+switch1/out_p           4     8     FB2_15  STD  RESET
+switch1/out_n           4     8     FB2_16  STD  RESET
+switch1/count<1>        4     7     FB2_17  STD  RESET
+watch_cnt<7>            5     11    FB2_18  STD  RESET
+output_enable_watchdog  2     23    FB3_1   STD  RESET
+watch_cnt<0>            4     23    FB3_3   STD  RESET
+watch_cnt<9>            5     13    FB3_4   STD  RESET
+watch_cnt<8>            5     12    FB3_5   STD  RESET
+watch_cnt<6>            5     10    FB3_6   STD  RESET
+watch_cnt<5>            5     9     FB3_7   STD  RESET
+watch_cnt<19>           5     23    FB3_8   STD  RESET
+watch_cnt<18>           5     22    FB3_9   STD  RESET
+watch_cnt<17>           5     21    FB3_10  STD  RESET
+watch_cnt<16>           5     20    FB3_11  STD  RESET
+watch_cnt<15>           5     19    FB3_12  STD  RESET
+watch_cnt<14>           5     18    FB3_13  STD  RESET
+watch_cnt<13>           5     17    FB3_15  STD  RESET
+watch_cnt<12>           5     16    FB3_16  STD  RESET
+watch_cnt<11>           5     15    FB3_17  STD  RESET
+watch_cnt<10>           5     14    FB3_18  STD  RESET
+
+** 6 Inputs **
+
+Signal                  Loc     Pin  Pin     Pin     
+Name                            No.  Type    Use     
+clk                     FB1_9   43~  GCK/I/O GCK
+sw2_input               FB2_6   31   I/O     I
+sw3_input               FB2_9   33   GSR/I/O I
+watchdog                FB2_11  34   GTS/I/O I
+enable                  FB3_9   8    I/O     I
+sw1_input               FB4_17  28   I/O     I
+
+Legend:
+Pin No. - ~ - User Assigned
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X            - Signal used as input to the macrocell logic.
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+Number of function block inputs used/remaining:               9/45
+Number of signals used by logic mapping into function block:  9
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB1_1         (b)     
+sw2_p                 1       0     0   4     FB1_2   39    I/O     O
+(unused)              0       0     0   5     FB1_3         (b)     
+(unused)              0       0     0   5     FB1_4         (b)     
+(unused)              0       0     0   5     FB1_5   40    I/O     
+(unused)              0       0     0   5     FB1_6   41    I/O     
+(unused)              0       0     0   5     FB1_7         (b)     
+(unused)              0       0     0   5     FB1_8   42    I/O     
+(unused)              0       0     0   5     FB1_9   43    GCK/I/O GCK
+(unused)              0       0     0   5     FB1_10        (b)     
+(unused)              0       0     0   5     FB1_11  44    GCK/I/O 
+(unused)              0       0     0   5     FB1_12        (b)     
+(unused)              0       0     0   5     FB1_13        (b)     
+watch_rst             2       0     0   3     FB1_14  1     GCK/I/O (b)
+watch_cnt<1>          4       0     0   1     FB1_15  2     I/O     (b)
+watch_cnt<4>          5       0     0   0     FB1_16        (b)     (b)
+watch_cnt<3>          5       0     0   0     FB1_17  3     I/O     (b)
+watch_cnt<2>          5       0     0   0     FB1_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: enable             4: watch_cnt<1>       7: watch_cnt<4> 
+  2: switch2/out_p      5: watch_cnt<2>       8: watch_rst 
+  3: watch_cnt<0>       6: watch_cnt<3>       9: watchdog 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+sw2_p                XX...................................... 2
+watch_rst            X.......X............................... 2
+watch_cnt<1>         X.XX...XX............................... 5
+watch_cnt<4>         X.XXXXXXX............................... 8
+watch_cnt<3>         X.XXXX.XX............................... 7
+watch_cnt<2>         X.XXX..XX............................... 6
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB2  ***********************************
+Number of function block inputs used/remaining:               30/24
+Number of signals used by logic mapping into function block:  30
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+switch3/count<2>      2       0     0   3     FB2_1         (b)     (b)
+sw1_p                 1       0     0   4     FB2_2   29    I/O     O
+switch3/count<0>      2       0     0   3     FB2_3         (b)     (b)
+switch2/count<2>      2       0     0   3     FB2_4         (b)     (b)
+switch2/count<0>      2       0     0   3     FB2_5   30    I/O     (b)
+switch1/count<2>      2       0     0   3     FB2_6   31    I/O     I
+switch1/count<0>      2       0     0   3     FB2_7         (b)     (b)
+sw2_n                 1       0     0   4     FB2_8   32    I/O     O
+switch3/out_p         4       0     0   1     FB2_9   33    GSR/I/O I
+switch3/out_n         4       0     0   1     FB2_10        (b)     (b)
+switch3/count<1>      4       0     0   1     FB2_11  34    GTS/I/O I
+switch2/out_p         4       0     0   1     FB2_12        (b)     (b)
+switch2/out_n         4       0     0   1     FB2_13        (b)     (b)
+switch2/count<1>      4       0     0   1     FB2_14  36    GTS/I/O (b)
+switch1/out_p         4       0     0   1     FB2_15  37    I/O     (b)
+switch1/out_n         4       0     0   1     FB2_16        (b)     (b)
+switch1/count<1>      4       0     0   1     FB2_17  38    I/O     (b)
+watch_cnt<7>          5       0     0   0     FB2_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: enable                  11: switch2/count<0>  21: watch_cnt<0> 
+  2: output_enable_watchdog  12: switch2/count<1>  22: watch_cnt<1> 
+  3: sw1_input               13: switch2/count<2>  23: watch_cnt<2> 
+  4: sw2_input               14: switch2/out_n     24: watch_cnt<3> 
+  5: sw3_input               15: switch2/out_p     25: watch_cnt<4> 
+  6: switch1/count<0>        16: switch3/count<0>  26: watch_cnt<5> 
+  7: switch1/count<1>        17: switch3/count<1>  27: watch_cnt<6> 
+  8: switch1/count<2>        18: switch3/count<2>  28: watch_cnt<7> 
+  9: switch1/out_n           19: switch3/out_n     29: watch_rst 
+ 10: switch1/out_p           20: switch3/out_p     30: watchdog 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+switch3/count<2>     XX.............XXXXX.................... 7
+sw1_p                X........X.............................. 2
+switch3/count<0>     XX.............X.XXX.................... 6
+switch2/count<2>     XX........XXXXX......................... 7
+switch2/count<0>     XX........X.XXX......................... 6
+switch1/count<2>     XX...XXXXX.............................. 7
+switch1/count<0>     XX...X.XXX.............................. 6
+sw2_n                X............X.......................... 2
+switch3/out_p        XX..X..........XXXXX.................... 8
+switch3/out_n        XX..X..........XXXXX.................... 8
+switch3/count<1>     XX.............XXXXX.................... 7
+switch2/out_p        XX.X......XXXXX......................... 8
+switch2/out_n        XX.X......XXXXX......................... 8
+switch2/count<1>     XX........XXXXX......................... 7
+switch1/out_p        XXX..XXXXX.............................. 8
+switch1/out_n        XXX..XXXXX.............................. 8
+switch1/count<1>     XX...XXXXX.............................. 7
+watch_cnt<7>         X...................XXXXXXXXXX.......... 11
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB3  ***********************************
+Number of function block inputs used/remaining:               25/29
+Number of signals used by logic mapping into function block:  25
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+output_enable_watchdog
+                      2       0     0   3     FB3_1         (b)     (b)
+sw3_n                 1       0     0   4     FB3_2   5     I/O     O
+watch_cnt<0>          4       0     0   1     FB3_3         (b)     (b)
+watch_cnt<9>          5       0     0   0     FB3_4         (b)     (b)
+watch_cnt<8>          5       0     0   0     FB3_5   6     I/O     (b)
+watch_cnt<6>          5       0     0   0     FB3_6         (b)     (b)
+watch_cnt<5>          5       0     0   0     FB3_7         (b)     (b)
+watch_cnt<19>         5       0     0   0     FB3_8   7     I/O     (b)
+watch_cnt<18>         5       0     0   0     FB3_9   8     I/O     I
+watch_cnt<17>         5       0     0   0     FB3_10        (b)     (b)
+watch_cnt<16>         5       0     0   0     FB3_11  12    I/O     (b)
+watch_cnt<15>         5       0     0   0     FB3_12        (b)     (b)
+watch_cnt<14>         5       0     0   0     FB3_13        (b)     (b)
+sw3_p                 1       0     0   4     FB3_14  13    I/O     O
+watch_cnt<13>         5       0     0   0     FB3_15  14    I/O     (b)
+watch_cnt<12>         5       0     0   0     FB3_16  18    I/O     (b)
+watch_cnt<11>         5       0     0   0     FB3_17  16    I/O     (b)
+watch_cnt<10>         5       0     0   0     FB3_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: enable            10: watch_cnt<15>     18: watch_cnt<4> 
+  2: switch3/out_n     11: watch_cnt<16>     19: watch_cnt<5> 
+  3: switch3/out_p     12: watch_cnt<17>     20: watch_cnt<6> 
+  4: watch_cnt<0>      13: watch_cnt<18>     21: watch_cnt<7> 
+  5: watch_cnt<10>     14: watch_cnt<19>     22: watch_cnt<8> 
+  6: watch_cnt<11>     15: watch_cnt<1>      23: watch_cnt<9> 
+  7: watch_cnt<12>     16: watch_cnt<2>      24: watch_rst 
+  8: watch_cnt<13>     17: watch_cnt<3>      25: watchdog 
+  9: watch_cnt<14>    
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+output_enable_watchdog 
+                     X..XXXXXXXXXXXXXXXXXXXXXX............... 23
+sw3_n                XX...................................... 2
+watch_cnt<0>         X..XXXXXXXXXXXXXXXXXXXXXX............... 23
+watch_cnt<9>         X..X..........XXXXXXXXXXX............... 13
+watch_cnt<8>         X..X..........XXXXXXXX.XX............... 12
+watch_cnt<6>         X..X..........XXXXXX...XX............... 10
+watch_cnt<5>         X..X..........XXXXX....XX............... 9
+watch_cnt<19>        X..XXXXXXXXXXXXXXXXXXXXXX............... 23
+watch_cnt<18>        X..XXXXXXXXXX.XXXXXXXXXXX............... 22
+watch_cnt<17>        X..XXXXXXXXX..XXXXXXXXXXX............... 21
+watch_cnt<16>        X..XXXXXXXX...XXXXXXXXXXX............... 20
+watch_cnt<15>        X..XXXXXXX....XXXXXXXXXXX............... 19
+watch_cnt<14>        X..XXXXXX.....XXXXXXXXXXX............... 18
+sw3_p                X.X..................................... 2
+watch_cnt<13>        X..XXXXX......XXXXXXXXXXX............... 17
+watch_cnt<12>        X..XXXX.......XXXXXXXXXXX............... 16
+watch_cnt<11>        X..XXX........XXXXXXXXXXX............... 15
+watch_cnt<10>        X..XX.........XXXXXXXXXXX............... 14
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB4  ***********************************
+Number of function block inputs used/remaining:               2/52
+Number of signals used by logic mapping into function block:  2
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB4_1         (b)     
+sw1_n                 1       0     0   4     FB4_2   19    I/O     O
+(unused)              0       0     0   5     FB4_3         (b)     
+(unused)              0       0     0   5     FB4_4         (b)     
+(unused)              0       0     0   5     FB4_5   20    I/O     
+(unused)              0       0     0   5     FB4_6         (b)     
+(unused)              0       0     0   5     FB4_7         (b)     
+(unused)              0       0     0   5     FB4_8   21    I/O     
+(unused)              0       0     0   5     FB4_9         (b)     
+(unused)              0       0     0   5     FB4_10        (b)     
+(unused)              0       0     0   5     FB4_11  22    I/O     
+(unused)              0       0     0   5     FB4_12        (b)     
+(unused)              0       0     0   5     FB4_13        (b)     
+(unused)              0       0     0   5     FB4_14  23    I/O     
+(unused)              0       0     0   5     FB4_15  27    I/O     
+(unused)              0       0     0   5     FB4_16        (b)     
+(unused)              0       0     0   5     FB4_17  28    I/O     I
+(unused)              0       0     0   5     FB4_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: enable             2: switch1/out_n    
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+sw1_n                XX...................................... 2
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+FDCPE_output_enable_watchdog: FDCPE port map (output_enable_watchdog,output_enable_watchdog_D,clk,'0','0');
+output_enable_watchdog_D <= ((enable AND watch_rst AND NOT watch_cnt(0) AND watchdog AND 
+	NOT watch_cnt(10) AND NOT watch_cnt(11) AND NOT watch_cnt(12) AND NOT watch_cnt(13) AND 
+	NOT watch_cnt(14) AND NOT watch_cnt(15) AND NOT watch_cnt(16) AND NOT watch_cnt(17) AND 
+	NOT watch_cnt(18) AND NOT watch_cnt(1) AND NOT watch_cnt(2) AND NOT watch_cnt(3) AND 
+	NOT watch_cnt(4) AND NOT watch_cnt(5) AND NOT watch_cnt(6) AND NOT watch_cnt(7) AND 
+	NOT watch_cnt(8) AND NOT watch_cnt(9) AND NOT watch_cnt(19))
+	OR (enable AND NOT watch_rst AND NOT watch_cnt(0) AND NOT watchdog AND 
+	NOT watch_cnt(10) AND NOT watch_cnt(11) AND NOT watch_cnt(12) AND NOT watch_cnt(13) AND 
+	NOT watch_cnt(14) AND NOT watch_cnt(15) AND NOT watch_cnt(16) AND NOT watch_cnt(17) AND 
+	NOT watch_cnt(18) AND NOT watch_cnt(1) AND NOT watch_cnt(2) AND NOT watch_cnt(3) AND 
+	NOT watch_cnt(4) AND NOT watch_cnt(5) AND NOT watch_cnt(6) AND NOT watch_cnt(7) AND 
+	NOT watch_cnt(8) AND NOT watch_cnt(9) AND NOT watch_cnt(19)));
+
+
+sw1_n <= (enable AND switch1/out_n);
+
+
+sw1_p <= (enable AND switch1/out_p);
+
+
+sw2_n <= (enable AND switch2/out_n);
+
+
+sw2_p <= (enable AND switch2/out_p);
+
+
+sw3_n <= (enable AND switch3/out_n);
+
+
+sw3_p <= (enable AND switch3/out_p);
+
+FDCPE_switch1/count0: FDCPE port map (switch1/count(0),switch1/count_D(0),clk,'0','0');
+switch1/count_D(0) <= ((enable AND switch1/out_p AND switch1/out_n AND 
+	output_enable_watchdog AND NOT switch1/count(0) AND NOT switch1/count(2))
+	OR (enable AND NOT switch1/out_p AND NOT switch1/out_n AND 
+	output_enable_watchdog AND NOT switch1/count(0) AND NOT switch1/count(2)));
+
+FDCPE_switch1/count1: FDCPE port map (switch1/count(1),switch1/count_D(1),clk,'0','0');
+switch1/count_D(1) <= ((enable AND switch1/out_p AND switch1/out_n AND 
+	output_enable_watchdog AND switch1/count(0) AND NOT switch1/count(2) AND 
+	NOT switch1/count(1))
+	OR (enable AND switch1/out_p AND switch1/out_n AND 
+	output_enable_watchdog AND NOT switch1/count(0) AND NOT switch1/count(2) AND 
+	switch1/count(1))
+	OR (enable AND NOT switch1/out_p AND NOT switch1/out_n AND 
+	output_enable_watchdog AND switch1/count(0) AND NOT switch1/count(2) AND 
+	NOT switch1/count(1))
+	OR (enable AND NOT switch1/out_p AND NOT switch1/out_n AND 
+	output_enable_watchdog AND NOT switch1/count(0) AND NOT switch1/count(2) AND 
+	switch1/count(1)));
+
+FDCPE_switch1/count2: FDCPE port map (switch1/count(2),switch1/count_D(2),clk,'0','0');
+switch1/count_D(2) <= ((enable AND switch1/out_p AND switch1/out_n AND 
+	output_enable_watchdog AND switch1/count(0) AND NOT switch1/count(2) AND 
+	switch1/count(1))
+	OR (enable AND NOT switch1/out_p AND NOT switch1/out_n AND 
+	output_enable_watchdog AND switch1/count(0) AND NOT switch1/count(2) AND 
+	switch1/count(1)));
+
+FDCPE_switch1/out_n: FDCPE port map (switch1/out_n,switch1/out_n_D,clk,'0','0');
+switch1/out_n_D <= ((NOT sw1_input AND enable AND NOT switch1/out_p AND 
+	switch1/out_n AND output_enable_watchdog)
+	OR (enable AND switch1/out_p AND switch1/out_n AND 
+	output_enable_watchdog AND NOT switch1/count(2))
+	OR (NOT sw1_input AND enable AND switch1/out_n AND 
+	output_enable_watchdog AND NOT switch1/count(0) AND NOT switch1/count(1))
+	OR (NOT sw1_input AND enable AND NOT switch1/out_p AND 
+	output_enable_watchdog AND NOT switch1/count(0) AND switch1/count(2) AND 
+	NOT switch1/count(1)));
+
+FDCPE_switch1/out_p: FDCPE port map (switch1/out_p,switch1/out_p_D,clk,'0','0');
+switch1/out_p_D <= ((sw1_input AND enable AND switch1/out_p AND 
+	NOT switch1/out_n AND output_enable_watchdog)
+	OR (enable AND switch1/out_p AND switch1/out_n AND 
+	output_enable_watchdog AND NOT switch1/count(2))
+	OR (sw1_input AND enable AND switch1/out_p AND 
+	output_enable_watchdog AND NOT switch1/count(0) AND NOT switch1/count(1))
+	OR (sw1_input AND enable AND NOT switch1/out_n AND 
+	output_enable_watchdog AND NOT switch1/count(0) AND switch1/count(2) AND 
+	NOT switch1/count(1)));
+
+FDCPE_switch2/count0: FDCPE port map (switch2/count(0),switch2/count_D(0),clk,'0','0');
+switch2/count_D(0) <= ((enable AND switch2/out_p AND switch2/out_n AND 
+	output_enable_watchdog AND NOT switch2/count(0) AND NOT switch2/count(2))
+	OR (enable AND NOT switch2/out_p AND NOT switch2/out_n AND 
+	output_enable_watchdog AND NOT switch2/count(0) AND NOT switch2/count(2)));
+
+FDCPE_switch2/count1: FDCPE port map (switch2/count(1),switch2/count_D(1),clk,'0','0');
+switch2/count_D(1) <= ((enable AND switch2/out_p AND switch2/out_n AND 
+	output_enable_watchdog AND switch2/count(0) AND NOT switch2/count(2) AND 
+	NOT switch2/count(1))
+	OR (enable AND switch2/out_p AND switch2/out_n AND 
+	output_enable_watchdog AND NOT switch2/count(0) AND NOT switch2/count(2) AND 
+	switch2/count(1))
+	OR (enable AND NOT switch2/out_p AND NOT switch2/out_n AND 
+	output_enable_watchdog AND switch2/count(0) AND NOT switch2/count(2) AND 
+	NOT switch2/count(1))
+	OR (enable AND NOT switch2/out_p AND NOT switch2/out_n AND 
+	output_enable_watchdog AND NOT switch2/count(0) AND NOT switch2/count(2) AND 
+	switch2/count(1)));
+
+FDCPE_switch2/count2: FDCPE port map (switch2/count(2),switch2/count_D(2),clk,'0','0');
+switch2/count_D(2) <= ((enable AND switch2/out_p AND switch2/out_n AND 
+	output_enable_watchdog AND switch2/count(0) AND NOT switch2/count(2) AND 
+	switch2/count(1))
+	OR (enable AND NOT switch2/out_p AND NOT switch2/out_n AND 
+	output_enable_watchdog AND switch2/count(0) AND NOT switch2/count(2) AND 
+	switch2/count(1)));
+
+FDCPE_switch2/out_n: FDCPE port map (switch2/out_n,switch2/out_n_D,clk,'0','0');
+switch2/out_n_D <= ((enable AND NOT sw2_input AND NOT switch2/out_p AND 
+	switch2/out_n AND output_enable_watchdog)
+	OR (enable AND switch2/out_p AND switch2/out_n AND 
+	output_enable_watchdog AND NOT switch2/count(2))
+	OR (enable AND NOT sw2_input AND switch2/out_n AND 
+	output_enable_watchdog AND NOT switch2/count(0) AND NOT switch2/count(1))
+	OR (enable AND NOT sw2_input AND NOT switch2/out_p AND 
+	output_enable_watchdog AND NOT switch2/count(0) AND switch2/count(2) AND 
+	NOT switch2/count(1)));
+
+FDCPE_switch2/out_p: FDCPE port map (switch2/out_p,switch2/out_p_D,clk,'0','0');
+switch2/out_p_D <= ((enable AND sw2_input AND switch2/out_p AND 
+	NOT switch2/out_n AND output_enable_watchdog)
+	OR (enable AND switch2/out_p AND switch2/out_n AND 
+	output_enable_watchdog AND NOT switch2/count(2))
+	OR (enable AND sw2_input AND switch2/out_p AND 
+	output_enable_watchdog AND NOT switch2/count(0) AND NOT switch2/count(1))
+	OR (enable AND sw2_input AND NOT switch2/out_n AND 
+	output_enable_watchdog AND NOT switch2/count(0) AND switch2/count(2) AND 
+	NOT switch2/count(1)));
+
+FDCPE_switch3/count0: FDCPE port map (switch3/count(0),switch3/count_D(0),clk,'0','0');
+switch3/count_D(0) <= ((enable AND switch3/out_p AND switch3/out_n AND 
+	output_enable_watchdog AND NOT switch3/count(0) AND NOT switch3/count(2))
+	OR (enable AND NOT switch3/out_p AND NOT switch3/out_n AND 
+	output_enable_watchdog AND NOT switch3/count(0) AND NOT switch3/count(2)));
+
+FDCPE_switch3/count1: FDCPE port map (switch3/count(1),switch3/count_D(1),clk,'0','0');
+switch3/count_D(1) <= ((enable AND switch3/out_p AND switch3/out_n AND 
+	output_enable_watchdog AND switch3/count(0) AND NOT switch3/count(2) AND 
+	NOT switch3/count(1))
+	OR (enable AND switch3/out_p AND switch3/out_n AND 
+	output_enable_watchdog AND NOT switch3/count(0) AND NOT switch3/count(2) AND 
+	switch3/count(1))
+	OR (enable AND NOT switch3/out_p AND NOT switch3/out_n AND 
+	output_enable_watchdog AND switch3/count(0) AND NOT switch3/count(2) AND 
+	NOT switch3/count(1))
+	OR (enable AND NOT switch3/out_p AND NOT switch3/out_n AND 
+	output_enable_watchdog AND NOT switch3/count(0) AND NOT switch3/count(2) AND 
+	switch3/count(1)));
+
+FDCPE_switch3/count2: FDCPE port map (switch3/count(2),switch3/count_D(2),clk,'0','0');
+switch3/count_D(2) <= ((enable AND switch3/out_p AND switch3/out_n AND 
+	output_enable_watchdog AND switch3/count(0) AND NOT switch3/count(2) AND 
+	switch3/count(1))
+	OR (enable AND NOT switch3/out_p AND NOT switch3/out_n AND 
+	output_enable_watchdog AND switch3/count(0) AND NOT switch3/count(2) AND 
+	switch3/count(1)));
+
+FDCPE_switch3/out_n: FDCPE port map (switch3/out_n,switch3/out_n_D,clk,'0','0');
+switch3/out_n_D <= ((enable AND NOT sw3_input AND NOT switch3/out_p AND 
+	switch3/out_n AND output_enable_watchdog)
+	OR (enable AND switch3/out_p AND switch3/out_n AND 
+	output_enable_watchdog AND NOT switch3/count(2))
+	OR (enable AND NOT sw3_input AND switch3/out_n AND 
+	output_enable_watchdog AND NOT switch3/count(0) AND NOT switch3/count(1))
+	OR (enable AND NOT sw3_input AND NOT switch3/out_p AND 
+	output_enable_watchdog AND NOT switch3/count(0) AND switch3/count(2) AND 
+	NOT switch3/count(1)));
+
+FDCPE_switch3/out_p: FDCPE port map (switch3/out_p,switch3/out_p_D,clk,'0','0');
+switch3/out_p_D <= ((enable AND sw3_input AND switch3/out_p AND 
+	NOT switch3/out_n AND output_enable_watchdog)
+	OR (enable AND switch3/out_p AND switch3/out_n AND 
+	output_enable_watchdog AND NOT switch3/count(2))
+	OR (enable AND sw3_input AND switch3/out_p AND 
+	output_enable_watchdog AND NOT switch3/count(0) AND NOT switch3/count(1))
+	OR (enable AND sw3_input AND NOT switch3/out_n AND 
+	output_enable_watchdog AND NOT switch3/count(0) AND switch3/count(2) AND 
+	NOT switch3/count(1)));
+
+FDCPE_watch_cnt0: FDCPE port map (watch_cnt(0),watch_cnt_D(0),clk,'0','0');
+watch_cnt_D(0) <= ((enable AND watch_rst AND watch_cnt(0) AND watchdog)
+	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog)
+	OR (enable AND watch_rst AND watchdog AND NOT watch_cnt(10) AND 
+	NOT watch_cnt(11) AND NOT watch_cnt(12) AND NOT watch_cnt(13) AND NOT watch_cnt(14) AND 
+	NOT watch_cnt(15) AND NOT watch_cnt(16) AND NOT watch_cnt(17) AND NOT watch_cnt(18) AND 
+	NOT watch_cnt(1) AND NOT watch_cnt(2) AND NOT watch_cnt(3) AND NOT watch_cnt(4) AND 
+	NOT watch_cnt(5) AND NOT watch_cnt(6) AND NOT watch_cnt(7) AND NOT watch_cnt(8) AND 
+	NOT watch_cnt(9) AND NOT watch_cnt(19))
+	OR (enable AND NOT watch_rst AND NOT watchdog AND NOT watch_cnt(10) AND 
+	NOT watch_cnt(11) AND NOT watch_cnt(12) AND NOT watch_cnt(13) AND NOT watch_cnt(14) AND 
+	NOT watch_cnt(15) AND NOT watch_cnt(16) AND NOT watch_cnt(17) AND NOT watch_cnt(18) AND 
+	NOT watch_cnt(1) AND NOT watch_cnt(2) AND NOT watch_cnt(3) AND NOT watch_cnt(4) AND 
+	NOT watch_cnt(5) AND NOT watch_cnt(6) AND NOT watch_cnt(7) AND NOT watch_cnt(8) AND 
+	NOT watch_cnt(9) AND NOT watch_cnt(19)));
+
+FDCPE_watch_cnt1: FDCPE port map (watch_cnt(1),watch_cnt_D(1),clk,'0','0');
+watch_cnt_D(1) <= ((enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+	NOT watch_cnt(1))
+	OR (enable AND watch_rst AND NOT watch_cnt(0) AND watchdog AND 
+	watch_cnt(1))
+	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+	NOT watch_cnt(1))
+	OR (enable AND NOT watch_rst AND NOT watch_cnt(0) AND NOT watchdog AND 
+	watch_cnt(1)));
+
+FTCPE_watch_cnt2: FTCPE port map (watch_cnt(2),watch_cnt_T(2),clk,'0','0');
+watch_cnt_T(2) <= ((NOT enable AND watch_cnt(2))
+	OR (watch_rst AND NOT watchdog AND watch_cnt(2))
+	OR (NOT watch_rst AND watchdog AND watch_cnt(2))
+	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+	watch_cnt(1))
+	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+	watch_cnt(1)));
+
+FTCPE_watch_cnt3: FTCPE port map (watch_cnt(3),watch_cnt_T(3),clk,'0','0');
+watch_cnt_T(3) <= ((NOT enable AND watch_cnt(3))
+	OR (watch_rst AND NOT watchdog AND watch_cnt(3))
+	OR (NOT watch_rst AND watchdog AND watch_cnt(3))
+	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+	watch_cnt(1) AND watch_cnt(2))
+	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+	watch_cnt(1) AND watch_cnt(2)));
+
+FTCPE_watch_cnt4: FTCPE port map (watch_cnt(4),watch_cnt_T(4),clk,'0','0');
+watch_cnt_T(4) <= ((NOT enable AND watch_cnt(4))
+	OR (watch_rst AND NOT watchdog AND watch_cnt(4))
+	OR (NOT watch_rst AND watchdog AND watch_cnt(4))
+	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3))
+	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3)));
+
+FTCPE_watch_cnt5: FTCPE port map (watch_cnt(5),watch_cnt_T(5),clk,'0','0');
+watch_cnt_T(5) <= ((NOT enable AND watch_cnt(5))
+	OR (watch_rst AND NOT watchdog AND watch_cnt(5))
+	OR (NOT watch_rst AND watchdog AND watch_cnt(5))
+	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4))
+	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4)));
+
+FTCPE_watch_cnt6: FTCPE port map (watch_cnt(6),watch_cnt_T(6),clk,'0','0');
+watch_cnt_T(6) <= ((NOT enable AND watch_cnt(6))
+	OR (watch_rst AND NOT watchdog AND watch_cnt(6))
+	OR (NOT watch_rst AND watchdog AND watch_cnt(6))
+	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+	watch_cnt(5))
+	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+	watch_cnt(5)));
+
+FTCPE_watch_cnt7: FTCPE port map (watch_cnt(7),watch_cnt_T(7),clk,'0','0');
+watch_cnt_T(7) <= ((NOT enable AND watch_cnt(7))
+	OR (watch_rst AND NOT watchdog AND watch_cnt(7))
+	OR (NOT watch_rst AND watchdog AND watch_cnt(7))
+	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+	watch_cnt(5) AND watch_cnt(6))
+	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+	watch_cnt(5) AND watch_cnt(6)));
+
+FTCPE_watch_cnt8: FTCPE port map (watch_cnt(8),watch_cnt_T(8),clk,'0','0');
+watch_cnt_T(8) <= ((NOT enable AND watch_cnt(8))
+	OR (watch_rst AND NOT watchdog AND watch_cnt(8))
+	OR (NOT watch_rst AND watchdog AND watch_cnt(8))
+	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+	watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7))
+	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+	watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7)));
+
+FTCPE_watch_cnt9: FTCPE port map (watch_cnt(9),watch_cnt_T(9),clk,'0','0');
+watch_cnt_T(9) <= ((NOT enable AND watch_cnt(9))
+	OR (watch_rst AND NOT watchdog AND watch_cnt(9))
+	OR (NOT watch_rst AND watchdog AND watch_cnt(9))
+	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+	watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8))
+	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+	watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8)));
+
+FTCPE_watch_cnt10: FTCPE port map (watch_cnt(10),watch_cnt_T(10),clk,'0','0');
+watch_cnt_T(10) <= ((NOT enable AND watch_cnt(10))
+	OR (watch_rst AND NOT watchdog AND watch_cnt(10))
+	OR (NOT watch_rst AND watchdog AND watch_cnt(10))
+	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+	watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8) AND 
+	watch_cnt(9))
+	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+	watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8) AND 
+	watch_cnt(9)));
+
+FTCPE_watch_cnt11: FTCPE port map (watch_cnt(11),watch_cnt_T(11),clk,'0','0');
+watch_cnt_T(11) <= ((NOT enable AND watch_cnt(11))
+	OR (watch_rst AND NOT watchdog AND watch_cnt(11))
+	OR (NOT watch_rst AND watchdog AND watch_cnt(11))
+	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+	watch_cnt(10) AND watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND 
+	watch_cnt(4) AND watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND 
+	watch_cnt(8) AND watch_cnt(9))
+	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+	watch_cnt(10) AND watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND 
+	watch_cnt(4) AND watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND 
+	watch_cnt(8) AND watch_cnt(9)));
+
+FTCPE_watch_cnt12: FTCPE port map (watch_cnt(12),watch_cnt_T(12),clk,'0','0');
+watch_cnt_T(12) <= ((NOT enable AND watch_cnt(12))
+	OR (watch_rst AND NOT watchdog AND watch_cnt(12))
+	OR (NOT watch_rst AND watchdog AND watch_cnt(12))
+	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(1) AND watch_cnt(2) AND 
+	watch_cnt(3) AND watch_cnt(4) AND watch_cnt(5) AND watch_cnt(6) AND 
+	watch_cnt(7) AND watch_cnt(8) AND watch_cnt(9))
+	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(1) AND watch_cnt(2) AND 
+	watch_cnt(3) AND watch_cnt(4) AND watch_cnt(5) AND watch_cnt(6) AND 
+	watch_cnt(7) AND watch_cnt(8) AND watch_cnt(9)));
+
+FTCPE_watch_cnt13: FTCPE port map (watch_cnt(13),watch_cnt_T(13),clk,'0','0');
+watch_cnt_T(13) <= ((NOT enable AND watch_cnt(13))
+	OR (watch_rst AND NOT watchdog AND watch_cnt(13))
+	OR (NOT watch_rst AND watchdog AND watch_cnt(13))
+	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(1) AND 
+	watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND watch_cnt(5) AND 
+	watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8) AND watch_cnt(9))
+	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(1) AND 
+	watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND watch_cnt(5) AND 
+	watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8) AND watch_cnt(9)));
+
+FTCPE_watch_cnt14: FTCPE port map (watch_cnt(14),watch_cnt_T(14),clk,'0','0');
+watch_cnt_T(14) <= ((NOT enable AND watch_cnt(14))
+	OR (watch_rst AND NOT watchdog AND watch_cnt(14))
+	OR (NOT watch_rst AND watchdog AND watch_cnt(14))
+	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+	watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8) AND 
+	watch_cnt(9))
+	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+	watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8) AND 
+	watch_cnt(9)));
+
+FTCPE_watch_cnt15: FTCPE port map (watch_cnt(15),watch_cnt_T(15),clk,'0','0');
+watch_cnt_T(15) <= ((NOT enable AND watch_cnt(15))
+	OR (watch_rst AND NOT watchdog AND watch_cnt(15))
+	OR (NOT watch_rst AND watchdog AND watch_cnt(15))
+	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+	watch_cnt(14) AND watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND 
+	watch_cnt(4) AND watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND 
+	watch_cnt(8) AND watch_cnt(9))
+	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+	watch_cnt(14) AND watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND 
+	watch_cnt(4) AND watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND 
+	watch_cnt(8) AND watch_cnt(9)));
+
+FTCPE_watch_cnt16: FTCPE port map (watch_cnt(16),watch_cnt_T(16),clk,'0','0');
+watch_cnt_T(16) <= ((NOT enable AND watch_cnt(16))
+	OR (watch_rst AND NOT watchdog AND watch_cnt(16))
+	OR (NOT watch_rst AND watchdog AND watch_cnt(16))
+	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+	watch_cnt(14) AND watch_cnt(15) AND watch_cnt(1) AND watch_cnt(2) AND 
+	watch_cnt(3) AND watch_cnt(4) AND watch_cnt(5) AND watch_cnt(6) AND 
+	watch_cnt(7) AND watch_cnt(8) AND watch_cnt(9))
+	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+	watch_cnt(14) AND watch_cnt(15) AND watch_cnt(1) AND watch_cnt(2) AND 
+	watch_cnt(3) AND watch_cnt(4) AND watch_cnt(5) AND watch_cnt(6) AND 
+	watch_cnt(7) AND watch_cnt(8) AND watch_cnt(9)));
+
+FTCPE_watch_cnt17: FTCPE port map (watch_cnt(17),watch_cnt_T(17),clk,'0','0');
+watch_cnt_T(17) <= ((NOT enable AND watch_cnt(17))
+	OR (watch_rst AND NOT watchdog AND watch_cnt(17))
+	OR (NOT watch_rst AND watchdog AND watch_cnt(17))
+	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+	watch_cnt(14) AND watch_cnt(15) AND watch_cnt(16) AND watch_cnt(1) AND 
+	watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND watch_cnt(5) AND 
+	watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8) AND watch_cnt(9))
+	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+	watch_cnt(14) AND watch_cnt(15) AND watch_cnt(16) AND watch_cnt(1) AND 
+	watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND watch_cnt(5) AND 
+	watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8) AND watch_cnt(9)));
+
+FTCPE_watch_cnt18: FTCPE port map (watch_cnt(18),watch_cnt_T(18),clk,'0','0');
+watch_cnt_T(18) <= ((NOT enable AND watch_cnt(18))
+	OR (watch_rst AND NOT watchdog AND watch_cnt(18))
+	OR (NOT watch_rst AND watchdog AND watch_cnt(18))
+	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+	watch_cnt(14) AND watch_cnt(15) AND watch_cnt(16) AND watch_cnt(17) AND 
+	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+	watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8) AND 
+	watch_cnt(9))
+	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+	watch_cnt(14) AND watch_cnt(15) AND watch_cnt(16) AND watch_cnt(17) AND 
+	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+	watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8) AND 
+	watch_cnt(9)));
+
+FTCPE_watch_cnt19: FTCPE port map (watch_cnt(19),watch_cnt_T(19),clk,'0','0');
+watch_cnt_T(19) <= ((NOT enable AND watch_cnt(19))
+	OR (watch_rst AND NOT watchdog AND watch_cnt(19))
+	OR (NOT watch_rst AND watchdog AND watch_cnt(19))
+	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+	watch_cnt(14) AND watch_cnt(15) AND watch_cnt(16) AND watch_cnt(17) AND 
+	watch_cnt(18) AND watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND 
+	watch_cnt(4) AND watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND 
+	watch_cnt(8) AND watch_cnt(9))
+	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+	watch_cnt(14) AND watch_cnt(15) AND watch_cnt(16) AND watch_cnt(17) AND 
+	watch_cnt(18) AND watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND 
+	watch_cnt(4) AND watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND 
+	watch_cnt(8) AND watch_cnt(9)));
+
+FDCPE_watch_rst: FDCPE port map (watch_rst,watch_rst_D,clk,'0','0');
+watch_rst_D <= watchdog
+	 XOR 
+watch_rst_D <= enable;
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XC9572XL-7-VQ44
+
+
+   --------------------------------  
+  /44 43 42 41 40 39 38 37 36 35 34 \
+ | 1                             33 | 
+ | 2                             32 | 
+ | 3                             31 | 
+ | 4                             30 | 
+ | 5         XC9572XL-7-VQ44     29 | 
+ | 6                             28 | 
+ | 7                             27 | 
+ | 8                             26 | 
+ | 9                             25 | 
+ | 10                            24 | 
+ | 11                            23 | 
+ \ 12 13 14 15 16 17 18 19 20 21 22 /
+   --------------------------------  
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 KPR                              23 KPR                           
+  2 KPR                              24 TDO                           
+  3 KPR                              25 GND                           
+  4 GND                              26 VCC                           
+  5 sw3_n                            27 KPR                           
+  6 KPR                              28 sw1_input                     
+  7 KPR                              29 sw1_p                         
+  8 enable                           30 KPR                           
+  9 TDI                              31 sw2_input                     
+ 10 TMS                              32 sw2_n                         
+ 11 TCK                              33 sw3_input                     
+ 12 KPR                              34 watchdog                      
+ 13 sw3_p                            35 VCC                           
+ 14 KPR                              36 KPR                           
+ 15 VCC                              37 KPR                           
+ 16 KPR                              38 KPR                           
+ 17 GND                              39 sw2_p                         
+ 18 KPR                              40 KPR                           
+ 19 sw1_n                            41 KPR                           
+ 20 KPR                              42 KPR                           
+ 21 KPR                              43 clk                           
+ 22 KPR                              44 KPR                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+         PGND = Unused I/O configured as additional Ground pin
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc9572xl-7-VQ44
+Optimization Method                         : SPEED
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : STD
+Ground on Unused IOs                        : OFF
+Set I/O Pin Termination                     : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Input Limit                                 : 54
+Pterm Limit                                 : 25
+</pre>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

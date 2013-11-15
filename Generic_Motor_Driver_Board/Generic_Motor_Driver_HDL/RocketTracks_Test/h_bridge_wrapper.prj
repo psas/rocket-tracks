@@ -1,0 +1,2 @@
+verilog work "../src/h_bridge.v"
+verilog work "../src/h_bridge_wrapper.v"

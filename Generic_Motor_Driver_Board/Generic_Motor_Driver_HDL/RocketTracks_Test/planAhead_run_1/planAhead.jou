@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# PlanAhead v13.2
+# Build 131561 by hdbuild on Thu Jun 16 17:01:57 PDT 2011
+# Start of session at: Wed Aug 31 12:17:27 2011
+# Process ID: 10976
+# Log file: C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/pa.fromNetlist.tcl
+exit
+stop_gui

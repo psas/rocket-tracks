@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DARoots Version="1" Minor="16">
+	<FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+		<Filter Type="Constrs"/>
+		<File Path="$PPRDIR/../h_bridge_wrapper.ucf">
+		</File>
+		<Config>
+			<Option Name="TargetPart" Val="xc3s200ft256-4"/>
+			<Option Name="ConstrsType" Val="UCF"/>
+			<Option Name="SrcSet" Val="sources_1"/>
+		</Config>
+	</FileSet>
+</DARoots>
+

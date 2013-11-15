@@ -1,0 +1,777 @@
+MDF Database:  version 1.0
+MDF_INFO | h_bridge | XC9572XL-7-VQ44
+MACROCELL | 1 | 14 | switch1/out_p
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 6 | 1 | 14 | 1 | 15 | 1 | 6 | 1 | 5 | 1 | 16 | 1 | 1
+INPUTS | 8 | sw1_input  | enable  | switch1/out_n  | output_enable_watchdog  | switch1/count<0>  | switch1/count<2>  | switch1/count<1>  | switch1/out_p
+INPUTMC | 6 | 1 | 15 | 2 | 0 | 1 | 6 | 1 | 5 | 1 | 16 | 1 | 14
+INPUTP | 2 | 83 | 38
+EQ | 10 | 
+   switch1/out_p.D = sw1_input & enable & switch1/out_p & 
+	!switch1/out_n & output_enable_watchdog
+	# enable & switch1/out_p & switch1/out_n & 
+	output_enable_watchdog & !switch1/count<2>
+	# sw1_input & enable & switch1/out_p & 
+	output_enable_watchdog & !switch1/count<0> & !switch1/count<1>
+	# sw1_input & enable & !switch1/out_n & 
+	output_enable_watchdog & !switch1/count<0> & switch1/count<2> & 
+	!switch1/count<1>;
+   switch1/out_p.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 11 | switch2/out_p
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 6 | 1 | 11 | 1 | 12 | 1 | 4 | 1 | 3 | 1 | 13 | 0 | 1
+INPUTS | 8 | enable  | sw2_input  | switch2/out_n  | output_enable_watchdog  | switch2/count<0>  | switch2/count<2>  | switch2/count<1>  | switch2/out_p
+INPUTMC | 6 | 1 | 12 | 2 | 0 | 1 | 4 | 1 | 3 | 1 | 13 | 1 | 11
+INPUTP | 2 | 38 | 89
+EQ | 10 | 
+   switch2/out_p.D = enable & sw2_input & switch2/out_p & 
+	!switch2/out_n & output_enable_watchdog
+	# enable & switch2/out_p & switch2/out_n & 
+	output_enable_watchdog & !switch2/count<2>
+	# enable & sw2_input & switch2/out_p & 
+	output_enable_watchdog & !switch2/count<0> & !switch2/count<1>
+	# enable & sw2_input & !switch2/out_n & 
+	output_enable_watchdog & !switch2/count<0> & switch2/count<2> & 
+	!switch2/count<1>;
+   switch2/out_p.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 8 | switch3/out_p
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 6 | 1 | 8 | 1 | 9 | 1 | 2 | 1 | 0 | 1 | 10 | 2 | 13
+INPUTS | 8 | enable  | sw3_input  | switch3/out_n  | output_enable_watchdog  | switch3/count<0>  | switch3/count<2>  | switch3/count<1>  | switch3/out_p
+INPUTMC | 6 | 1 | 9 | 2 | 0 | 1 | 2 | 1 | 0 | 1 | 10 | 1 | 8
+INPUTP | 2 | 38 | 92
+EQ | 10 | 
+   switch3/out_p.D = enable & sw3_input & switch3/out_p & 
+	!switch3/out_n & output_enable_watchdog
+	# enable & switch3/out_p & switch3/out_n & 
+	output_enable_watchdog & !switch3/count<2>
+	# enable & sw3_input & switch3/out_p & 
+	output_enable_watchdog & !switch3/count<0> & !switch3/count<1>
+	# enable & sw3_input & !switch3/out_n & 
+	output_enable_watchdog & !switch3/count<0> & switch3/count<2> & 
+	!switch3/count<1>;
+   switch3/out_p.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 15 | switch1/out_n
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 6 | 1 | 14 | 1 | 15 | 1 | 6 | 1 | 5 | 1 | 16 | 3 | 1
+INPUTS | 8 | sw1_input  | enable  | switch1/out_p  | output_enable_watchdog  | switch1/count<0>  | switch1/count<2>  | switch1/count<1>  | switch1/out_n
+INPUTMC | 6 | 1 | 14 | 2 | 0 | 1 | 6 | 1 | 5 | 1 | 16 | 1 | 15
+INPUTP | 2 | 83 | 38
+EQ | 10 | 
+   switch1/out_n.D = !sw1_input & enable & !switch1/out_p & 
+	switch1/out_n & output_enable_watchdog
+	# enable & switch1/out_p & switch1/out_n & 
+	output_enable_watchdog & !switch1/count<2>
+	# !sw1_input & enable & switch1/out_n & 
+	output_enable_watchdog & !switch1/count<0> & !switch1/count<1>
+	# !sw1_input & enable & !switch1/out_p & 
+	output_enable_watchdog & !switch1/count<0> & switch1/count<2> & 
+	!switch1/count<1>;
+   switch1/out_n.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 12 | switch2/out_n
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 6 | 1 | 11 | 1 | 12 | 1 | 4 | 1 | 3 | 1 | 13 | 1 | 7
+INPUTS | 8 | enable  | sw2_input  | switch2/out_p  | output_enable_watchdog  | switch2/count<0>  | switch2/count<2>  | switch2/count<1>  | switch2/out_n
+INPUTMC | 6 | 1 | 11 | 2 | 0 | 1 | 4 | 1 | 3 | 1 | 13 | 1 | 12
+INPUTP | 2 | 38 | 89
+EQ | 10 | 
+   switch2/out_n.D = enable & !sw2_input & !switch2/out_p & 
+	switch2/out_n & output_enable_watchdog
+	# enable & switch2/out_p & switch2/out_n & 
+	output_enable_watchdog & !switch2/count<2>
+	# enable & !sw2_input & switch2/out_n & 
+	output_enable_watchdog & !switch2/count<0> & !switch2/count<1>
+	# enable & !sw2_input & !switch2/out_p & 
+	output_enable_watchdog & !switch2/count<0> & switch2/count<2> & 
+	!switch2/count<1>;
+   switch2/out_n.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 9 | switch3/out_n
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 6 | 1 | 8 | 1 | 9 | 1 | 2 | 1 | 0 | 1 | 10 | 2 | 1
+INPUTS | 8 | enable  | sw3_input  | switch3/out_p  | output_enable_watchdog  | switch3/count<0>  | switch3/count<2>  | switch3/count<1>  | switch3/out_n
+INPUTMC | 6 | 1 | 8 | 2 | 0 | 1 | 2 | 1 | 0 | 1 | 10 | 1 | 9
+INPUTP | 2 | 38 | 92
+EQ | 10 | 
+   switch3/out_n.D = enable & !sw3_input & !switch3/out_p & 
+	switch3/out_n & output_enable_watchdog
+	# enable & switch3/out_p & switch3/out_n & 
+	output_enable_watchdog & !switch3/count<2>
+	# enable & !sw3_input & switch3/out_n & 
+	output_enable_watchdog & !switch3/count<0> & !switch3/count<1>
+	# enable & !sw3_input & !switch3/out_p & 
+	output_enable_watchdog & !switch3/count<0> & switch3/count<2> & 
+	!switch3/count<1>;
+   switch3/out_n.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 13 | watch_rst
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 21 | 2 | 0 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3 | 2 | 7
+INPUTS | 2 | watchdog  | enable
+INPUTP | 2 | 3 | 38
+EQ | 3 | 
+   !watch_rst.D = watchdog
+	$ enable;
+   watch_rst.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 2 | 0 | output_enable_watchdog
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 15 | 1 | 14 | 1 | 11 | 1 | 8 | 1 | 15 | 1 | 12 | 1 | 9 | 1 | 6 | 1 | 5 | 1 | 4 | 1 | 3 | 1 | 2 | 1 | 0 | 1 | 16 | 1 | 13 | 1 | 10
+INPUTS | 23 | enable  | watch_rst  | watch_cnt<0>  | watchdog  | watch_cnt<10>  | watch_cnt<11>  | watch_cnt<12>  | watch_cnt<13>  | watch_cnt<14>  | watch_cnt<15>  | watch_cnt<16>  | watch_cnt<17>  | watch_cnt<18>  | watch_cnt<1>  | watch_cnt<2>  | watch_cnt<3>  | watch_cnt<4>  | watch_cnt<5>  | watch_cnt<6>  | watch_cnt<7>  | watch_cnt<8>  | watch_cnt<9>  | watch_cnt<19>
+INPUTMC | 21 | 0 | 13 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3 | 2 | 7
+INPUTP | 2 | 38 | 3
+EQ | 13 | 
+   !output_enable_watchdog.D = enable & watch_rst & !watch_cnt<0> & watchdog & 
+	!watch_cnt<10> & !watch_cnt<11> & !watch_cnt<12> & !watch_cnt<13> & 
+	!watch_cnt<14> & !watch_cnt<15> & !watch_cnt<16> & !watch_cnt<17> & 
+	!watch_cnt<18> & !watch_cnt<1> & !watch_cnt<2> & !watch_cnt<3> & 
+	!watch_cnt<4> & !watch_cnt<5> & !watch_cnt<6> & !watch_cnt<7> & 
+	!watch_cnt<8> & !watch_cnt<9> & !watch_cnt<19>
+	# enable & !watch_rst & !watch_cnt<0> & !watchdog & 
+	!watch_cnt<10> & !watch_cnt<11> & !watch_cnt<12> & !watch_cnt<13> & 
+	!watch_cnt<14> & !watch_cnt<15> & !watch_cnt<16> & !watch_cnt<17> & 
+	!watch_cnt<18> & !watch_cnt<1> & !watch_cnt<2> & !watch_cnt<3> & 
+	!watch_cnt<4> & !watch_cnt<5> & !watch_cnt<6> & !watch_cnt<7> & 
+	!watch_cnt<8> & !watch_cnt<9> & !watch_cnt<19>;
+   output_enable_watchdog.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 6 | switch1/count<0>
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 5 | 1 | 14 | 1 | 15 | 1 | 6 | 1 | 5 | 1 | 16
+INPUTS | 6 | enable  | switch1/out_p  | switch1/out_n  | output_enable_watchdog  | switch1/count<0>  | switch1/count<2>
+INPUTMC | 5 | 1 | 14 | 1 | 15 | 2 | 0 | 1 | 6 | 1 | 5
+INPUTP | 1 | 38
+EQ | 5 | 
+   switch1/count<0>.D = enable & switch1/out_p & switch1/out_n & 
+	output_enable_watchdog & !switch1/count<0> & !switch1/count<2>
+	# enable & !switch1/out_p & !switch1/out_n & 
+	output_enable_watchdog & !switch1/count<0> & !switch1/count<2>;
+   switch1/count<0>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 5 | switch1/count<2>
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 5 | 1 | 14 | 1 | 15 | 1 | 6 | 1 | 5 | 1 | 16
+INPUTS | 7 | enable  | switch1/out_p  | switch1/out_n  | output_enable_watchdog  | switch1/count<0>  | switch1/count<2>  | switch1/count<1>
+INPUTMC | 6 | 1 | 14 | 1 | 15 | 2 | 0 | 1 | 6 | 1 | 5 | 1 | 16
+INPUTP | 1 | 38
+EQ | 7 | 
+   switch1/count<2>.D = enable & switch1/out_p & switch1/out_n & 
+	output_enable_watchdog & switch1/count<0> & !switch1/count<2> & 
+	switch1/count<1>
+	# enable & !switch1/out_p & !switch1/out_n & 
+	output_enable_watchdog & switch1/count<0> & !switch1/count<2> & 
+	switch1/count<1>;
+   switch1/count<2>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 4 | switch2/count<0>
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 5 | 1 | 11 | 1 | 12 | 1 | 4 | 1 | 3 | 1 | 13
+INPUTS | 6 | enable  | switch2/out_p  | switch2/out_n  | output_enable_watchdog  | switch2/count<0>  | switch2/count<2>
+INPUTMC | 5 | 1 | 11 | 1 | 12 | 2 | 0 | 1 | 4 | 1 | 3
+INPUTP | 1 | 38
+EQ | 5 | 
+   switch2/count<0>.D = enable & switch2/out_p & switch2/out_n & 
+	output_enable_watchdog & !switch2/count<0> & !switch2/count<2>
+	# enable & !switch2/out_p & !switch2/out_n & 
+	output_enable_watchdog & !switch2/count<0> & !switch2/count<2>;
+   switch2/count<0>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 3 | switch2/count<2>
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 5 | 1 | 11 | 1 | 12 | 1 | 4 | 1 | 3 | 1 | 13
+INPUTS | 7 | enable  | switch2/out_p  | switch2/out_n  | output_enable_watchdog  | switch2/count<0>  | switch2/count<2>  | switch2/count<1>
+INPUTMC | 6 | 1 | 11 | 1 | 12 | 2 | 0 | 1 | 4 | 1 | 3 | 1 | 13
+INPUTP | 1 | 38
+EQ | 7 | 
+   switch2/count<2>.D = enable & switch2/out_p & switch2/out_n & 
+	output_enable_watchdog & switch2/count<0> & !switch2/count<2> & 
+	switch2/count<1>
+	# enable & !switch2/out_p & !switch2/out_n & 
+	output_enable_watchdog & switch2/count<0> & !switch2/count<2> & 
+	switch2/count<1>;
+   switch2/count<2>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 2 | switch3/count<0>
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 5 | 1 | 8 | 1 | 9 | 1 | 2 | 1 | 0 | 1 | 10
+INPUTS | 6 | enable  | switch3/out_p  | switch3/out_n  | output_enable_watchdog  | switch3/count<0>  | switch3/count<2>
+INPUTMC | 5 | 1 | 8 | 1 | 9 | 2 | 0 | 1 | 2 | 1 | 0
+INPUTP | 1 | 38
+EQ | 5 | 
+   switch3/count<0>.D = enable & switch3/out_p & switch3/out_n & 
+	output_enable_watchdog & !switch3/count<0> & !switch3/count<2>
+	# enable & !switch3/out_p & !switch3/out_n & 
+	output_enable_watchdog & !switch3/count<0> & !switch3/count<2>;
+   switch3/count<0>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 0 | switch3/count<2>
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 5 | 1 | 8 | 1 | 9 | 1 | 2 | 1 | 0 | 1 | 10
+INPUTS | 7 | enable  | switch3/out_p  | switch3/out_n  | output_enable_watchdog  | switch3/count<0>  | switch3/count<2>  | switch3/count<1>
+INPUTMC | 6 | 1 | 8 | 1 | 9 | 2 | 0 | 1 | 2 | 1 | 0 | 1 | 10
+INPUTP | 1 | 38
+EQ | 7 | 
+   switch3/count<2>.D = enable & switch3/out_p & switch3/out_n & 
+	output_enable_watchdog & switch3/count<0> & !switch3/count<2> & 
+	switch3/count<1>
+	# enable & !switch3/out_p & !switch3/out_n & 
+	output_enable_watchdog & switch3/count<0> & !switch3/count<2> & 
+	switch3/count<1>;
+   switch3/count<2>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 2 | 2 | watch_cnt<0>
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 21 | 2 | 0 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3 | 2 | 7
+INPUTS | 23 | enable  | watch_rst  | watchdog  | watch_cnt<10>  | watch_cnt<11>  | watch_cnt<12>  | watch_cnt<13>  | watch_cnt<14>  | watch_cnt<15>  | watch_cnt<16>  | watch_cnt<17>  | watch_cnt<18>  | watch_cnt<1>  | watch_cnt<2>  | watch_cnt<3>  | watch_cnt<4>  | watch_cnt<5>  | watch_cnt<6>  | watch_cnt<7>  | watch_cnt<8>  | watch_cnt<9>  | watch_cnt<19>  | watch_cnt<0>
+INPUTMC | 21 | 0 | 13 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3 | 2 | 7 | 2 | 2
+INPUTP | 2 | 38 | 3
+EQ | 15 | 
+   !watch_cnt<0>.D = enable & watch_rst & watch_cnt<0> & watchdog
+	# enable & !watch_rst & watch_cnt<0> & !watchdog
+	# enable & watch_rst & watchdog & !watch_cnt<10> & 
+	!watch_cnt<11> & !watch_cnt<12> & !watch_cnt<13> & !watch_cnt<14> & 
+	!watch_cnt<15> & !watch_cnt<16> & !watch_cnt<17> & !watch_cnt<18> & 
+	!watch_cnt<1> & !watch_cnt<2> & !watch_cnt<3> & !watch_cnt<4> & 
+	!watch_cnt<5> & !watch_cnt<6> & !watch_cnt<7> & !watch_cnt<8> & 
+	!watch_cnt<9> & !watch_cnt<19>
+	# enable & !watch_rst & !watchdog & !watch_cnt<10> & 
+	!watch_cnt<11> & !watch_cnt<12> & !watch_cnt<13> & !watch_cnt<14> & 
+	!watch_cnt<15> & !watch_cnt<16> & !watch_cnt<17> & !watch_cnt<18> & 
+	!watch_cnt<1> & !watch_cnt<2> & !watch_cnt<3> & !watch_cnt<4> & 
+	!watch_cnt<5> & !watch_cnt<6> & !watch_cnt<7> & !watch_cnt<8> & 
+	!watch_cnt<9> & !watch_cnt<19>;
+   watch_cnt<0>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 16 | switch1/count<1>
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 4 | 1 | 14 | 1 | 15 | 1 | 5 | 1 | 16
+INPUTS | 7 | enable  | switch1/out_p  | switch1/out_n  | output_enable_watchdog  | switch1/count<0>  | switch1/count<2>  | switch1/count<1>
+INPUTMC | 6 | 1 | 14 | 1 | 15 | 2 | 0 | 1 | 6 | 1 | 5 | 1 | 16
+INPUTP | 1 | 38
+EQ | 13 | 
+   switch1/count<1>.D = enable & switch1/out_p & switch1/out_n & 
+	output_enable_watchdog & switch1/count<0> & !switch1/count<2> & 
+	!switch1/count<1>
+	# enable & switch1/out_p & switch1/out_n & 
+	output_enable_watchdog & !switch1/count<0> & !switch1/count<2> & 
+	switch1/count<1>
+	# enable & !switch1/out_p & !switch1/out_n & 
+	output_enable_watchdog & switch1/count<0> & !switch1/count<2> & 
+	!switch1/count<1>
+	# enable & !switch1/out_p & !switch1/out_n & 
+	output_enable_watchdog & !switch1/count<0> & !switch1/count<2> & 
+	switch1/count<1>;
+   switch1/count<1>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 13 | switch2/count<1>
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 4 | 1 | 11 | 1 | 12 | 1 | 3 | 1 | 13
+INPUTS | 7 | enable  | switch2/out_p  | switch2/out_n  | output_enable_watchdog  | switch2/count<0>  | switch2/count<2>  | switch2/count<1>
+INPUTMC | 6 | 1 | 11 | 1 | 12 | 2 | 0 | 1 | 4 | 1 | 3 | 1 | 13
+INPUTP | 1 | 38
+EQ | 13 | 
+   switch2/count<1>.D = enable & switch2/out_p & switch2/out_n & 
+	output_enable_watchdog & switch2/count<0> & !switch2/count<2> & 
+	!switch2/count<1>
+	# enable & switch2/out_p & switch2/out_n & 
+	output_enable_watchdog & !switch2/count<0> & !switch2/count<2> & 
+	switch2/count<1>
+	# enable & !switch2/out_p & !switch2/out_n & 
+	output_enable_watchdog & switch2/count<0> & !switch2/count<2> & 
+	!switch2/count<1>
+	# enable & !switch2/out_p & !switch2/out_n & 
+	output_enable_watchdog & !switch2/count<0> & !switch2/count<2> & 
+	switch2/count<1>;
+   switch2/count<1>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 10 | switch3/count<1>
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 4 | 1 | 8 | 1 | 9 | 1 | 0 | 1 | 10
+INPUTS | 7 | enable  | switch3/out_p  | switch3/out_n  | output_enable_watchdog  | switch3/count<0>  | switch3/count<2>  | switch3/count<1>
+INPUTMC | 6 | 1 | 8 | 1 | 9 | 2 | 0 | 1 | 2 | 1 | 0 | 1 | 10
+INPUTP | 1 | 38
+EQ | 13 | 
+   switch3/count<1>.D = enable & switch3/out_p & switch3/out_n & 
+	output_enable_watchdog & switch3/count<0> & !switch3/count<2> & 
+	!switch3/count<1>
+	# enable & switch3/out_p & switch3/out_n & 
+	output_enable_watchdog & !switch3/count<0> & !switch3/count<2> & 
+	switch3/count<1>
+	# enable & !switch3/out_p & !switch3/out_n & 
+	output_enable_watchdog & switch3/count<0> & !switch3/count<2> & 
+	!switch3/count<1>
+	# enable & !switch3/out_p & !switch3/out_n & 
+	output_enable_watchdog & !switch3/count<0> & !switch3/count<2> & 
+	switch3/count<1>;
+   switch3/count<1>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 2 | 17 | watch_cnt<10>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 12 | 2 | 0 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7
+INPUTS | 14 | enable  | watch_cnt<10>  | watch_rst  | watchdog  | watch_cnt<0>  | watch_cnt<1>  | watch_cnt<2>  | watch_cnt<3>  | watch_cnt<4>  | watch_cnt<5>  | watch_cnt<6>  | watch_cnt<7>  | watch_cnt<8>  | watch_cnt<9>
+INPUTMC | 12 | 2 | 17 | 0 | 13 | 2 | 2 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3
+INPUTP | 2 | 38 | 3
+EQ | 12 | 
+   watch_cnt<10>.T = !enable & watch_cnt<10>
+	# watch_rst & !watchdog & watch_cnt<10>
+	# !watch_rst & watchdog & watch_cnt<10>
+	# enable & watch_rst & watch_cnt<0> & watchdog & 
+	watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & watch_cnt<4> & 
+	watch_cnt<5> & watch_cnt<6> & watch_cnt<7> & watch_cnt<8> & 
+	watch_cnt<9>
+	# enable & !watch_rst & watch_cnt<0> & !watchdog & 
+	watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & watch_cnt<4> & 
+	watch_cnt<5> & watch_cnt<6> & watch_cnt<7> & watch_cnt<8> & 
+	watch_cnt<9>;
+   watch_cnt<10>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 2 | 16 | watch_cnt<11>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 11 | 2 | 0 | 2 | 2 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7
+INPUTS | 15 | enable  | watch_cnt<11>  | watch_rst  | watchdog  | watch_cnt<0>  | watch_cnt<10>  | watch_cnt<1>  | watch_cnt<2>  | watch_cnt<3>  | watch_cnt<4>  | watch_cnt<5>  | watch_cnt<6>  | watch_cnt<7>  | watch_cnt<8>  | watch_cnt<9>
+INPUTMC | 13 | 2 | 16 | 0 | 13 | 2 | 2 | 2 | 17 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3
+INPUTP | 2 | 38 | 3
+EQ | 12 | 
+   watch_cnt<11>.T = !enable & watch_cnt<11>
+	# watch_rst & !watchdog & watch_cnt<11>
+	# !watch_rst & watchdog & watch_cnt<11>
+	# enable & watch_rst & watch_cnt<0> & watchdog & 
+	watch_cnt<10> & watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & 
+	watch_cnt<4> & watch_cnt<5> & watch_cnt<6> & watch_cnt<7> & 
+	watch_cnt<8> & watch_cnt<9>
+	# enable & !watch_rst & watch_cnt<0> & !watchdog & 
+	watch_cnt<10> & watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & 
+	watch_cnt<4> & watch_cnt<5> & watch_cnt<6> & watch_cnt<7> & 
+	watch_cnt<8> & watch_cnt<9>;
+   watch_cnt<11>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 2 | 15 | watch_cnt<12>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 10 | 2 | 0 | 2 | 2 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7
+INPUTS | 16 | enable  | watch_cnt<12>  | watch_rst  | watchdog  | watch_cnt<0>  | watch_cnt<10>  | watch_cnt<11>  | watch_cnt<1>  | watch_cnt<2>  | watch_cnt<3>  | watch_cnt<4>  | watch_cnt<5>  | watch_cnt<6>  | watch_cnt<7>  | watch_cnt<8>  | watch_cnt<9>
+INPUTMC | 14 | 2 | 15 | 0 | 13 | 2 | 2 | 2 | 17 | 2 | 16 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3
+INPUTP | 2 | 38 | 3
+EQ | 12 | 
+   watch_cnt<12>.T = !enable & watch_cnt<12>
+	# watch_rst & !watchdog & watch_cnt<12>
+	# !watch_rst & watchdog & watch_cnt<12>
+	# enable & watch_rst & watch_cnt<0> & watchdog & 
+	watch_cnt<10> & watch_cnt<11> & watch_cnt<1> & watch_cnt<2> & 
+	watch_cnt<3> & watch_cnt<4> & watch_cnt<5> & watch_cnt<6> & 
+	watch_cnt<7> & watch_cnt<8> & watch_cnt<9>
+	# enable & !watch_rst & watch_cnt<0> & !watchdog & 
+	watch_cnt<10> & watch_cnt<11> & watch_cnt<1> & watch_cnt<2> & 
+	watch_cnt<3> & watch_cnt<4> & watch_cnt<5> & watch_cnt<6> & 
+	watch_cnt<7> & watch_cnt<8> & watch_cnt<9>;
+   watch_cnt<12>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 2 | 14 | watch_cnt<13>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 9 | 2 | 0 | 2 | 2 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7
+INPUTS | 17 | enable  | watch_cnt<13>  | watch_rst  | watchdog  | watch_cnt<0>  | watch_cnt<10>  | watch_cnt<11>  | watch_cnt<12>  | watch_cnt<1>  | watch_cnt<2>  | watch_cnt<3>  | watch_cnt<4>  | watch_cnt<5>  | watch_cnt<6>  | watch_cnt<7>  | watch_cnt<8>  | watch_cnt<9>
+INPUTMC | 15 | 2 | 14 | 0 | 13 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3
+INPUTP | 2 | 38 | 3
+EQ | 12 | 
+   watch_cnt<13>.T = !enable & watch_cnt<13>
+	# watch_rst & !watchdog & watch_cnt<13>
+	# !watch_rst & watchdog & watch_cnt<13>
+	# enable & watch_rst & watch_cnt<0> & watchdog & 
+	watch_cnt<10> & watch_cnt<11> & watch_cnt<12> & watch_cnt<1> & 
+	watch_cnt<2> & watch_cnt<3> & watch_cnt<4> & watch_cnt<5> & 
+	watch_cnt<6> & watch_cnt<7> & watch_cnt<8> & watch_cnt<9>
+	# enable & !watch_rst & watch_cnt<0> & !watchdog & 
+	watch_cnt<10> & watch_cnt<11> & watch_cnt<12> & watch_cnt<1> & 
+	watch_cnt<2> & watch_cnt<3> & watch_cnt<4> & watch_cnt<5> & 
+	watch_cnt<6> & watch_cnt<7> & watch_cnt<8> & watch_cnt<9>;
+   watch_cnt<13>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 2 | 12 | watch_cnt<14>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 8 | 2 | 0 | 2 | 2 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7
+INPUTS | 18 | enable  | watch_cnt<14>  | watch_rst  | watchdog  | watch_cnt<0>  | watch_cnt<10>  | watch_cnt<11>  | watch_cnt<12>  | watch_cnt<13>  | watch_cnt<1>  | watch_cnt<2>  | watch_cnt<3>  | watch_cnt<4>  | watch_cnt<5>  | watch_cnt<6>  | watch_cnt<7>  | watch_cnt<8>  | watch_cnt<9>
+INPUTMC | 16 | 2 | 12 | 0 | 13 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3
+INPUTP | 2 | 38 | 3
+EQ | 14 | 
+   watch_cnt<14>.T = !enable & watch_cnt<14>
+	# watch_rst & !watchdog & watch_cnt<14>
+	# !watch_rst & watchdog & watch_cnt<14>
+	# enable & watch_rst & watch_cnt<0> & watchdog & 
+	watch_cnt<10> & watch_cnt<11> & watch_cnt<12> & watch_cnt<13> & 
+	watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & watch_cnt<4> & 
+	watch_cnt<5> & watch_cnt<6> & watch_cnt<7> & watch_cnt<8> & 
+	watch_cnt<9>
+	# enable & !watch_rst & watch_cnt<0> & !watchdog & 
+	watch_cnt<10> & watch_cnt<11> & watch_cnt<12> & watch_cnt<13> & 
+	watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & watch_cnt<4> & 
+	watch_cnt<5> & watch_cnt<6> & watch_cnt<7> & watch_cnt<8> & 
+	watch_cnt<9>;
+   watch_cnt<14>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 2 | 11 | watch_cnt<15>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 7 | 2 | 0 | 2 | 2 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7
+INPUTS | 19 | enable  | watch_cnt<15>  | watch_rst  | watchdog  | watch_cnt<0>  | watch_cnt<10>  | watch_cnt<11>  | watch_cnt<12>  | watch_cnt<13>  | watch_cnt<14>  | watch_cnt<1>  | watch_cnt<2>  | watch_cnt<3>  | watch_cnt<4>  | watch_cnt<5>  | watch_cnt<6>  | watch_cnt<7>  | watch_cnt<8>  | watch_cnt<9>
+INPUTMC | 17 | 2 | 11 | 0 | 13 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3
+INPUTP | 2 | 38 | 3
+EQ | 14 | 
+   watch_cnt<15>.T = !enable & watch_cnt<15>
+	# watch_rst & !watchdog & watch_cnt<15>
+	# !watch_rst & watchdog & watch_cnt<15>
+	# enable & watch_rst & watch_cnt<0> & watchdog & 
+	watch_cnt<10> & watch_cnt<11> & watch_cnt<12> & watch_cnt<13> & 
+	watch_cnt<14> & watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & 
+	watch_cnt<4> & watch_cnt<5> & watch_cnt<6> & watch_cnt<7> & 
+	watch_cnt<8> & watch_cnt<9>
+	# enable & !watch_rst & watch_cnt<0> & !watchdog & 
+	watch_cnt<10> & watch_cnt<11> & watch_cnt<12> & watch_cnt<13> & 
+	watch_cnt<14> & watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & 
+	watch_cnt<4> & watch_cnt<5> & watch_cnt<6> & watch_cnt<7> & 
+	watch_cnt<8> & watch_cnt<9>;
+   watch_cnt<15>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 2 | 10 | watch_cnt<16>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 6 | 2 | 0 | 2 | 2 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7
+INPUTS | 20 | enable  | watch_cnt<16>  | watch_rst  | watchdog  | watch_cnt<0>  | watch_cnt<10>  | watch_cnt<11>  | watch_cnt<12>  | watch_cnt<13>  | watch_cnt<14>  | watch_cnt<15>  | watch_cnt<1>  | watch_cnt<2>  | watch_cnt<3>  | watch_cnt<4>  | watch_cnt<5>  | watch_cnt<6>  | watch_cnt<7>  | watch_cnt<8>  | watch_cnt<9>
+INPUTMC | 18 | 2 | 10 | 0 | 13 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3
+INPUTP | 2 | 38 | 3
+EQ | 14 | 
+   watch_cnt<16>.T = !enable & watch_cnt<16>
+	# watch_rst & !watchdog & watch_cnt<16>
+	# !watch_rst & watchdog & watch_cnt<16>
+	# enable & watch_rst & watch_cnt<0> & watchdog & 
+	watch_cnt<10> & watch_cnt<11> & watch_cnt<12> & watch_cnt<13> & 
+	watch_cnt<14> & watch_cnt<15> & watch_cnt<1> & watch_cnt<2> & 
+	watch_cnt<3> & watch_cnt<4> & watch_cnt<5> & watch_cnt<6> & 
+	watch_cnt<7> & watch_cnt<8> & watch_cnt<9>
+	# enable & !watch_rst & watch_cnt<0> & !watchdog & 
+	watch_cnt<10> & watch_cnt<11> & watch_cnt<12> & watch_cnt<13> & 
+	watch_cnt<14> & watch_cnt<15> & watch_cnt<1> & watch_cnt<2> & 
+	watch_cnt<3> & watch_cnt<4> & watch_cnt<5> & watch_cnt<6> & 
+	watch_cnt<7> & watch_cnt<8> & watch_cnt<9>;
+   watch_cnt<16>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 2 | 9 | watch_cnt<17>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 5 | 2 | 0 | 2 | 2 | 2 | 9 | 2 | 8 | 2 | 7
+INPUTS | 21 | enable  | watch_cnt<17>  | watch_rst  | watchdog  | watch_cnt<0>  | watch_cnt<10>  | watch_cnt<11>  | watch_cnt<12>  | watch_cnt<13>  | watch_cnt<14>  | watch_cnt<15>  | watch_cnt<16>  | watch_cnt<1>  | watch_cnt<2>  | watch_cnt<3>  | watch_cnt<4>  | watch_cnt<5>  | watch_cnt<6>  | watch_cnt<7>  | watch_cnt<8>  | watch_cnt<9>
+INPUTMC | 19 | 2 | 9 | 0 | 13 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3
+INPUTP | 2 | 38 | 3
+EQ | 14 | 
+   watch_cnt<17>.T = !enable & watch_cnt<17>
+	# watch_rst & !watchdog & watch_cnt<17>
+	# !watch_rst & watchdog & watch_cnt<17>
+	# enable & watch_rst & watch_cnt<0> & watchdog & 
+	watch_cnt<10> & watch_cnt<11> & watch_cnt<12> & watch_cnt<13> & 
+	watch_cnt<14> & watch_cnt<15> & watch_cnt<16> & watch_cnt<1> & 
+	watch_cnt<2> & watch_cnt<3> & watch_cnt<4> & watch_cnt<5> & 
+	watch_cnt<6> & watch_cnt<7> & watch_cnt<8> & watch_cnt<9>
+	# enable & !watch_rst & watch_cnt<0> & !watchdog & 
+	watch_cnt<10> & watch_cnt<11> & watch_cnt<12> & watch_cnt<13> & 
+	watch_cnt<14> & watch_cnt<15> & watch_cnt<16> & watch_cnt<1> & 
+	watch_cnt<2> & watch_cnt<3> & watch_cnt<4> & watch_cnt<5> & 
+	watch_cnt<6> & watch_cnt<7> & watch_cnt<8> & watch_cnt<9>;
+   watch_cnt<17>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 2 | 8 | watch_cnt<18>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 4 | 2 | 0 | 2 | 2 | 2 | 8 | 2 | 7
+INPUTS | 22 | enable  | watch_cnt<18>  | watch_rst  | watchdog  | watch_cnt<0>  | watch_cnt<10>  | watch_cnt<11>  | watch_cnt<12>  | watch_cnt<13>  | watch_cnt<14>  | watch_cnt<15>  | watch_cnt<16>  | watch_cnt<17>  | watch_cnt<1>  | watch_cnt<2>  | watch_cnt<3>  | watch_cnt<4>  | watch_cnt<5>  | watch_cnt<6>  | watch_cnt<7>  | watch_cnt<8>  | watch_cnt<9>
+INPUTMC | 20 | 2 | 8 | 0 | 13 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3
+INPUTP | 2 | 38 | 3
+EQ | 16 | 
+   watch_cnt<18>.T = !enable & watch_cnt<18>
+	# watch_rst & !watchdog & watch_cnt<18>
+	# !watch_rst & watchdog & watch_cnt<18>
+	# enable & watch_rst & watch_cnt<0> & watchdog & 
+	watch_cnt<10> & watch_cnt<11> & watch_cnt<12> & watch_cnt<13> & 
+	watch_cnt<14> & watch_cnt<15> & watch_cnt<16> & watch_cnt<17> & 
+	watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & watch_cnt<4> & 
+	watch_cnt<5> & watch_cnt<6> & watch_cnt<7> & watch_cnt<8> & 
+	watch_cnt<9>
+	# enable & !watch_rst & watch_cnt<0> & !watchdog & 
+	watch_cnt<10> & watch_cnt<11> & watch_cnt<12> & watch_cnt<13> & 
+	watch_cnt<14> & watch_cnt<15> & watch_cnt<16> & watch_cnt<17> & 
+	watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & watch_cnt<4> & 
+	watch_cnt<5> & watch_cnt<6> & watch_cnt<7> & watch_cnt<8> & 
+	watch_cnt<9>;
+   watch_cnt<18>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 14 | watch_cnt<1>
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 21 | 2 | 0 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3 | 2 | 7
+INPUTS | 5 | enable  | watch_rst  | watch_cnt<0>  | watchdog  | watch_cnt<1>
+INPUTMC | 3 | 0 | 13 | 2 | 2 | 0 | 14
+INPUTP | 2 | 38 | 3
+EQ | 9 | 
+   watch_cnt<1>.D = enable & watch_rst & watch_cnt<0> & watchdog & 
+	!watch_cnt<1>
+	# enable & watch_rst & !watch_cnt<0> & watchdog & 
+	watch_cnt<1>
+	# enable & !watch_rst & watch_cnt<0> & !watchdog & 
+	!watch_cnt<1>
+	# enable & !watch_rst & !watch_cnt<0> & !watchdog & 
+	watch_cnt<1>;
+   watch_cnt<1>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 17 | watch_cnt<2>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 20 | 2 | 0 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3 | 2 | 7
+INPUTS | 6 | enable  | watch_rst  | watch_cnt<0>  | watchdog  | watch_cnt<1>  | watch_cnt<2>
+INPUTMC | 4 | 0 | 13 | 2 | 2 | 0 | 14 | 0 | 17
+INPUTP | 2 | 38 | 3
+EQ | 8 | 
+   watch_cnt<2>.T = !enable & watch_cnt<2>
+	# watch_rst & !watchdog & watch_cnt<2>
+	# !watch_rst & watchdog & watch_cnt<2>
+	# enable & watch_rst & watch_cnt<0> & watchdog & 
+	watch_cnt<1>
+	# enable & !watch_rst & watch_cnt<0> & !watchdog & 
+	watch_cnt<1>;
+   watch_cnt<2>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 16 | watch_cnt<3>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 19 | 2 | 0 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3 | 2 | 7
+INPUTS | 7 | enable  | watch_cnt<3>  | watch_rst  | watchdog  | watch_cnt<0>  | watch_cnt<1>  | watch_cnt<2>
+INPUTMC | 5 | 0 | 16 | 0 | 13 | 2 | 2 | 0 | 14 | 0 | 17
+INPUTP | 2 | 38 | 3
+EQ | 8 | 
+   watch_cnt<3>.T = !enable & watch_cnt<3>
+	# watch_rst & !watchdog & watch_cnt<3>
+	# !watch_rst & watchdog & watch_cnt<3>
+	# enable & watch_rst & watch_cnt<0> & watchdog & 
+	watch_cnt<1> & watch_cnt<2>
+	# enable & !watch_rst & watch_cnt<0> & !watchdog & 
+	watch_cnt<1> & watch_cnt<2>;
+   watch_cnt<3>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 15 | watch_cnt<4>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 18 | 2 | 0 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3 | 2 | 7
+INPUTS | 8 | enable  | watch_cnt<4>  | watch_rst  | watchdog  | watch_cnt<0>  | watch_cnt<1>  | watch_cnt<2>  | watch_cnt<3>
+INPUTMC | 6 | 0 | 15 | 0 | 13 | 2 | 2 | 0 | 14 | 0 | 17 | 0 | 16
+INPUTP | 2 | 38 | 3
+EQ | 8 | 
+   watch_cnt<4>.T = !enable & watch_cnt<4>
+	# watch_rst & !watchdog & watch_cnt<4>
+	# !watch_rst & watchdog & watch_cnt<4>
+	# enable & watch_rst & watch_cnt<0> & watchdog & 
+	watch_cnt<1> & watch_cnt<2> & watch_cnt<3>
+	# enable & !watch_rst & watch_cnt<0> & !watchdog & 
+	watch_cnt<1> & watch_cnt<2> & watch_cnt<3>;
+   watch_cnt<4>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 2 | 6 | watch_cnt<5>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 17 | 2 | 0 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3 | 2 | 7
+INPUTS | 9 | enable  | watch_cnt<5>  | watch_rst  | watchdog  | watch_cnt<0>  | watch_cnt<1>  | watch_cnt<2>  | watch_cnt<3>  | watch_cnt<4>
+INPUTMC | 7 | 2 | 6 | 0 | 13 | 2 | 2 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15
+INPUTP | 2 | 38 | 3
+EQ | 8 | 
+   watch_cnt<5>.T = !enable & watch_cnt<5>
+	# watch_rst & !watchdog & watch_cnt<5>
+	# !watch_rst & watchdog & watch_cnt<5>
+	# enable & watch_rst & watch_cnt<0> & watchdog & 
+	watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & watch_cnt<4>
+	# enable & !watch_rst & watch_cnt<0> & !watchdog & 
+	watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & watch_cnt<4>;
+   watch_cnt<5>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 2 | 5 | watch_cnt<6>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 16 | 2 | 0 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3 | 2 | 7
+INPUTS | 10 | enable  | watch_cnt<6>  | watch_rst  | watchdog  | watch_cnt<0>  | watch_cnt<1>  | watch_cnt<2>  | watch_cnt<3>  | watch_cnt<4>  | watch_cnt<5>
+INPUTMC | 8 | 2 | 5 | 0 | 13 | 2 | 2 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6
+INPUTP | 2 | 38 | 3
+EQ | 10 | 
+   watch_cnt<6>.T = !enable & watch_cnt<6>
+	# watch_rst & !watchdog & watch_cnt<6>
+	# !watch_rst & watchdog & watch_cnt<6>
+	# enable & watch_rst & watch_cnt<0> & watchdog & 
+	watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & watch_cnt<4> & 
+	watch_cnt<5>
+	# enable & !watch_rst & watch_cnt<0> & !watchdog & 
+	watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & watch_cnt<4> & 
+	watch_cnt<5>;
+   watch_cnt<6>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 17 | watch_cnt<7>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 15 | 2 | 0 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 1 | 17 | 2 | 4 | 2 | 3 | 2 | 7
+INPUTS | 11 | enable  | watch_cnt<7>  | watch_rst  | watchdog  | watch_cnt<0>  | watch_cnt<1>  | watch_cnt<2>  | watch_cnt<3>  | watch_cnt<4>  | watch_cnt<5>  | watch_cnt<6>
+INPUTMC | 9 | 1 | 17 | 0 | 13 | 2 | 2 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5
+INPUTP | 2 | 38 | 3
+EQ | 10 | 
+   watch_cnt<7>.T = !enable & watch_cnt<7>
+	# watch_rst & !watchdog & watch_cnt<7>
+	# !watch_rst & watchdog & watch_cnt<7>
+	# enable & watch_rst & watch_cnt<0> & watchdog & 
+	watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & watch_cnt<4> & 
+	watch_cnt<5> & watch_cnt<6>
+	# enable & !watch_rst & watch_cnt<0> & !watchdog & 
+	watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & watch_cnt<4> & 
+	watch_cnt<5> & watch_cnt<6>;
+   watch_cnt<7>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 2 | 4 | watch_cnt<8>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 14 | 2 | 0 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 4 | 2 | 3 | 2 | 7
+INPUTS | 12 | enable  | watch_cnt<8>  | watch_rst  | watchdog  | watch_cnt<0>  | watch_cnt<1>  | watch_cnt<2>  | watch_cnt<3>  | watch_cnt<4>  | watch_cnt<5>  | watch_cnt<6>  | watch_cnt<7>
+INPUTMC | 10 | 2 | 4 | 0 | 13 | 2 | 2 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17
+INPUTP | 2 | 38 | 3
+EQ | 10 | 
+   watch_cnt<8>.T = !enable & watch_cnt<8>
+	# watch_rst & !watchdog & watch_cnt<8>
+	# !watch_rst & watchdog & watch_cnt<8>
+	# enable & watch_rst & watch_cnt<0> & watchdog & 
+	watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & watch_cnt<4> & 
+	watch_cnt<5> & watch_cnt<6> & watch_cnt<7>
+	# enable & !watch_rst & watch_cnt<0> & !watchdog & 
+	watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & watch_cnt<4> & 
+	watch_cnt<5> & watch_cnt<6> & watch_cnt<7>;
+   watch_cnt<8>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 2 | 3 | watch_cnt<9>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 13 | 2 | 0 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 3 | 2 | 7
+INPUTS | 13 | enable  | watch_cnt<9>  | watch_rst  | watchdog  | watch_cnt<0>  | watch_cnt<1>  | watch_cnt<2>  | watch_cnt<3>  | watch_cnt<4>  | watch_cnt<5>  | watch_cnt<6>  | watch_cnt<7>  | watch_cnt<8>
+INPUTMC | 11 | 2 | 3 | 0 | 13 | 2 | 2 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4
+INPUTP | 2 | 38 | 3
+EQ | 10 | 
+   watch_cnt<9>.T = !enable & watch_cnt<9>
+	# watch_rst & !watchdog & watch_cnt<9>
+	# !watch_rst & watchdog & watch_cnt<9>
+	# enable & watch_rst & watch_cnt<0> & watchdog & 
+	watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & watch_cnt<4> & 
+	watch_cnt<5> & watch_cnt<6> & watch_cnt<7> & watch_cnt<8>
+	# enable & !watch_rst & watch_cnt<0> & !watchdog & 
+	watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & watch_cnt<4> & 
+	watch_cnt<5> & watch_cnt<6> & watch_cnt<7> & watch_cnt<8>;
+   watch_cnt<9>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 2 | 7 | watch_cnt<19>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 3 | 2 | 0 | 2 | 2 | 2 | 7
+INPUTS | 23 | enable  | watch_cnt<19>  | watch_rst  | watchdog  | watch_cnt<0>  | watch_cnt<10>  | watch_cnt<11>  | watch_cnt<12>  | watch_cnt<13>  | watch_cnt<14>  | watch_cnt<15>  | watch_cnt<16>  | watch_cnt<17>  | watch_cnt<18>  | watch_cnt<1>  | watch_cnt<2>  | watch_cnt<3>  | watch_cnt<4>  | watch_cnt<5>  | watch_cnt<6>  | watch_cnt<7>  | watch_cnt<8>  | watch_cnt<9>
+INPUTMC | 21 | 2 | 7 | 0 | 13 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3
+INPUTP | 2 | 38 | 3
+EQ | 16 | 
+   watch_cnt<19>.T = !enable & watch_cnt<19>
+	# watch_rst & !watchdog & watch_cnt<19>
+	# !watch_rst & watchdog & watch_cnt<19>
+	# enable & watch_rst & watch_cnt<0> & watchdog & 
+	watch_cnt<10> & watch_cnt<11> & watch_cnt<12> & watch_cnt<13> & 
+	watch_cnt<14> & watch_cnt<15> & watch_cnt<16> & watch_cnt<17> & 
+	watch_cnt<18> & watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & 
+	watch_cnt<4> & watch_cnt<5> & watch_cnt<6> & watch_cnt<7> & 
+	watch_cnt<8> & watch_cnt<9>
+	# enable & !watch_rst & watch_cnt<0> & !watchdog & 
+	watch_cnt<10> & watch_cnt<11> & watch_cnt<12> & watch_cnt<13> & 
+	watch_cnt<14> & watch_cnt<15> & watch_cnt<16> & watch_cnt<17> & 
+	watch_cnt<18> & watch_cnt<1> & watch_cnt<2> & watch_cnt<3> & 
+	watch_cnt<4> & watch_cnt<5> & watch_cnt<6> & watch_cnt<7> & 
+	watch_cnt<8> & watch_cnt<9>;
+   watch_cnt<19>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 3 | 1 | sw1_n_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 2 | enable  | switch1/out_n
+INPUTMC | 1 | 1 | 15
+INPUTP | 1 | 38
+EQ | 1 | 
+   sw1_n = enable & switch1/out_n;
+
+MACROCELL | 1 | 1 | sw1_p_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 2 | enable  | switch1/out_p
+INPUTMC | 1 | 1 | 14
+INPUTP | 1 | 38
+EQ | 1 | 
+   sw1_p = enable & switch1/out_p;
+
+MACROCELL | 1 | 7 | sw2_n_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 2 | enable  | switch2/out_n
+INPUTMC | 1 | 1 | 12
+INPUTP | 1 | 38
+EQ | 1 | 
+   sw2_n = enable & switch2/out_n;
+
+MACROCELL | 0 | 1 | sw2_p_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 2 | enable  | switch2/out_p
+INPUTMC | 1 | 1 | 11
+INPUTP | 1 | 38
+EQ | 1 | 
+   sw2_p = enable & switch2/out_p;
+
+MACROCELL | 2 | 1 | sw3_n_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 2 | enable  | switch3/out_n
+INPUTMC | 1 | 1 | 9
+INPUTP | 1 | 38
+EQ | 1 | 
+   sw3_n = enable & switch3/out_n;
+
+MACROCELL | 2 | 13 | sw3_p_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 2 | enable  | switch3/out_p
+INPUTMC | 1 | 1 | 8
+INPUTP | 1 | 38
+EQ | 1 | 
+   sw3_p = enable & switch3/out_p;
+
+PIN | sw1_input | 64 | 0 | N/A | 83 | 2 | 1 | 14 | 1 | 15
+PIN | enable | 64 | 0 | N/A | 38 | 43 | 1 | 14 | 1 | 11 | 1 | 8 | 1 | 15 | 1 | 12 | 1 | 9 | 0 | 13 | 2 | 0 | 1 | 6 | 1 | 5 | 1 | 4 | 1 | 3 | 1 | 2 | 1 | 0 | 2 | 2 | 1 | 16 | 1 | 13 | 1 | 10 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3 | 2 | 7 | 3 | 1 | 1 | 1 | 1 | 7 | 0 | 1 | 2 | 1 | 2 | 13
+PIN | sw2_input | 64 | 0 | N/A | 89 | 2 | 1 | 11 | 1 | 12
+PIN | sw3_input | 64 | 0 | N/A | 92 | 2 | 1 | 8 | 1 | 9
+PIN | clk | 4096 | 0 | N/A | 20 | 37 | 1 | 14 | 1 | 11 | 1 | 8 | 1 | 15 | 1 | 12 | 1 | 9 | 0 | 13 | 2 | 0 | 1 | 6 | 1 | 5 | 1 | 4 | 1 | 3 | 1 | 2 | 1 | 0 | 2 | 2 | 1 | 16 | 1 | 13 | 1 | 10 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3 | 2 | 7
+PIN | watchdog | 64 | 0 | N/A | 3 | 22 | 0 | 13 | 2 | 0 | 2 | 2 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 15 | 2 | 6 | 2 | 5 | 1 | 17 | 2 | 4 | 2 | 3 | 2 | 7
+PIN | sw1_n | 536871040 | 0 | N/A | 62
+PIN | sw1_p | 536871040 | 0 | N/A | 87
+PIN | sw2_n | 536871040 | 0 | N/A | 90
+PIN | sw2_p | 536871040 | 0 | N/A | 11
+PIN | sw3_n | 536871040 | 0 | N/A | 29
+PIN | sw3_p | 536871040 | 0 | N/A | 49

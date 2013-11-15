@@ -1,0 +1,168 @@
+NDS Database:  version O.61xd
+
+NDS_INFO | xc9500xl | 9572XL44VQ | XC9572XL-7-VQ44
+
+DEVICE | 9572XL | 9572XL44VQ | 
+
+NETWORK | h_bridge | 0 | 0 | 81927
+
+MACROCELL_INSTANCE | FbkInv+Merge+OptxMapped | sw1_output_H_OBUF | h_bridge_COPY_0_COPY_0 | 2155907072 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | sw1_output_H_OBUF$Q | 90 | ? | 0 | 0 | h_bridge_COPY_0_COPY_0 | NULL | sw1_output_H_OBUF.Q | sw1_output_H_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | sw1_output_H_OBUF.SI | sw1_output_H_OBUF | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | sw1_output_H_OBUF.D1 | 103 | ? | 0 | 4096 | sw1_output_H_OBUF | NULL | NULL | sw1_output_H_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | sw1_output_H_OBUF.D2 | 104 | ? | 0 | 4096 | sw1_output_H_OBUF | NULL | NULL | sw1_output_H_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | sw1_output_H_OBUF.REG | sw1_output_H_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | sw1_output_H_OBUF.D | 102 | ? | 0 | 0 | sw1_output_H_OBUF | NULL | NULL | sw1_output_H_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | sw1_output_H_OBUF.Q | 105 | ? | 0 | 0 | sw1_output_H_OBUF | NULL | NULL | sw1_output_H_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | sw1_output_H_OBUF$BUF0 | h_bridge_COPY_0_COPY_0 | 2155872256 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | sw1_output_H_OBUF$BUF0 | 91 | ? | 0 | 0 | h_bridge_COPY_0_COPY_0 | NULL | sw1_output_H_OBUF$BUF0.Q | sw1_output_H_OBUF$BUF0 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | sw1_output_H_OBUF$BUF0.SI | sw1_output_H_OBUF$BUF0 | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | sw1_output_H_OBUF$BUF0.D1 | 107 | ? | 0 | 4096 | sw1_output_H_OBUF$BUF0 | NULL | NULL | sw1_output_H_OBUF$BUF0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | sw1_output_H_OBUF$BUF0.D2 | 108 | ? | 0 | 6144 | sw1_output_H_OBUF$BUF0 | NULL | NULL | sw1_output_H_OBUF$BUF0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | sw1_output_H_OBUF$BUF0.REG | sw1_output_H_OBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | sw1_output_H_OBUF$BUF0.D | 106 | ? | 0 | 0 | sw1_output_H_OBUF$BUF0 | NULL | NULL | sw1_output_H_OBUF$BUF0.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | sw1_output_H_OBUF$BUF0.Q | 109 | ? | 0 | 0 | sw1_output_H_OBUF$BUF0 | NULL | NULL | sw1_output_H_OBUF$BUF0.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | FbkInv+Merge+OptxMapped | sw2_output_H_OBUF | h_bridge_COPY_0_COPY_0 | 2155907072 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | sw2_output_H_OBUF$Q | 92 | ? | 0 | 0 | h_bridge_COPY_0_COPY_0 | NULL | sw2_output_H_OBUF.Q | sw2_output_H_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | sw2_output_H_OBUF.SI | sw2_output_H_OBUF | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | sw2_output_H_OBUF.D1 | 111 | ? | 0 | 4096 | sw2_output_H_OBUF | NULL | NULL | sw2_output_H_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | sw2_output_H_OBUF.D2 | 112 | ? | 0 | 4096 | sw2_output_H_OBUF | NULL | NULL | sw2_output_H_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | sw2_output_H_OBUF.REG | sw2_output_H_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | sw2_output_H_OBUF.D | 110 | ? | 0 | 0 | sw2_output_H_OBUF | NULL | NULL | sw2_output_H_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | sw2_output_H_OBUF.Q | 113 | ? | 0 | 0 | sw2_output_H_OBUF | NULL | NULL | sw2_output_H_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | sw2_output_H_OBUF$BUF0 | h_bridge_COPY_0_COPY_0 | 2155872256 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | sw2_output_H_OBUF$BUF0 | 93 | ? | 0 | 0 | h_bridge_COPY_0_COPY_0 | NULL | sw2_output_H_OBUF$BUF0.Q | sw2_output_H_OBUF$BUF0 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | sw2_output_H_OBUF$BUF0.SI | sw2_output_H_OBUF$BUF0 | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | sw2_output_H_OBUF$BUF0.D1 | 115 | ? | 0 | 4096 | sw2_output_H_OBUF$BUF0 | NULL | NULL | sw2_output_H_OBUF$BUF0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | sw2_output_H_OBUF$BUF0.D2 | 116 | ? | 0 | 6144 | sw2_output_H_OBUF$BUF0 | NULL | NULL | sw2_output_H_OBUF$BUF0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | sw2_output_H_OBUF$BUF0.REG | sw2_output_H_OBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | sw2_output_H_OBUF$BUF0.D | 114 | ? | 0 | 0 | sw2_output_H_OBUF$BUF0 | NULL | NULL | sw2_output_H_OBUF$BUF0.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | sw2_output_H_OBUF$BUF0.Q | 117 | ? | 0 | 0 | sw2_output_H_OBUF$BUF0 | NULL | NULL | sw2_output_H_OBUF$BUF0.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | FbkInv+Merge+OptxMapped | sw3_output_H_OBUF | h_bridge_COPY_0_COPY_0 | 2155907072 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | sw3_output_H_OBUF$Q | 94 | ? | 0 | 0 | h_bridge_COPY_0_COPY_0 | NULL | sw3_output_H_OBUF.Q | sw3_output_H_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | sw3_output_H_OBUF.SI | sw3_output_H_OBUF | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | sw3_output_H_OBUF.D1 | 119 | ? | 0 | 4096 | sw3_output_H_OBUF | NULL | NULL | sw3_output_H_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | sw3_output_H_OBUF.D2 | 120 | ? | 0 | 4096 | sw3_output_H_OBUF | NULL | NULL | sw3_output_H_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | sw3_output_H_OBUF.REG | sw3_output_H_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | sw3_output_H_OBUF.D | 118 | ? | 0 | 0 | sw3_output_H_OBUF | NULL | NULL | sw3_output_H_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | sw3_output_H_OBUF.Q | 121 | ? | 0 | 0 | sw3_output_H_OBUF | NULL | NULL | sw3_output_H_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | sw3_output_H_OBUF$BUF0 | h_bridge_COPY_0_COPY_0 | 2155872256 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | sw3_output_H_OBUF$BUF0 | 95 | ? | 0 | 0 | h_bridge_COPY_0_COPY_0 | NULL | sw3_output_H_OBUF$BUF0.Q | sw3_output_H_OBUF$BUF0 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | sw3_output_H_OBUF$BUF0.SI | sw3_output_H_OBUF$BUF0 | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | sw3_output_H_OBUF$BUF0.D1 | 123 | ? | 0 | 4096 | sw3_output_H_OBUF$BUF0 | NULL | NULL | sw3_output_H_OBUF$BUF0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | sw3_output_H_OBUF$BUF0.D2 | 124 | ? | 0 | 6144 | sw3_output_H_OBUF$BUF0 | NULL | NULL | sw3_output_H_OBUF$BUF0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | sw3_output_H_OBUF$BUF0.REG | sw3_output_H_OBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | sw3_output_H_OBUF$BUF0.D | 122 | ? | 0 | 0 | sw3_output_H_OBUF$BUF0 | NULL | NULL | sw3_output_H_OBUF$BUF0.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | sw3_output_H_OBUF$BUF0.Q | 125 | ? | 0 | 0 | sw3_output_H_OBUF$BUF0 | NULL | NULL | sw3_output_H_OBUF$BUF0.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | sw1_output_L | h_bridge_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | sw1_output_H_OBUF$Q | 90 | ? | 0 | 0 | h_bridge_COPY_0_COPY_0 | NULL | sw1_output_H_OBUF.Q | sw1_output_H_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | sw1_output_L | 96 | PO | 0 | 0 | h_bridge_COPY_0_COPY_0 | NULL | NULL | sw1_output_L | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | sw1_output_H | h_bridge_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | sw1_output_H_OBUF$BUF0 | 91 | ? | 0 | 0 | h_bridge_COPY_0_COPY_0 | NULL | sw1_output_H_OBUF$BUF0.Q | sw1_output_H_OBUF$BUF0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | sw1_output_H | 97 | PO | 0 | 0 | h_bridge_COPY_0_COPY_0 | NULL | NULL | sw1_output_H | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | sw2_output_L | h_bridge_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | sw2_output_H_OBUF$Q | 92 | ? | 0 | 0 | h_bridge_COPY_0_COPY_0 | NULL | sw2_output_H_OBUF.Q | sw2_output_H_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | sw2_output_L | 98 | PO | 0 | 0 | h_bridge_COPY_0_COPY_0 | NULL | NULL | sw2_output_L | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | sw2_output_H | h_bridge_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | sw2_output_H_OBUF$BUF0 | 93 | ? | 0 | 0 | h_bridge_COPY_0_COPY_0 | NULL | sw2_output_H_OBUF$BUF0.Q | sw2_output_H_OBUF$BUF0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | sw2_output_H | 99 | PO | 0 | 0 | h_bridge_COPY_0_COPY_0 | NULL | NULL | sw2_output_H | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | sw3_output_L | h_bridge_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | sw3_output_H_OBUF$Q | 94 | ? | 0 | 0 | h_bridge_COPY_0_COPY_0 | NULL | sw3_output_H_OBUF.Q | sw3_output_H_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | sw3_output_L | 100 | PO | 0 | 0 | h_bridge_COPY_0_COPY_0 | NULL | NULL | sw3_output_L | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | sw3_output_H | h_bridge_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | sw3_output_H_OBUF$BUF0 | 95 | ? | 0 | 0 | h_bridge_COPY_0_COPY_0 | NULL | sw3_output_H_OBUF$BUF0.Q | sw3_output_H_OBUF$BUF0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | sw3_output_H | 101 | PO | 0 | 0 | h_bridge_COPY_0_COPY_0 | NULL | NULL | sw3_output_H | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | h_bridge_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | sw1_output_H_OBUF | 1 | NULL | 0 | sw1_output_L | 1 | 39 | 49152
+FBPIN | 8 | sw2_output_H_OBUF$BUF0 | 1 | NULL | 0 | sw2_output_H | 1 | 42 | 49152
+
+FB_INSTANCE | FOOBAR2_ | h_bridge_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | sw2_output_H_OBUF | 1 | NULL | 0 | sw2_output_L | 1 | 29 | 49152
+FBPIN | 8 | sw3_output_H_OBUF | 1 | NULL | 0 | sw3_output_L | 1 | 32 | 49152
+
+FB_INSTANCE | FOOBAR3_ | h_bridge_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | sw1_output_H_OBUF$BUF0 | 1 | NULL | 0 | sw1_output_H | 1 | 5 | 49152
+FBPIN | 14 | sw3_output_H_OBUF$BUF0 | 1 | NULL | 0 | sw3_output_H | 1 | 13 | 49152
+
+FB_INSTANCE | FOOBAR4_ | h_bridge_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR5_ | h_bridge_COPY_0_COPY_0 | 0 | 0 | 0
+

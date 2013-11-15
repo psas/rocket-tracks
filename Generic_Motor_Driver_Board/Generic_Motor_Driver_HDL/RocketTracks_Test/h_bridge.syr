@@ -1,0 +1,252 @@
+Release 13.2 - xst O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: h_bridge.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "h_bridge.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "h_bridge"
+Output Format                      : NGC
+Target Device                      : XC9500XL CPLDs
+
+---- Source Options
+Top Module Name                    : h_bridge
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../src/h_bridge-2.v" in library work
+Module <h_bridge> compiled
+Module <switch> compiled
+No errors in compilation
+Analysis of file <"h_bridge.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <h_bridge> in library <work>.
+
+Analyzing hierarchy for module <switch> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <h_bridge>.
+Module <h_bridge> is correct for synthesis.
+ 
+Analyzing module <switch> in library <work>.
+Module <switch> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <out_p> in unit <switch> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <out_n> in unit <switch> has a constant value of 0 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <switch>.
+    Related source file is "../src/h_bridge-2.v".
+    Found 2-bit up counter for signal <count>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <switch> synthesized.
+
+
+Synthesizing Unit <h_bridge>.
+    Related source file is "../src/h_bridge-2.v".
+WARNING:Xst:1306 - Output <status> is never assigned.
+WARNING:Xst:1780 - Signal <status_flash_cnt> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <output_reset_watchdog>.
+    Found 1-bit register for signal <prev_watchdog_in>.
+    Found 20-bit register for signal <watch_cnt>.
+    Found 20-bit adder for signal <watch_cnt$addsub0000> created at line 64.
+    Found 20-bit comparator greater for signal <watch_cnt$cmp_gt0000> created at line 61.
+    Found 1-bit xor2 for signal <watch_cnt$xor0000> created at line 53.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred   1 Xor(s).
+Unit <h_bridge> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 20-bit adder                                          : 1
+# Counters                                             : 3
+ 2-bit up counter                                      : 3
+# Registers                                            : 3
+ 1-bit register                                        : 2
+ 20-bit register                                       : 1
+# Comparators                                          : 1
+ 20-bit comparator greater                             : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 20-bit adder                                          : 1
+# Counters                                             : 3
+ 2-bit up counter                                      : 3
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <count_1> of sequential type is unconnected in block <switch>.
+WARNING:Xst:2677 - Node <count_0> of sequential type is unconnected in block <switch>.
+
+Optimizing unit <h_bridge> ...
+
+Optimizing unit <switch> ...
+WARNING:Xst:2677 - Node <prev_watchdog_in> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <watch_cnt_1> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <watch_cnt_2> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <watch_cnt_3> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <watch_cnt_4> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <watch_cnt_5> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <watch_cnt_6> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <watch_cnt_7> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <watch_cnt_8> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <watch_cnt_9> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <watch_cnt_10> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <watch_cnt_11> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <watch_cnt_12> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <watch_cnt_13> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <watch_cnt_14> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <watch_cnt_15> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <watch_cnt_16> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <watch_cnt_17> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <watch_cnt_18> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <watch_cnt_19> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <watch_cnt_0> of sequential type is unconnected in block <h_bridge>.
+WARNING:Xst:2677 - Node <output_reset_watchdog> of sequential type is unconnected in block <h_bridge>.
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : h_bridge.ngr
+Top Level Output File Name         : h_bridge
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : XC9500XL CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 3
+#      GND                         : 3
+# IO Buffers                       : 6
+#      OBUF                        : 6
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.04 secs
+ 
+--> 
+
+Total memory usage is 200052 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   26 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

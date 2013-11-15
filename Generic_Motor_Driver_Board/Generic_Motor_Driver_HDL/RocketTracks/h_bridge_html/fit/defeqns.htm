@@ -1,0 +1,458 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+FDCPE_output_enable_watchdog: FDCPE port map (output_enable_watchdog,output_enable_watchdog_D,clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;output_enable_watchdog_D <= ((enable AND watch_rst AND NOT watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(10) AND NOT watch_cnt(11) AND NOT watch_cnt(12) AND NOT watch_cnt(13) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(14) AND NOT watch_cnt(15) AND NOT watch_cnt(16) AND NOT watch_cnt(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(18) AND NOT watch_cnt(1) AND NOT watch_cnt(2) AND NOT watch_cnt(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(4) AND NOT watch_cnt(5) AND NOT watch_cnt(6) AND NOT watch_cnt(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(8) AND NOT watch_cnt(9) AND NOT watch_cnt(19))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND NOT watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(10) AND NOT watch_cnt(11) AND NOT watch_cnt(12) AND NOT watch_cnt(13) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(14) AND NOT watch_cnt(15) AND NOT watch_cnt(16) AND NOT watch_cnt(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(18) AND NOT watch_cnt(1) AND NOT watch_cnt(2) AND NOT watch_cnt(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(4) AND NOT watch_cnt(5) AND NOT watch_cnt(6) AND NOT watch_cnt(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(8) AND NOT watch_cnt(9) AND NOT watch_cnt(19)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+sw1_n <= (enable AND switch1/out_n);
+</td></tr><tr><td>
+</td></tr><tr><td>
+sw1_p <= (enable AND switch1/out_p);
+</td></tr><tr><td>
+</td></tr><tr><td>
+sw2_n <= (enable AND switch2/out_n);
+</td></tr><tr><td>
+</td></tr><tr><td>
+sw2_p <= (enable AND switch2/out_p);
+</td></tr><tr><td>
+</td></tr><tr><td>
+sw3_n <= (enable AND switch3/out_n);
+</td></tr><tr><td>
+</td></tr><tr><td>
+sw3_p <= (enable AND switch3/out_p);
+</td></tr><tr><td>
+FDCPE_switch1/count0: FDCPE port map (switch1/count(0),switch1/count_D(0),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch1/count_D(0) <= ((enable AND switch1/out_p AND switch1/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch1/count(0) AND NOT switch1/count(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT switch1/out_p AND NOT switch1/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch1/count(0) AND NOT switch1/count(2)));
+</td></tr><tr><td>
+FDCPE_switch1/count1: FDCPE port map (switch1/count(1),switch1/count_D(1),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch1/count_D(1) <= ((enable AND switch1/out_p AND switch1/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND switch1/count(0) AND NOT switch1/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT switch1/count(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND switch1/out_p AND switch1/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch1/count(0) AND NOT switch1/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	switch1/count(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT switch1/out_p AND NOT switch1/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND switch1/count(0) AND NOT switch1/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT switch1/count(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT switch1/out_p AND NOT switch1/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch1/count(0) AND NOT switch1/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	switch1/count(1)));
+</td></tr><tr><td>
+FDCPE_switch1/count2: FDCPE port map (switch1/count(2),switch1/count_D(2),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch1/count_D(2) <= ((enable AND switch1/out_p AND switch1/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND switch1/count(0) AND NOT switch1/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	switch1/count(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT switch1/out_p AND NOT switch1/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND switch1/count(0) AND NOT switch1/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	switch1/count(1)));
+</td></tr><tr><td>
+FDCPE_switch1/out_n: FDCPE port map (switch1/out_n,switch1/out_n_D,clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch1/out_n_D <= ((NOT sw1_input AND enable AND NOT switch1/out_p AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	switch1/out_n AND output_enable_watchdog)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND switch1/out_p AND switch1/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch1/count(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT sw1_input AND enable AND switch1/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch1/count(0) AND NOT switch1/count(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT sw1_input AND enable AND NOT switch1/out_p AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch1/count(0) AND switch1/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT switch1/count(1)));
+</td></tr><tr><td>
+FDCPE_switch1/out_p: FDCPE port map (switch1/out_p,switch1/out_p_D,clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch1/out_p_D <= ((sw1_input AND enable AND switch1/out_p AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT switch1/out_n AND output_enable_watchdog)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND switch1/out_p AND switch1/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch1/count(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (sw1_input AND enable AND switch1/out_p AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch1/count(0) AND NOT switch1/count(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (sw1_input AND enable AND NOT switch1/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch1/count(0) AND switch1/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT switch1/count(1)));
+</td></tr><tr><td>
+FDCPE_switch2/count0: FDCPE port map (switch2/count(0),switch2/count_D(0),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch2/count_D(0) <= ((enable AND switch2/out_p AND switch2/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch2/count(0) AND NOT switch2/count(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT switch2/out_p AND NOT switch2/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch2/count(0) AND NOT switch2/count(2)));
+</td></tr><tr><td>
+FDCPE_switch2/count1: FDCPE port map (switch2/count(1),switch2/count_D(1),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch2/count_D(1) <= ((enable AND switch2/out_p AND switch2/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND switch2/count(0) AND NOT switch2/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT switch2/count(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND switch2/out_p AND switch2/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch2/count(0) AND NOT switch2/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	switch2/count(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT switch2/out_p AND NOT switch2/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND switch2/count(0) AND NOT switch2/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT switch2/count(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT switch2/out_p AND NOT switch2/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch2/count(0) AND NOT switch2/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	switch2/count(1)));
+</td></tr><tr><td>
+FDCPE_switch2/count2: FDCPE port map (switch2/count(2),switch2/count_D(2),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch2/count_D(2) <= ((enable AND switch2/out_p AND switch2/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND switch2/count(0) AND NOT switch2/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	switch2/count(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT switch2/out_p AND NOT switch2/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND switch2/count(0) AND NOT switch2/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	switch2/count(1)));
+</td></tr><tr><td>
+FDCPE_switch2/out_n: FDCPE port map (switch2/out_n,switch2/out_n_D,clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch2/out_n_D <= ((enable AND NOT sw2_input AND NOT switch2/out_p AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	switch2/out_n AND output_enable_watchdog)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND switch2/out_p AND switch2/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch2/count(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT sw2_input AND switch2/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch2/count(0) AND NOT switch2/count(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT sw2_input AND NOT switch2/out_p AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch2/count(0) AND switch2/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT switch2/count(1)));
+</td></tr><tr><td>
+FDCPE_switch2/out_p: FDCPE port map (switch2/out_p,switch2/out_p_D,clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch2/out_p_D <= ((enable AND sw2_input AND switch2/out_p AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT switch2/out_n AND output_enable_watchdog)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND switch2/out_p AND switch2/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch2/count(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND sw2_input AND switch2/out_p AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch2/count(0) AND NOT switch2/count(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND sw2_input AND NOT switch2/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch2/count(0) AND switch2/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT switch2/count(1)));
+</td></tr><tr><td>
+FDCPE_switch3/count0: FDCPE port map (switch3/count(0),switch3/count_D(0),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch3/count_D(0) <= ((enable AND switch3/out_p AND switch3/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch3/count(0) AND NOT switch3/count(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT switch3/out_p AND NOT switch3/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch3/count(0) AND NOT switch3/count(2)));
+</td></tr><tr><td>
+FDCPE_switch3/count1: FDCPE port map (switch3/count(1),switch3/count_D(1),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch3/count_D(1) <= ((enable AND switch3/out_p AND switch3/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND switch3/count(0) AND NOT switch3/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT switch3/count(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND switch3/out_p AND switch3/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch3/count(0) AND NOT switch3/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	switch3/count(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT switch3/out_p AND NOT switch3/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND switch3/count(0) AND NOT switch3/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT switch3/count(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT switch3/out_p AND NOT switch3/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch3/count(0) AND NOT switch3/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	switch3/count(1)));
+</td></tr><tr><td>
+FDCPE_switch3/count2: FDCPE port map (switch3/count(2),switch3/count_D(2),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch3/count_D(2) <= ((enable AND switch3/out_p AND switch3/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND switch3/count(0) AND NOT switch3/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	switch3/count(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT switch3/out_p AND NOT switch3/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND switch3/count(0) AND NOT switch3/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	switch3/count(1)));
+</td></tr><tr><td>
+FDCPE_switch3/out_n: FDCPE port map (switch3/out_n,switch3/out_n_D,clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch3/out_n_D <= ((enable AND NOT sw3_input AND NOT switch3/out_p AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	switch3/out_n AND output_enable_watchdog)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND switch3/out_p AND switch3/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch3/count(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT sw3_input AND switch3/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch3/count(0) AND NOT switch3/count(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT sw3_input AND NOT switch3/out_p AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch3/count(0) AND switch3/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT switch3/count(1)));
+</td></tr><tr><td>
+FDCPE_switch3/out_p: FDCPE port map (switch3/out_p,switch3/out_p_D,clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch3/out_p_D <= ((enable AND sw3_input AND switch3/out_p AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT switch3/out_n AND output_enable_watchdog)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND switch3/out_p AND switch3/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch3/count(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND sw3_input AND switch3/out_p AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch3/count(0) AND NOT switch3/count(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND sw3_input AND NOT switch3/out_n AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	output_enable_watchdog AND NOT switch3/count(0) AND switch3/count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT switch3/count(1)));
+</td></tr><tr><td>
+FDCPE_watch_cnt0: FDCPE port map (watch_cnt(0),watch_cnt_D(0),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_cnt_D(0) <= ((enable AND watch_rst AND watch_cnt(0) AND watchdog)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND watch_rst AND watchdog AND NOT watch_cnt(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(11) AND NOT watch_cnt(12) AND NOT watch_cnt(13) AND NOT watch_cnt(14) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(15) AND NOT watch_cnt(16) AND NOT watch_cnt(17) AND NOT watch_cnt(18) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(1) AND NOT watch_cnt(2) AND NOT watch_cnt(3) AND NOT watch_cnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(5) AND NOT watch_cnt(6) AND NOT watch_cnt(7) AND NOT watch_cnt(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(9) AND NOT watch_cnt(19))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND NOT watchdog AND NOT watch_cnt(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(11) AND NOT watch_cnt(12) AND NOT watch_cnt(13) AND NOT watch_cnt(14) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(15) AND NOT watch_cnt(16) AND NOT watch_cnt(17) AND NOT watch_cnt(18) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(1) AND NOT watch_cnt(2) AND NOT watch_cnt(3) AND NOT watch_cnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(5) AND NOT watch_cnt(6) AND NOT watch_cnt(7) AND NOT watch_cnt(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(9) AND NOT watch_cnt(19)));
+</td></tr><tr><td>
+FDCPE_watch_cnt1: FDCPE port map (watch_cnt(1),watch_cnt_D(1),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_cnt_D(1) <= ((enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND watch_rst AND NOT watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT watch_cnt(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND NOT watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1)));
+</td></tr><tr><td>
+FTCPE_watch_cnt2: FTCPE port map (watch_cnt(2),watch_cnt_T(2),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_cnt_T(2) <= ((NOT enable AND watch_cnt(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (watch_rst AND NOT watchdog AND watch_cnt(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT watch_rst AND watchdog AND watch_cnt(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1)));
+</td></tr><tr><td>
+FTCPE_watch_cnt3: FTCPE port map (watch_cnt(3),watch_cnt_T(3),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_cnt_T(3) <= ((NOT enable AND watch_cnt(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (watch_rst AND NOT watchdog AND watch_cnt(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT watch_rst AND watchdog AND watch_cnt(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1) AND watch_cnt(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1) AND watch_cnt(2)));
+</td></tr><tr><td>
+FTCPE_watch_cnt4: FTCPE port map (watch_cnt(4),watch_cnt_T(4),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_cnt_T(4) <= ((NOT enable AND watch_cnt(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (watch_rst AND NOT watchdog AND watch_cnt(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT watch_rst AND watchdog AND watch_cnt(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3)));
+</td></tr><tr><td>
+FTCPE_watch_cnt5: FTCPE port map (watch_cnt(5),watch_cnt_T(5),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_cnt_T(5) <= ((NOT enable AND watch_cnt(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (watch_rst AND NOT watchdog AND watch_cnt(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT watch_rst AND watchdog AND watch_cnt(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4)));
+</td></tr><tr><td>
+FTCPE_watch_cnt6: FTCPE port map (watch_cnt(6),watch_cnt_T(6),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_cnt_T(6) <= ((NOT enable AND watch_cnt(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (watch_rst AND NOT watchdog AND watch_cnt(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT watch_rst AND watchdog AND watch_cnt(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(5)));
+</td></tr><tr><td>
+FTCPE_watch_cnt7: FTCPE port map (watch_cnt(7),watch_cnt_T(7),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_cnt_T(7) <= ((NOT enable AND watch_cnt(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (watch_rst AND NOT watchdog AND watch_cnt(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT watch_rst AND watchdog AND watch_cnt(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(5) AND watch_cnt(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(5) AND watch_cnt(6)));
+</td></tr><tr><td>
+FTCPE_watch_cnt8: FTCPE port map (watch_cnt(8),watch_cnt_T(8),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_cnt_T(8) <= ((NOT enable AND watch_cnt(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (watch_rst AND NOT watchdog AND watch_cnt(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT watch_rst AND watchdog AND watch_cnt(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7)));
+</td></tr><tr><td>
+FTCPE_watch_cnt9: FTCPE port map (watch_cnt(9),watch_cnt_T(9),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_cnt_T(9) <= ((NOT enable AND watch_cnt(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (watch_rst AND NOT watchdog AND watch_cnt(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT watch_rst AND watchdog AND watch_cnt(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8)));
+</td></tr><tr><td>
+FTCPE_watch_cnt10: FTCPE port map (watch_cnt(10),watch_cnt_T(10),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_cnt_T(10) <= ((NOT enable AND watch_cnt(10))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (watch_rst AND NOT watchdog AND watch_cnt(10))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT watch_rst AND watchdog AND watch_cnt(10))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(9)));
+</td></tr><tr><td>
+FTCPE_watch_cnt11: FTCPE port map (watch_cnt(11),watch_cnt_T(11),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_cnt_T(11) <= ((NOT enable AND watch_cnt(11))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (watch_rst AND NOT watchdog AND watch_cnt(11))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT watch_rst AND watchdog AND watch_cnt(11))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(10) AND watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(4) AND watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(8) AND watch_cnt(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(10) AND watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(4) AND watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(8) AND watch_cnt(9)));
+</td></tr><tr><td>
+FTCPE_watch_cnt12: FTCPE port map (watch_cnt(12),watch_cnt_T(12),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_cnt_T(12) <= ((NOT enable AND watch_cnt(12))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (watch_rst AND NOT watchdog AND watch_cnt(12))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT watch_rst AND watchdog AND watch_cnt(12))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(1) AND watch_cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(3) AND watch_cnt(4) AND watch_cnt(5) AND watch_cnt(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(7) AND watch_cnt(8) AND watch_cnt(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(1) AND watch_cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(3) AND watch_cnt(4) AND watch_cnt(5) AND watch_cnt(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(7) AND watch_cnt(8) AND watch_cnt(9)));
+</td></tr><tr><td>
+FTCPE_watch_cnt13: FTCPE port map (watch_cnt(13),watch_cnt_T(13),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_cnt_T(13) <= ((NOT enable AND watch_cnt(13))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (watch_rst AND NOT watchdog AND watch_cnt(13))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT watch_rst AND watchdog AND watch_cnt(13))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND watch_cnt(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8) AND watch_cnt(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND watch_cnt(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8) AND watch_cnt(9)));
+</td></tr><tr><td>
+FTCPE_watch_cnt14: FTCPE port map (watch_cnt(14),watch_cnt_T(14),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_cnt_T(14) <= ((NOT enable AND watch_cnt(14))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (watch_rst AND NOT watchdog AND watch_cnt(14))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT watch_rst AND watchdog AND watch_cnt(14))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(9)));
+</td></tr><tr><td>
+FTCPE_watch_cnt15: FTCPE port map (watch_cnt(15),watch_cnt_T(15),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_cnt_T(15) <= ((NOT enable AND watch_cnt(15))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (watch_rst AND NOT watchdog AND watch_cnt(15))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT watch_rst AND watchdog AND watch_cnt(15))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(14) AND watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(4) AND watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(8) AND watch_cnt(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(14) AND watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(4) AND watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(8) AND watch_cnt(9)));
+</td></tr><tr><td>
+FTCPE_watch_cnt16: FTCPE port map (watch_cnt(16),watch_cnt_T(16),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_cnt_T(16) <= ((NOT enable AND watch_cnt(16))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (watch_rst AND NOT watchdog AND watch_cnt(16))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT watch_rst AND watchdog AND watch_cnt(16))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(14) AND watch_cnt(15) AND watch_cnt(1) AND watch_cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(3) AND watch_cnt(4) AND watch_cnt(5) AND watch_cnt(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(7) AND watch_cnt(8) AND watch_cnt(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(14) AND watch_cnt(15) AND watch_cnt(1) AND watch_cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(3) AND watch_cnt(4) AND watch_cnt(5) AND watch_cnt(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(7) AND watch_cnt(8) AND watch_cnt(9)));
+</td></tr><tr><td>
+FTCPE_watch_cnt17: FTCPE port map (watch_cnt(17),watch_cnt_T(17),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_cnt_T(17) <= ((NOT enable AND watch_cnt(17))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (watch_rst AND NOT watchdog AND watch_cnt(17))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT watch_rst AND watchdog AND watch_cnt(17))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(14) AND watch_cnt(15) AND watch_cnt(16) AND watch_cnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND watch_cnt(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8) AND watch_cnt(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(14) AND watch_cnt(15) AND watch_cnt(16) AND watch_cnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND watch_cnt(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8) AND watch_cnt(9)));
+</td></tr><tr><td>
+FTCPE_watch_cnt18: FTCPE port map (watch_cnt(18),watch_cnt_T(18),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_cnt_T(18) <= ((NOT enable AND watch_cnt(18))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (watch_rst AND NOT watchdog AND watch_cnt(18))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT watch_rst AND watchdog AND watch_cnt(18))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(14) AND watch_cnt(15) AND watch_cnt(16) AND watch_cnt(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(14) AND watch_cnt(15) AND watch_cnt(16) AND watch_cnt(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND watch_cnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND watch_cnt(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(9)));
+</td></tr><tr><td>
+FTCPE_watch_cnt19: FTCPE port map (watch_cnt(19),watch_cnt_T(19),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_cnt_T(19) <= ((NOT enable AND watch_cnt(19))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (watch_rst AND NOT watchdog AND watch_cnt(19))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT watch_rst AND watchdog AND watch_cnt(19))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND watch_rst AND watch_cnt(0) AND watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(14) AND watch_cnt(15) AND watch_cnt(16) AND watch_cnt(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(18) AND watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(4) AND watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(8) AND watch_cnt(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (enable AND NOT watch_rst AND watch_cnt(0) AND NOT watchdog AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(10) AND watch_cnt(11) AND watch_cnt(12) AND watch_cnt(13) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(14) AND watch_cnt(15) AND watch_cnt(16) AND watch_cnt(17) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(18) AND watch_cnt(1) AND watch_cnt(2) AND watch_cnt(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(4) AND watch_cnt(5) AND watch_cnt(6) AND watch_cnt(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	watch_cnt(8) AND watch_cnt(9)));
+</td></tr><tr><td>
+FDCPE_watch_rst: FDCPE port map (watch_rst,watch_rst_D,clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_rst_D <= watchdog
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	 XOR 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch_rst_D <= enable;
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

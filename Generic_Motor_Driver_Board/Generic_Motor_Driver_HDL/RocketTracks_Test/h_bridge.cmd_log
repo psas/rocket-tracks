@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572xl-VQ44-7 h_bridge.ngc h_bridge.ngd  
+cpldfit -intstyle ise -p xc9572xl-7-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper h_bridge.ngd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572xl-VQ44-7 h_bridge.ngc h_bridge.ngd  
+cpldfit -intstyle ise -p xc9572xl-7-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper h_bridge.ngd 
+tsim -intstyle ise h_bridge h_bridge.nga 
+hprep6 -s IEEE1149 -n h_bridge -i h_bridge 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc h_bridge.ucf -p xc9572xl-VQ44-7 h_bridge.ngc h_bridge.ngd  
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc h_bridge.ucf -p xc9572xl-VQ44-7 h_bridge.ngc h_bridge.ngd  
+cpldfit -intstyle ise -p xc9572xl-7-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper h_bridge.ngd 
+xst -intstyle ise -ifn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge.xst" -ofn "C:/Users/Rob/Projects/RocketTracks_HDL/RocketTracks_Test/h_bridge.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc h_bridge.ucf -p xc9572xl-VQ44-7 h_bridge.ngc h_bridge.ngd  
+cpldfit -intstyle ise -p xc9572xl-7-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper h_bridge.ngd 
+tsim -intstyle ise h_bridge h_bridge.nga 
+hprep6 -s IEEE1149 -n h_bridge -i h_bridge 
