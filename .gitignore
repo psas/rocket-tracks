@@ -25,6 +25,7 @@
 *.rar
 *.tar
 *.zip
+*.bak
 
 # Logs and databases #
 ######################
@@ -38,9 +39,6 @@
 *.mpf
 *.wlf
 *.mti
-*.b#*
-*.l#*
-*.s#*
 
 # Project Directories #
 #######################
@@ -54,5 +52,7 @@ build/
 ._*
 .Spotlight-V100
 .Trashes
+.tmp
+~$*
 ehthumbs.db
 Thumbs.db
