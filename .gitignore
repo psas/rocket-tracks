@@ -34,7 +34,7 @@
 *.sqlite
 
 # Project Files #
-#######################
+#################
 *.epf
 *.mpf
 *.wlf
@@ -56,3 +56,10 @@ build/
 ~$*
 ehthumbs.db
 Thumbs.db
+
+# Misc Eagle files #
+####################
+*.b#*
+*.l#*
+*.s#*
+*.b#
