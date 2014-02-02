@@ -1601,30 +1601,31 @@ design rules under a new name.</description>
 <element name="JP3" library="pinhead" package="1X03" value="Neutral LEDs" x="5.08" y="-76.2"/>
 <element name="JP2" library="pinhead" package="2X03" value="Mode Switch/LEDs" x="-5.08" y="-72.39"/>
 <element name="JP4" library="pinhead" package="1X02" value="Drive Enable" x="-5.08" y="-82.55"/>
-<element name="R5" library="rcl" package="R1206" value="" x="-6.35" y="-96.52"/>
-<element name="R6" library="rcl" package="R1206" value="" x="-6.35" y="-101.6"/>
+<element name="R5" library="rcl" package="R1206" value="280" x="-6.35" y="-96.52"/>
+<element name="R6" library="rcl" package="R1206" value="280" x="-6.35" y="-101.6"/>
 <element name="JP5" library="pinhead" package="1X08" value="CON4" x="2.54" y="-106.68"/>
 <element name="JP6" library="pinhead" package="1X06" value="CON2" x="0" y="-113.03"/>
 <element name="JP7" library="pinhead" package="1X06" value="Main Axis Inputs" x="0" y="-119.38"/>
 <element name="JP8" library="pinhead" package="1X06" value="Aux Axis Inputs" x="0" y="-125.73"/>
 <element name="JP1" library="pinhead" package="1X06" value="CON1" x="0" y="-132.08"/>
-<element name="R7" library="rcl" package="R1206" value="" x="-6.35" y="-137.16"/>
-<element name="R8" library="rcl" package="R1206" value="" x="-6.35" y="-142.24"/>
+<element name="R7" library="rcl" package="R1206" value="280" x="-6.35" y="-137.16"/>
+<element name="R8" library="rcl" package="R1206" value="280" x="-6.35" y="-142.24"/>
 <element name="R9" library="rcl" package="R1206" value="1k" x="-6.35" y="-147.32"/>
 <element name="JP9" library="pinhead" package="2X03" value="Aux Switch/LEDs" x="-5.08" y="-153.67"/>
-<element name="R10" library="rcl" package="R1206" value="" x="-6.35" y="-160.02"/>
-<element name="R11" library="rcl" package="R1206" value="" x="-1.27" y="-160.02"/>
+<element name="R10" library="rcl" package="R1206" value="280" x="-6.35" y="-160.02"/>
+<element name="R11" library="rcl" package="R1206" value="280" x="-1.27" y="-160.02"/>
 <element name="R12" library="rcl" package="R1206" value="1k" x="-6.35" y="-165.1"/>
 <element name="R13" library="rcl" package="R1206" value="1k" x="-6.35" y="-170.18"/>
 <element name="R14" library="rcl" package="R1206" value="10k" x="-6.35" y="-176.53"/>
-<element name="C5" library="rcl" package="C1206" value="" x="-6.35" y="-182.88"/>
-<element name="C6" library="rcl" package="C1206" value="" x="-6.35" y="-187.96"/>
+<element name="C5" library="rcl" package="C1206" value="10uF" x="-6.35" y="-182.88"/>
+<element name="C6" library="rcl" package="C1206" value="10uF" x="-6.35" y="-187.96"/>
 <element name="JP10" library="pinhead" package="1X08" value="CON3" x="2.54" y="-193.04"/>
 <element name="R15" library="rcl" package="R1206" value="10k" x="-6.35" y="-198.12"/>
 <element name="R16" library="rcl" package="R1206" value="10k" x="-6.35" y="-204.47"/>
 <element name="C7" library="rcl" package="C1206" value="1uF" x="-6.35" y="-210.82"/>
 <element name="C8" library="rcl" package="C1206" value="1uF" x="-6.35" y="-215.9"/>
 <element name="C9" library="rcl" package="C1206" value="1uF" x="-6.35" y="-222.25"/>
+<element name="C10" library="rcl" package="C1206" value="10uF" x="-6.35" y="-228.6"/>
 </elements>
 <signals>
 <signal name="VERT_AXIS_ADC">
@@ -1675,6 +1676,8 @@ design rules under a new name.</description>
 <contactref element="C8" pad="2"/>
 <contactref element="C7" pad="2"/>
 <contactref element="C9" pad="2"/>
+<contactref element="C10" pad="2"/>
+<wire x1="-4.95" y1="-222.25" x2="-4.95" y2="-228.6" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.95" y1="-215.9" x2="-4.95" y2="-222.25" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.95" y1="-210.82" x2="-4.95" y2="-215.9" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.772" y1="-204.47" x2="-4.95" y2="-210.82" width="0" layer="19" extent="1-1"/>
@@ -1700,20 +1703,20 @@ design rules under a new name.</description>
 <wire x1="7.62" y1="-76.2" x2="-7.772" y2="-101.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VERT_NEUTRAL_LED_CONN">
-<contactref element="JP3" pad="2"/>
 <contactref element="R5" pad="1"/>
-<wire x1="5.08" y1="-76.2" x2="-7.772" y2="-96.52" width="0" layer="19" extent="1-1"/>
+<contactref element="JP3" pad="1"/>
+<wire x1="2.54" y1="-76.2" x2="-7.772" y2="-96.52" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
-<contactref element="JP3" pad="1"/>
 <contactref element="JP1" pad="3"/>
 <contactref element="JP2" pad="4"/>
 <contactref element="JP9" pad="4"/>
 <contactref element="C6" pad="1"/>
+<contactref element="JP3" pad="2"/>
 <wire x1="-5.08" y1="-152.4" x2="-7.75" y2="-187.96" width="0" layer="19" extent="1-1"/>
 <wire x1="-1.27" y1="-132.08" x2="-5.08" y2="-152.4" width="0" layer="19" extent="1-1"/>
-<wire x1="2.54" y1="-76.2" x2="-1.27" y2="-132.08" width="0" layer="19" extent="1-1"/>
-<wire x1="-5.08" y1="-71.12" x2="2.54" y2="-76.2" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="-76.2" x2="-1.27" y2="-132.08" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.08" y1="-71.12" x2="5.08" y2="-76.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VERT_AXIS_CONN">
 <contactref element="R1" pad="1"/>
@@ -1741,6 +1744,8 @@ design rules under a new name.</description>
 <contactref element="JP5" pad="1"/>
 <contactref element="JP8" pad="3"/>
 <contactref element="JP8" pad="4"/>
+<contactref element="C10" pad="1"/>
+<wire x1="-1.27" y1="-125.73" x2="-7.75" y2="-228.6" width="0" layer="19" extent="1-1"/>
 <wire x1="1.27" y1="-125.73" x2="-1.27" y2="-125.73" width="0" layer="19" extent="1-1"/>
 <wire x1="-1.27" y1="-119.38" x2="-1.27" y2="-125.73" width="0" layer="19" extent="1-1"/>
 <wire x1="1.27" y1="-119.38" x2="-1.27" y2="-119.38" width="0" layer="19" extent="1-1"/>
