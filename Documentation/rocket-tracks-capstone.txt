@@ -1,0 +1,29 @@
+Completion of the Rocket Tracks Electrical Subsystem
+====================================================
+
+Andrew Greenberg
+adg@ece.pdx.edu
+503-708-7711
+
+Background:
+-----------
+
+The Portland State Aerospace Society (PSAS) is an educational aerospace project that builds advanced open source sounding rockets at PSU. For more information on our group, please see http://psas.pdx.edu/.
+
+We currently use a shoulder-mounted antenna system to manually point our telemetry antennas at the rocket during flight. Seperately, we record the rocket's flight with tripod-mounted video cameras. Two years ago we won an MCECS Innovation Grant to produce "Rocket Tracks", an automated antenna and video pointed platform. Although the mechanical systems are mostly completed, the system is still not operational. For more information on the current state of Rocket Tracks, please see: http://psas.pdx.edu/rockettracks/
+
+
+Project Goals
+-------------
+
+Your job is to make Rocket Tracks operational. This means:
+
+- Implementing a controller to control all three DC brushed motors.
+- Implementing safety systems, including a safety analysis (fault tree), emergency switches, continuous system health checks, etc.
+- Creating a detachable sytem enclosure for all control boards with weather resistant connectors to motors and sensors.
+- Building the antenna and video head (currently a Raspberry Pi, 2 COTS USB to WiFi adapters, and a PoE controller).
+- Integrating Sightline Application's (http://www.sightlineapplications.com/) video tracking system into the video system for visual tracking of the launch vehicle.
+- Working with the mechanical team to coordinate any changes to the mechanical designs.
+- Document the entire system, including writing SOPs for its use.
+- Deliver the entire system to PSAS by early June 2014 for use in a July 2014 launch.
+
