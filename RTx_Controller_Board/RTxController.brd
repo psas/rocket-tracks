@@ -508,6 +508,42 @@ type 0204, grid 2.5 mm</description>
 <text x="-1.905" y="1.905" size="1.016" layer="25" font="vector" ratio="12">&gt;NAME</text>
 <text x="-1.905" y="-3.175" size="1.016" layer="27" font="vector" ratio="12">&gt;VALUE</text>
 </package>
+<package name="MAGJACK-RJ45">
+<pad name="SHIELD4" x="6.35" y="0" drill="2.8" diameter="3.2512"/>
+<pad name="SHIELD3" x="-6.35" y="0" drill="2.8" diameter="3.2512"/>
+<pad name="SHIELD1" x="-8.0645" y="3.175" drill="1.016" diameter="1.5748"/>
+<pad name="SHIELD2" x="8.0645" y="3.175" drill="1.016" diameter="1.5748"/>
+<pad name="15" x="-5.588" y="-6.6548" drill="0.6" diameter="0.889"/>
+<pad name="13" x="-5.588" y="-8.128" drill="0.6" diameter="0.889"/>
+<pad name="16" x="5.588" y="-6.6548" drill="0.6" diameter="0.889"/>
+<pad name="14" x="5.588" y="-8.128" drill="0.6" diameter="0.889"/>
+<pad name="1" x="-5.08" y="-15.24" drill="0.6" diameter="0.889"/>
+<pad name="7" x="-6.096" y="-17.78" drill="0.6" diameter="0.889"/>
+<pad name="8" x="-4.064" y="-17.78" drill="0.6" diameter="0.889"/>
+<pad name="9" x="-2.032" y="-17.78" drill="0.6" diameter="0.889"/>
+<pad name="2" x="-3.048" y="-15.24" drill="0.6" diameter="0.889"/>
+<pad name="3" x="-1.016" y="-15.24" drill="0.6" diameter="0.889"/>
+<pad name="4" x="1.016" y="-15.24" drill="0.6" diameter="0.889"/>
+<pad name="5" x="3.048" y="-15.24" drill="0.6" diameter="0.889"/>
+<pad name="6" x="5.08" y="-15.24" drill="0.6" diameter="0.889"/>
+<pad name="10" x="2.032" y="-17.78" drill="0.6" diameter="0.889"/>
+<pad name="11" x="4.064" y="-17.78" drill="0.6" diameter="0.889"/>
+<pad name="12" x="6.096" y="-17.78" drill="0.6" diameter="0.889"/>
+<pad name="17" x="-6.096" y="-20.32" drill="0.8" diameter="1.016"/>
+<pad name="18" x="-3.556" y="-20.32" drill="0.8" diameter="1.016"/>
+<pad name="19" x="3.556" y="-20.32" drill="0.8" diameter="1.016"/>
+<pad name="20" x="6.096" y="-20.32" drill="0.8" diameter="1.016"/>
+<rectangle x1="-8.9154" y1="7.874" x2="8.9154" y2="10.922" layer="41"/>
+<rectangle x1="5.9944" y1="4.0132" x2="8.9154" y2="7.874" layer="41"/>
+<rectangle x1="-8.9154" y1="4.0132" x2="-5.9944" y2="7.874" layer="41"/>
+<rectangle x1="-8.9154" y1="-20.066" x2="-6.5532" y2="-13.589" layer="41"/>
+<rectangle x1="6.5532" y1="-20.066" x2="8.9154" y2="-13.589" layer="41"/>
+<wire x1="-8.1534" y1="10.922" x2="-8.1534" y2="-21.844" width="0.6096" layer="21"/>
+<wire x1="8.1534" y1="10.922" x2="8.1534" y2="-21.844" width="0.6096" layer="21"/>
+<wire x1="-8.1534" y1="10.922" x2="8.1534" y2="10.922" width="0.6096" layer="21"/>
+<wire x1="-8.1534" y1="-21.844" x2="8.1534" y2="-21.844" width="0.6096" layer="21"/>
+<text x="-8.255" y="12.065" size="1.9304" layer="21">&gt;NAME</text>
+</package>
 </packages>
 </library>
 <library name="con-subd">
@@ -2317,6 +2353,7 @@ design rules under a new name.</description>
 <element name="R_LED" library="motorFeedback" package="R0603" value="1k" x="-53.594" y="-233.934"/>
 <element name="D2" library="motorFeedback" package="SOT23-TO-236" value="MMBD6050LT1SOT23" x="-59.436" y="-231.14"/>
 <element name="C43" library="motorFeedback" package="C0805K" value="0.1uf 100v" x="-59.944" y="-238.76"/>
+<element name="U$6" library="motorFeedback" package="MAGJACK-RJ45" value="0826-1X1T-GJ-F" x="-71.12" y="-218.948"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2957,9 +2994,11 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="9"/>
 <contactref element="D1" pad="A"/>
 <contactref element="C47" pad="2"/>
+<contactref element="U$6" pad="16"/>
 <wire x1="-52.594" y1="-208.534" x2="-50.284" y2="-190.246" width="0" layer="19" extent="1-1"/>
 <wire x1="-29.278" y1="-190.5" x2="-50.284" y2="-190.246" width="0" layer="19" extent="1-1"/>
 <wire x1="-29.278" y1="-189.23" x2="-29.278" y2="-190.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-65.532" y1="-225.6028" x2="-52.594" y2="-208.534" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="48VDC-">
 <contactref element="IC1" pad="2"/>
@@ -2994,7 +3033,9 @@ design rules under a new name.</description>
 <signal name="PORT_MAGNETICS+">
 <contactref element="F1" pad="2"/>
 <contactref element="C47" pad="1"/>
+<contactref element="U$6" pad="15"/>
 <wire x1="-54.594" y1="-208.534" x2="-30.226" y2="-200.406" width="0" layer="19" extent="1-1"/>
+<wire x1="-76.708" y1="-225.6028" x2="-54.594" y2="-208.534" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$24">
 <contactref element="L1" pad="1"/>
