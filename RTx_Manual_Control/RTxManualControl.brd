@@ -79,8 +79,11 @@
 <wire x1="58.42" y1="0" x2="58.42" y2="49.022" width="0" layer="20"/>
 <wire x1="58.42" y1="49.022" x2="0" y2="49.022" width="0" layer="20"/>
 <wire x1="0" y1="49.022" x2="0" y2="0" width="0" layer="20"/>
-<text x="46.609" y="44.958" size="1.27" layer="51">RocketTracks</text>
-<text x="46.863" y="43.561" size="1.016" layer="51">Manual Remote</text>
+<text x="46.609" y="44.958" size="2.54" layer="51">RTx</text>
+<text x="45.466" y="43.18" size="1.27" layer="51">Manual Remote</text>
+<text x="46.736" y="41.783" size="0.8128" layer="21">Rob Gaskell</text>
+<text x="46.736" y="40.513" size="0.8128" layer="21">Robin Davis</text>
+<text x="46.736" y="39.37" size="0.8128" layer="21">Robert Corkran</text>
 </plain>
 <libraries>
 <library name="pinhead">
