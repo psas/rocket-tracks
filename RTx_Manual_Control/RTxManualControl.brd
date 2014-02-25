@@ -1593,37 +1593,29 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="rcl" package="C1206" value="" x="6.223" y="39.751" smashed="yes" rot="R270">
+<element name="C1" library="rcl" package="C1206" value="10u" x="6.223" y="39.751" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.985" y="43.18" size="0.8128" layer="25" rot="R180"/>
-<attribute name="VALUE" x="3.683" y="41.021" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C2" library="rcl" package="C1206" value="" x="13.716" y="39.751" smashed="yes" rot="R270">
+<element name="C2" library="rcl" package="C1206" value="10u" x="13.716" y="39.751" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.478" y="43.18" size="0.8128" layer="25" rot="R180"/>
-<attribute name="VALUE" x="11.176" y="41.021" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C3" library="rcl" package="C1206" value="" x="32.893" y="14.859" smashed="yes" rot="R180">
+<element name="C3" library="rcl" package="C1206" value="10u" x="32.893" y="14.859" smashed="yes" rot="R180">
 <attribute name="NAME" x="30.099" y="14.859" size="0.8128" layer="25" rot="R180"/>
-<attribute name="VALUE" x="34.163" y="17.399" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C4" library="rcl" package="C1206" value="" x="39.243" y="16.002" smashed="yes" rot="R90">
-<attribute name="NAME" x="39.751" y="12.192" size="0.8128" layer="25" rot="R90"/>
-<attribute name="VALUE" x="41.783" y="14.732" size="1.27" layer="27" rot="R90"/>
+<element name="C4" library="rcl" package="C1206" value="10u" x="39.243" y="16.002" smashed="yes" rot="R90">
+<attribute name="NAME" x="40.513" y="15.113" size="0.8128" layer="25" rot="R270"/>
 </element>
-<element name="R1" library="rcl" package="R1206" value="" x="8.89" y="39.751" smashed="yes" rot="R90">
+<element name="R1" library="rcl" package="R1206" value="620" x="8.89" y="39.751" smashed="yes" rot="R90">
 <attribute name="NAME" x="9.652" y="43.18" size="0.8128" layer="25" rot="R180"/>
-<attribute name="VALUE" x="11.43" y="38.481" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R2" library="rcl" package="R1206" value="" x="16.383" y="39.751" smashed="yes" rot="R90">
+<element name="R2" library="rcl" package="R1206" value="620" x="16.383" y="39.751" smashed="yes" rot="R90">
 <attribute name="NAME" x="17.145" y="43.18" size="0.8128" layer="25" rot="R180"/>
-<attribute name="VALUE" x="18.923" y="38.481" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R3" library="rcl" package="R1206" value="" x="32.893" y="17.272" smashed="yes">
-<attribute name="NAME" x="28.956" y="17.272" size="0.8128" layer="25"/>
-<attribute name="VALUE" x="31.623" y="14.732" size="1.27" layer="27"/>
+<element name="R3" library="rcl" package="R1206" value="620" x="32.893" y="17.272" smashed="yes">
+<attribute name="NAME" x="30.099" y="17.272" size="0.8128" layer="25" rot="R180"/>
 </element>
-<element name="R4" library="rcl" package="R1206" value="" x="36.83" y="16.002" smashed="yes" rot="R270">
+<element name="R4" library="rcl" package="R1206" value="620" x="36.83" y="16.002" smashed="yes" rot="R270">
 <attribute name="NAME" x="36.703" y="13.335" size="0.8128" layer="25" rot="R270"/>
-<attribute name="VALUE" x="34.29" y="17.272" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="JP3" library="pinhead" package="1X03" value="Neutral LEDs" x="52.07" y="13.843" smashed="yes" rot="R270">
 <attribute name="NAME" x="50.8508" y="8.0518" size="1.27" layer="25" ratio="10"/>
@@ -1681,7 +1673,6 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="R11" library="rcl" package="R1206" value="280" x="39.243" y="9.271" smashed="yes" rot="R270">
 <attribute name="NAME" x="38.989" y="6.604" size="0.8128" layer="25" rot="R270"/>
-<attribute name="VALUE" x="36.703" y="10.541" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R12" library="rcl" package="R1206" value="1k" x="26.162" y="10.922" smashed="yes" rot="R270">
 <attribute name="NAME" x="26.035" y="8.128" size="0.8128" layer="25" rot="R270"/>
@@ -2069,26 +2060,26 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 </signals>
 <errors>
-<approved hash="18,29,b0565f1d70863aa1"/>
 <approved hash="18,29,3be26dbb524fbde4"/>
+<approved hash="18,29,b0565f1d70863aa1"/>
 <approved hash="18,29,676c6711ef344f48"/>
 <approved hash="18,29,5e67fe4160656042"/>
 <approved hash="18,29,944f1e21d114fe66"/>
 <approved hash="18,29,fd44d2480d8c9b02"/>
-<approved hash="18,29,a057df039e980aa0"/>
 <approved hash="18,29,0bfc83bad24eadfa"/>
+<approved hash="18,29,a057df039e980aa0"/>
 <approved hash="18,29,176c07113935c148"/>
 <approved hash="18,29,d067284100651043"/>
 <approved hash="18,29,5143224e4f8a1702"/>
 <approved hash="18,29,18495c2621145260"/>
 <approved hash="18,29,f457df0218999ea1"/>
 <approved hash="18,29,9ffd05bad24ff9fb"/>
-<approved hash="18,29,77729f104334e356"/>
 <approved hash="18,29,f266525f987b7042"/>
-<approved hash="18,29,b15a42577d8c371c"/>
+<approved hash="18,29,77729f104334e356"/>
 <approved hash="18,29,38506e3f410ab266"/>
-<approved hash="18,29,8ffc67b8a24c79fa"/>
+<approved hash="18,29,b15a42577d8c371c"/>
 <approved hash="18,29,7455af037a988ea2"/>
+<approved hash="18,29,8ffc67b8a24c79fa"/>
 <approved hash="18,29,bf6a8f106137a94a"/>
 <approved hash="18,29,b86670478867b841"/>
 <approved hash="18,29,f44f70204115ce61"/>
@@ -2099,83 +2090,79 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="18,29,7666b640b8648842"/>
 <approved hash="18,29,7d44a249658d8b02"/>
 <approved hash="18,29,844e7621a1147e67"/>
-<approved hash="18,29,0bfe43bb424fbdf8"/>
 <approved hash="18,29,b0564f015e9a0aa1"/>
-<approved hash="18,29,9f6c0f11d9344149"/>
+<approved hash="18,29,0bfe43bb424fbdf8"/>
 <approved hash="18,29,5067c84108649842"/>
-<approved hash="18,29,e944e248078c9f02"/>
+<approved hash="18,29,9f6c0f11d9344149"/>
 <approved hash="18,29,904f1421e114ea66"/>
+<approved hash="18,29,e944e248078c9f02"/>
 <approved hash="18,29,fd41658254483a45"/>
 <approved hash="18,29,30a55fdc71fbfa1e"/>
-<approved hash="18,29,90d5a756a97246f1"/>
 <approved hash="18,29,51bcb646ae629198"/>
+<approved hash="18,29,90d5a756a97246f1"/>
 <approved hash="18,29,7782a40b78cd91fa"/>
 <approved hash="18,29,986e6c2da1547dfb"/>
 <approved hash="18,29,ecd92f21d8059263"/>
 <approved hash="18,29,9bbfc4e722b5eebb"/>
 <approved hash="18,29,c6a2dfd895fc8699"/>
 <approved hash="18,29,884a9cc8c0f3de6e"/>
-<approved hash="18,29,84ef1932cecb3c79"/>
 <approved hash="18,29,3e84c509054f8b65"/>
-<approved hash="18,29,a45a5f2557020ee1"/>
+<approved hash="18,29,84ef1932cecb3c79"/>
 <approved hash="18,29,09b8437d54b7aebc"/>
+<approved hash="18,29,a45a5f2557020ee1"/>
 <approved hash="18,29,90d40f57c37244f1"/>
 <approved hash="18,29,53bddc4706629198"/>
-<approved hash="18,29,986f1e2de1541dfa"/>
 <approved hash="18,29,1782e40a0acc91fa"/>
-<approved hash="18,29,7191101666150792"/>
+<approved hash="18,29,986f1e2de1541dfa"/>
 <approved hash="18,29,7ed8ed23fe070463"/>
 <approved hash="18,29,0dbde2e6e0b57cb9"/>
 <approved hash="18,29,fcbd47c487e0f69a"/>
 <approved hash="18,29,f8568ed758f0e472"/>
 <approved hash="18,29,8ee9fb2d4ed40c7f"/>
 <approved hash="18,29,0e9b450fe749817a"/>
-<approved hash="18,29,8cd8cf20f0043a63"/>
 <approved hash="18,29,33beece6c2b58eba"/>
-<approved hash="18,29,bebd7fc7f1e30699"/>
+<approved hash="18,29,8cd8cf20f0043a63"/>
 <approved hash="18,29,0855f8d760f3a671"/>
-<approved hash="18,29,80eef92c5ed54479"/>
+<approved hash="18,29,bebd7fc7f1e30699"/>
 <approved hash="18,29,469a5508e54f8f7b"/>
-<approved hash="18,29,b2db4923e2077861"/>
+<approved hash="18,29,80eef92c5ed54479"/>
 <approved hash="18,29,71bdfee544b7b0b9"/>
+<approved hash="18,29,b2db4923e2077861"/>
 <approved hash="18,29,50bcbfc63fe22e99"/>
 <approved hash="18,29,205436d6a0f34870"/>
-<approved hash="18,29,fe9ad509c34f197b"/>
 <approved hash="18,29,16efdf2cded5fc79"/>
-<approved hash="18,29,d14a75ba35bb914b"/>
-<approved hash="18,29,245992f5f8f44e58"/>
+<approved hash="18,29,fe9ad509c34f197b"/>
 <approved hash="18,29,2cda5f2210079a61"/>
 <approved hash="18,29,93bc0ce452b72eb9"/>
 <approved hash="18,29,66bddfc68de20e99"/>
 <approved hash="18,29,005484d7c0f37e70"/>
 <approved hash="18,29,04eca12eded7ac7a"/>
 <approved hash="18,29,ae98d50abd4c0b79"/>
-<approved hash="18,29,37fb95afcdd06f84"/>
 <approved hash="18,29,28fc6338789e9922"/>
 <approved hash="18,29,fed55d2dde09946f"/>
 <approved hash="18,29,9db3c2eb50b9fcb7"/>
 <approved hash="18,29,b056a6d4c8f3a472"/>
 <approved hash="18,29,bcbed7c4afe0be99"/>
-<approved hash="18,29,7eefe32eded73c79"/>
 <approved hash="18,29,3e98d509ff4f7179"/>
+<approved hash="18,29,7eefe32eded73c79"/>
+<approved hash="18,29,681c7966773b67eb"/>
 <approved hash="18,29,4fb60e00958b1888"/>
 <approved hash="18,29,1c4393b07219c0a2"/>
-<approved hash="18,29,681c7966773b67eb"/>
 <approved hash="18,29,ed240ede4706e45a"/>
 <approved hash="18,29,e04dc93c721bea31"/>
 <approved hash="18,29,60bc77d078276ee1"/>
-<approved hash="18,29,1d7192c672b5c020"/>
-<approved hash="18,29,689c793076db6719"/>
-<approved hash="18,29,3036716eeab96698"/>
-<approved hash="18,29,92a470ce38349b34"/>
-<approved hash="18,29,e0e1c84a7329eab3"/>
-<approved hash="18,29,60ea775078d56f01"/>
 <approved hash="18,29,37b67102eac16078"/>
-<approved hash="18,29,1f5d92b27369c2bc"/>
 <approved hash="18,29,6f2479ac706b6189"/>
+<approved hash="18,29,1f5d92b27369c2bc"/>
 <approved hash="18,29,e13dc83e7105e82f"/>
 <approved hash="18,29,9524762e384c9b58"/>
 <approved hash="18,29,607670e87e4569b1"/>
+<approved hash="18,29,3036716eeab96698"/>
+<approved hash="18,29,689c793076db6719"/>
+<approved hash="18,29,1d7192c672b5c020"/>
+<approved hash="18,29,e0e1c84a7329eab3"/>
+<approved hash="18,29,92a470ce38349b34"/>
+<approved hash="18,29,60ea775078d56f01"/>
 <approved hash="18,29,a28164512957ef87"/>
 <approved hash="18,30,b1de422394840aa8"/>
 <approved hash="18,30,097d86a04036bc7e"/>
