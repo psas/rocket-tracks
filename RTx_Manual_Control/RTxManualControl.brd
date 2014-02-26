@@ -1683,10 +1683,10 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R14" library="rcl" package="R1206" value="10k" x="26.67" y="27.94" smashed="yes" rot="R90">
 <attribute name="NAME" x="25.4" y="26.67" size="0.8128" layer="25" rot="R90"/>
 </element>
-<element name="C5" library="rcl" package="C1206" value="10uF" x="19.558" y="10.922" smashed="yes" rot="R90">
+<element name="C5" library="rcl" package="C1206" value="10u" x="19.558" y="10.922" smashed="yes" rot="R90">
 <attribute name="NAME" x="19.812" y="6.604" size="0.8128" layer="25" rot="R90"/>
 </element>
-<element name="C6" library="rcl" package="C1206" value="10uF" x="53.086" y="22.225" smashed="yes" rot="R180">
+<element name="C6" library="rcl" package="C1206" value="10u" x="53.086" y="22.225" smashed="yes" rot="R180">
 <attribute name="NAME" x="50.165" y="22.606" size="0.8128" layer="25" rot="R180"/>
 </element>
 <element name="JP10" library="pinhead" package="1X08" value="CON3" x="35.433" y="45.974" smashed="yes" rot="MR0">
@@ -1699,16 +1699,16 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R16" library="rcl" package="R1206" value="10k" x="36.703" y="38.989" smashed="yes" rot="R90">
 <attribute name="NAME" x="37.719" y="42.418" size="0.8128" layer="25" rot="R180"/>
 </element>
-<element name="C7" library="rcl" package="C1206" value="1uF" x="28.956" y="39.243" smashed="yes" rot="R270">
+<element name="C7" library="rcl" package="C1206" value="1u" x="28.956" y="39.243" smashed="yes" rot="R270">
 <attribute name="NAME" x="29.718" y="42.672" size="0.8128" layer="25" rot="R180"/>
 </element>
-<element name="C8" library="rcl" package="C1206" value="1uF" x="39.37" y="38.989" smashed="yes" rot="R270">
+<element name="C8" library="rcl" package="C1206" value="1u" x="39.37" y="38.989" smashed="yes" rot="R270">
 <attribute name="NAME" x="40.005" y="42.418" size="0.8128" layer="25" rot="R180"/>
 </element>
-<element name="C9" library="rcl" package="C1206" value="1uF" x="29.464" y="28.067" smashed="yes" rot="R270">
+<element name="C9" library="rcl" package="C1206" value="1u" x="29.464" y="28.067" smashed="yes" rot="R270">
 <attribute name="NAME" x="30.734" y="29.337" size="0.8128" layer="25" rot="R270"/>
 </element>
-<element name="C10" library="rcl" package="C1206" value="10uF" x="36.449" y="28.321" smashed="yes" rot="R90">
+<element name="C10" library="rcl" package="C1206" value="10u" x="36.449" y="28.321" smashed="yes" rot="R90">
 <attribute name="NAME" x="35.179" y="27.051" size="0.8128" layer="25" rot="R90"/>
 </element>
 </elements>

@@ -6750,22 +6750,22 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="P+11" library="manualControl" deviceset="+3.3V" device=""/>
 <part name="R14" library="rcl" deviceset="R-US_" device="R1206" value="10k"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="C5" library="rcl" deviceset="C-EU" device="C1206" value="10uF"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C1206" value="10u"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="C6" library="rcl" deviceset="C-EU" device="C1206" value="10uF"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C1206" value="10u"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="JP10" library="pinhead" deviceset="PINHD-1X8" device="" value="CON3"/>
 <part name="R15" library="rcl" deviceset="R-US_" device="R1206" value="10k"/>
 <part name="R16" library="rcl" deviceset="R-US_" device="R1206" value="10k"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="C7" library="rcl" deviceset="C-EU" device="C1206" value="1uF"/>
-<part name="C8" library="rcl" deviceset="C-EU" device="C1206" value="1uF"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C1206" value="1u"/>
+<part name="C8" library="rcl" deviceset="C-EU" device="C1206" value="1u"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
-<part name="C9" library="rcl" deviceset="C-EU" device="C1206" value="1uF"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C1206" value="1u"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="C10" library="rcl" deviceset="C-EU" device="C1206" value="10uF"/>
+<part name="C10" library="rcl" deviceset="C-EU" device="C1206" value="10u"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
