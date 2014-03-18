@@ -25982,8 +25982,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND40" library="motorFeedback" deviceset="GND" device=""/>
 <part name="P+19" library="motorFeedback" deviceset="+12V" device=""/>
 <part name="R12" library="motorFeedback" deviceset="R-US_" device="R0603" value="249k"/>
-<part name="R13" library="motorFeedback" deviceset="R-US_" device="R0603"/>
-<part name="R14" library="motorFeedback" deviceset="R-US_" device="R0603"/>
+<part name="R13" library="motorFeedback" deviceset="R-US_" device="R0603" value="150k"/>
+<part name="R14" library="motorFeedback" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R15" library="motorFeedback" deviceset="R-US_" device="R0603" value="2.43k"/>
 <part name="C32" library="motorFeedback" deviceset="C-EU" device="C0402" value="0.022u"/>
 <part name="C33" library="motorFeedback" deviceset="C-EU" device="C0402" value="4700p"/>
@@ -26254,6 +26254,7 @@ Connector</text>
 <text x="187.706" y="169.418" size="1.27" layer="97" rot="R180">Place at REF pin</text>
 <text x="187.706" y="110.998" size="1.27" layer="97" rot="R180">Place at REF pin</text>
 <text x="187.706" y="52.578" size="1.27" layer="97" rot="R180">Place at REF pin</text>
+<text x="10.16" y="137.16" size="1.27" layer="97" rot="R90">Add 8mil spark gaps to each signal near connector</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
@@ -27675,6 +27676,8 @@ Connector</text>
 <wire x1="332.74" y1="76.2" x2="398.78" y2="76.2" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="398.78" y1="76.2" x2="398.78" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="398.78" y1="129.54" x2="332.74" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
+<text x="10.16" y="25.4" size="1.27" layer="97" rot="R90">Add 8mil spark gaps to each signal near connector</text>
+<text x="10.16" y="83.82" size="1.27" layer="97" rot="R90">Add 8mil spark gaps to each signal near connector</text>
 </plain>
 <instances>
 <instance part="X2" gate="-1" x="20.32" y="25.4" rot="R180"/>
