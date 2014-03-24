@@ -27706,6 +27706,11 @@ Connector</text>
 <wire x1="398.78" y1="129.54" x2="332.74" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
 <text x="10.16" y="25.4" size="1.27" layer="97" rot="R90">Add 8mil spark gaps to each signal near connector</text>
 <text x="10.16" y="83.82" size="1.27" layer="97" rot="R90">Add 8mil spark gaps to each signal near connector</text>
+<wire x1="271.78" y1="243.84" x2="406.4" y2="243.84" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="406.4" y1="243.84" x2="406.4" y2="172.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="406.4" y1="172.72" x2="271.78" y2="172.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="271.78" y1="172.72" x2="271.78" y2="243.84" width="0.1524" layer="97" style="shortdash"/>
+<text x="281.94" y="243.84" size="2.54" layer="97">USB</text>
 </plain>
 <instances>
 <instance part="X2" gate="-1" x="20.32" y="25.4" rot="R180"/>
