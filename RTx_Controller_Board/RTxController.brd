@@ -377,6 +377,22 @@ type 0204, grid 2.5 mm</description>
 <text x="-2.1336" y="1.1684" size="1.27" layer="25" ratio="12">&gt;NAME</text>
 <text x="-2.1336" y="-2.3114" size="1.27" layer="27" ratio="12">&gt;VALUE</text>
 </package>
+<package name="LED5MM">
+<description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
+5 mm, round</description>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.254" layer="21" curve="-286.260205" cap="flat"/>
+<wire x1="-1.143" y1="0" x2="0" y2="1.143" width="0.1524" layer="51" curve="-90" cap="flat"/>
+<wire x1="0" y1="-1.143" x2="1.143" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
+<wire x1="-1.651" y1="0" x2="0" y2="1.651" width="0.1524" layer="51" curve="-90" cap="flat"/>
+<wire x1="0" y1="-1.651" x2="1.651" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
+<wire x1="-2.159" y1="0" x2="0" y2="2.159" width="0.1524" layer="51" curve="-90" cap="flat"/>
+<wire x1="0" y1="-2.159" x2="2.159" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
+<circle x="0" y="0" radius="2.54" width="0.1524" layer="21"/>
+<pad name="A" x="-1.27" y="0" drill="0.8128"/>
+<pad name="K" x="1.27" y="0" drill="0.8128"/>
+<text x="3.0734" y="3.175" size="1.016" layer="25" font="vector" ratio="12" rot="R270">&gt;NAME</text>
+</package>
 <package name="SOT23-TO-236">
 <wire x1="1.45" y1="0.65" x2="1.45" y2="-0.65" width="0.127" layer="51"/>
 <wire x1="1.45" y1="-0.65" x2="-1.45" y2="-0.65" width="0.127" layer="51"/>
@@ -2149,6 +2165,28 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
+<package name="RTRIM4G/J">
+<description>&lt;b&gt;Trimm resistor&lt;/b&gt; VISHAY</description>
+<wire x1="-2.4" y1="2.4" x2="-2.4" y2="-2.4" width="0.254" layer="51"/>
+<wire x1="-2.4" y1="-2.4" x2="2.4" y2="-2.4" width="0.254" layer="51"/>
+<wire x1="2.4" y1="-2.4" x2="2.4" y2="2.4" width="0.254" layer="51"/>
+<wire x1="2.4" y1="2.4" x2="-2.4" y2="2.4" width="0.254" layer="51"/>
+<wire x1="-2.1" y1="-2.4" x2="-2.4" y2="-2.4" width="0.254" layer="21"/>
+<wire x1="-2.4" y1="-2.4" x2="-2.4" y2="2.4" width="0.254" layer="21"/>
+<wire x1="-2.4" y1="2.4" x2="-1.25" y2="2.4" width="0.254" layer="21"/>
+<wire x1="2" y1="-2.4" x2="2.4" y2="-2.4" width="0.254" layer="21"/>
+<wire x1="2.4" y1="-2.4" x2="2.4" y2="2.4" width="0.254" layer="21"/>
+<wire x1="2.4" y1="2.4" x2="1.25" y2="2.4" width="0.254" layer="21"/>
+<wire x1="-0.25" y1="-2.4" x2="0.25" y2="-2.4" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="1.85" width="0.1016" layer="21"/>
+<smd name="1" x="-1.15" y="-2.75" dx="1.3" dy="1.3" layer="1"/>
+<smd name="3" x="1.15" y="-2.75" dx="1.3" dy="1.3" layer="1"/>
+<smd name="2" x="0" y="2.75" dx="2" dy="1.3" layer="1"/>
+<text x="-2.875" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.045" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.3" y1="-0.2" x2="1.35" y2="0.2" layer="21"/>
+<rectangle x1="-0.2" y1="-1.35" x2="0.2" y2="1.3" layer="21"/>
+</package>
 </packages>
 </library>
 <library name="diode">
@@ -2175,6 +2213,67 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <text x="-1.905" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-2.8" y1="-1.1" x2="-2.25" y2="1.1" layer="51"/>
 <rectangle x1="2.25" y1="-1.1" x2="2.8" y2="1.1" layer="51"/>
+</package>
+</packages>
+</library>
+<library name="special">
+<description>&lt;b&gt;Special Devices&lt;/b&gt;&lt;p&gt;
+7-segment displays, switches, heatsinks, crystals, transformers, etc.&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="FUSE">
+<description>&lt;B&gt;FUSE&lt;/B&gt;&lt;p&gt;
+5 x 20 mm</description>
+<wire x1="-11.43" y1="1.905" x2="-12.7" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="-1.905" x2="-12.7" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="-1.905" x2="-11.43" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-10.795" y1="2.54" x2="-10.795" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="-10.795" y1="3.81" x2="-6.985" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="-6.985" y1="2.54" x2="-6.985" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="-10.795" y1="-2.54" x2="-10.795" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="-6.985" y1="-3.81" x2="-10.795" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="-6.985" y1="-3.81" x2="-6.985" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="1.905" x2="-5.08" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.905" x2="-5.08" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-1.905" x2="-6.35" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="1.905" x2="5.08" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-1.905" x2="5.08" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-1.905" x2="6.35" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="2.54" x2="6.985" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="3.81" x2="10.795" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="10.795" y1="2.54" x2="10.795" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="-2.54" x2="6.985" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="10.795" y1="-3.81" x2="6.985" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="10.795" y1="-3.81" x2="10.795" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="11.43" y1="1.905" x2="12.7" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="12.7" y1="1.905" x2="12.7" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="12.7" y1="-1.905" x2="11.43" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="2.794" x2="5.715" y2="2.794" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="-2.794" x2="5.715" y2="-2.794" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.524" x2="5.08" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.524" x2="-5.08" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-1.524" x2="5.08" y2="1.905" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.127" width="0.1524" layer="21"/>
+<pad name="1" x="-11.43" y="0" drill="1.3208" shape="long"/>
+<pad name="2" x="11.43" y="0" drill="1.3208" shape="long"/>
+<text x="-5.08" y="3.302" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5.08" y="-5.08" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-12.065" y1="1.905" x2="-10.795" y2="3.175" layer="21"/>
+<rectangle x1="-12.065" y1="-3.175" x2="-10.795" y2="-1.905" layer="21"/>
+<rectangle x1="-11.43" y1="-2.54" x2="-10.795" y2="2.54" layer="51"/>
+<rectangle x1="-6.985" y1="1.905" x2="-5.715" y2="3.175" layer="21"/>
+<rectangle x1="-6.985" y1="-3.175" x2="-5.715" y2="-1.905" layer="21"/>
+<rectangle x1="-6.985" y1="-2.54" x2="-6.35" y2="2.54" layer="21"/>
+<rectangle x1="-10.795" y1="0.762" x2="-6.985" y2="2.54" layer="21"/>
+<rectangle x1="-10.795" y1="-2.54" x2="-6.985" y2="-0.762" layer="21"/>
+<rectangle x1="5.715" y1="1.905" x2="6.985" y2="3.175" layer="21"/>
+<rectangle x1="5.715" y1="-3.175" x2="6.985" y2="-1.905" layer="21"/>
+<rectangle x1="6.35" y1="-2.54" x2="6.985" y2="2.54" layer="21"/>
+<rectangle x1="10.795" y1="1.905" x2="12.065" y2="3.175" layer="21"/>
+<rectangle x1="10.795" y1="-3.175" x2="12.065" y2="-1.905" layer="21"/>
+<rectangle x1="10.795" y1="-2.54" x2="11.43" y2="2.54" layer="51"/>
+<rectangle x1="6.985" y1="0.762" x2="10.795" y2="2.54" layer="21"/>
+<rectangle x1="6.985" y1="-2.54" x2="10.795" y2="-0.762" layer="21"/>
 </package>
 </packages>
 </library>
@@ -3296,89 +3395,6 @@ This package is identical to 0402-B, but has its tPlace silkscreen layer removed
 </package>
 </packages>
 </library>
-<library name="pot">
-<description>&lt;b&gt;Potentiometers&lt;/b&gt;&lt;p&gt;
-Beckman, Copal, Piher, Spectrol, Schukat&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="3223W">
-<description>&lt;b&gt;3 mm SMD Trimming Potentiometer&lt;/b&gt; Top Adjust&lt;p&gt;
-Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
-<wire x1="-1.85" y1="1.5" x2="1.85" y2="1.5" width="0.2032" layer="51"/>
-<wire x1="1.85" y1="1.5" x2="1.85" y2="-1.5" width="0.2032" layer="51"/>
-<wire x1="1.85" y1="-1.5" x2="-1.85" y2="-1.5" width="0.2032" layer="51"/>
-<wire x1="-1.85" y1="-1.5" x2="-1.85" y2="1.5" width="0.2032" layer="51"/>
-<wire x1="-1.85" y1="0.0875" x2="-1.85" y2="1.5" width="0.2032" layer="21"/>
-<wire x1="-1.85" y1="1.5" x2="-1.0075" y2="1.5" width="0.2032" layer="21"/>
-<wire x1="1.0075" y1="1.5" x2="1.85" y2="1.5" width="0.2032" layer="21"/>
-<wire x1="1.85" y1="1.5" x2="1.85" y2="0.0875" width="0.2032" layer="21"/>
-<wire x1="0.58" y1="-1.5" x2="-0.58" y2="-1.5" width="0.2032" layer="21"/>
-<circle x="1.05" y="0.725" radius="0.5255" width="0.1016" layer="21"/>
-<smd name="1" x="-1.4" y="-1.215" dx="0.9" dy="1.6" layer="1"/>
-<smd name="3" x="1.4" y="-1.215" dx="0.9" dy="1.6" layer="1"/>
-<smd name="2" x="0" y="1.215" dx="1.3" dy="1.3" layer="1"/>
-<text x="-1.5875" y="2.2225" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.4925" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="0.55" y1="0.6" x2="1.55" y2="0.85" layer="21"/>
-</package>
-</packages>
-</library>
-<library name="eagle-ltspice">
-<description>Default symbols for import LTspice schematics&lt;p&gt;
-2012-10-29 alf@cadsoft.de&lt;br&gt;</description>
-<packages>
-<package name="LED_1206">
-<description>&lt;b&gt;CHICAGO MINIATURE LAMP, INC.&lt;/b&gt;&lt;p&gt;
-7022X Series SMT LEDs 1206 Package Size</description>
-<wire x1="1.55" y1="-0.75" x2="-1.55" y2="-0.75" width="0.1016" layer="51"/>
-<wire x1="-1.55" y1="-0.75" x2="-1.55" y2="0.75" width="0.1016" layer="51"/>
-<wire x1="-1.55" y1="0.75" x2="1.55" y2="0.75" width="0.1016" layer="51"/>
-<wire x1="1.55" y1="0.75" x2="1.55" y2="-0.75" width="0.1016" layer="51"/>
-<wire x1="-0.55" y1="-0.5" x2="0.55" y2="-0.5" width="0.1016" layer="21" curve="95.452622"/>
-<wire x1="-0.55" y1="-0.5" x2="-0.55" y2="0.5" width="0.1016" layer="51" curve="-84.547378"/>
-<wire x1="-0.55" y1="0.5" x2="0.55" y2="0.5" width="0.1016" layer="21" curve="-95.452622"/>
-<wire x1="0.55" y1="0.5" x2="0.55" y2="-0.5" width="0.1016" layer="51" curve="-84.547378"/>
-<rectangle x1="-0.1" y1="-0.1" x2="0.1" y2="0.1" layer="21"/>
-<rectangle x1="0.45" y1="-0.7" x2="0.8" y2="-0.45" layer="51"/>
-<rectangle x1="0.8" y1="-0.7" x2="0.9" y2="0.5" layer="51"/>
-<rectangle x1="0.8" y1="0.55" x2="0.9" y2="0.7" layer="51"/>
-<rectangle x1="-0.9" y1="-0.7" x2="-0.8" y2="0.5" layer="51"/>
-<rectangle x1="-0.9" y1="0.55" x2="-0.8" y2="0.7" layer="51"/>
-<rectangle x1="0.45" y1="-0.7" x2="0.6" y2="-0.45" layer="21"/>
-<smd name="A" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<smd name="C" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-</library>
-<library name="temp_library">
-<packages>
-<package name="FUSE_1206">
-<description>&lt;b&gt;CHICAGO MINIATURE LAMP, INC.&lt;/b&gt;&lt;p&gt;
-7022X Series SMT LEDs 1206 Package Size</description>
-<wire x1="1.55" y1="-0.75" x2="-1.55" y2="-0.75" width="0.1016" layer="51"/>
-<wire x1="-1.55" y1="-0.75" x2="-1.55" y2="0.75" width="0.1016" layer="51"/>
-<wire x1="-1.55" y1="0.75" x2="1.55" y2="0.75" width="0.1016" layer="51"/>
-<wire x1="1.55" y1="0.75" x2="1.55" y2="-0.75" width="0.1016" layer="51"/>
-<wire x1="-0.55" y1="-0.5" x2="0.55" y2="-0.5" width="0.1016" layer="21" curve="95.452622"/>
-<wire x1="-0.55" y1="-0.5" x2="-0.55" y2="0.5" width="0.1016" layer="51" curve="-84.547378"/>
-<wire x1="-0.55" y1="0.5" x2="0.55" y2="0.5" width="0.1016" layer="21" curve="-95.452622"/>
-<wire x1="0.55" y1="0.5" x2="0.55" y2="-0.5" width="0.1016" layer="51" curve="-84.547378"/>
-<rectangle x1="-0.1" y1="-0.1" x2="0.1" y2="0.1" layer="21"/>
-<rectangle x1="0.45" y1="-0.7" x2="0.8" y2="-0.45" layer="51"/>
-<rectangle x1="0.8" y1="-0.7" x2="0.9" y2="0.5" layer="51"/>
-<rectangle x1="0.8" y1="0.55" x2="0.9" y2="0.7" layer="51"/>
-<rectangle x1="-0.9" y1="-0.7" x2="-0.8" y2="0.5" layer="51"/>
-<rectangle x1="-0.9" y1="0.55" x2="-0.8" y2="0.7" layer="51"/>
-<rectangle x1="0.45" y1="-0.7" x2="0.6" y2="-0.45" layer="21"/>
-<smd name="A" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<smd name="C" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3674,14 +3690,11 @@ einem neuen Namen ab.</description>
 <element name="C46" library="rcl" package="C0402" value="10u" x="87.884" y="45.466"/>
 <element name="IC1" library="motorFeedback" package="S14-NARROW" value="LTC4263" x="-32.258" y="-187.96"/>
 <element name="D1" library="diode" package="SMBJ" value="SMAJ58A" x="-52.324" y="-190.246"/>
+<element name="F1" library="special" package="FUSE" value="1A" x="-41.656" y="-200.406"/>
 <element name="C47" library="motorFeedback" package="C0805K" value="0.1u 100v" x="-53.594" y="-208.534"/>
 <element name="C49" library="motorFeedback" package="C0805K" value="0.1uf" x="-53.594" y="-218.186"/>
 <element name="L1" library="motorFeedback" package="0204V" value="10m, 21mA" x="-52.578" y="-223.52"/>
-<element name="LED1" library="eagle-ltspice" package="LED_1206" value="HSMA-C150" x="-51.816" y="-228.346">
-<attribute name="SPICEMODEL" value="NONE" x="-51.816" y="-228.346" size="1.778" layer="27" display="off"/>
-<attribute name="SPICETYPE" value="diode" x="-51.816" y="-228.346" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="D" x="-51.816" y="-228.346" size="1.778" layer="27" display="off"/>
-</element>
+<element name="LED1" library="motorFeedback" package="LED5MM" value="" x="-51.816" y="-228.346"/>
 <element name="R_LED" library="motorFeedback" package="R0603" value="1k" x="-53.594" y="-233.934"/>
 <element name="D2" library="motorFeedback" package="SOT23-TO-236" value="MMBD6050LT1SOT23" x="-59.436" y="-231.14"/>
 <element name="C43" library="motorFeedback" package="C0805K" value="0.1u 100v" x="-59.944" y="-238.76"/>
@@ -3783,7 +3796,7 @@ einem neuen Namen ab.</description>
 <element name="C124" library="motorFeedback" package="C0603" value="NU" x="-119.888" y="-658.368"/>
 <element name="R50" library="motorFeedback" package="R0603" value="200" x="-119.888" y="-641.858"/>
 <element name="POE" library="motorFeedback" package="CHB75W" value="CHB75W" x="123.952" y="27.94" rot="R270"/>
-<element name="R54" library="pot" package="3223W" value="10k" x="-176.022" y="-664.21"/>
+<element name="R54" library="rcl" package="RTRIM4G/J" value="10k" x="-176.022" y="-664.21"/>
 <element name="VR3" library="motorFeedback" package="PG-TO252-5-11" value="TL751M08QKVURQ1" x="110.49" y="8.636" rot="R180"/>
 <element name="C125" library="motorFeedback" package="PANASONIC_B" value="10u" x="110.744" y="19.558"/>
 <element name="C126" library="motorFeedback" package="C0402" value="0.1u" x="113.03" y="16.51"/>
@@ -3824,7 +3837,6 @@ einem neuen Namen ab.</description>
 </element>
 <element name="R168" library="rcl_custom" package="0402-B-NOSILK" value="100" x="86.868" y="25.146"/>
 <element name="J22" library="headers" package="1.27MM_2X5" value="Debug Header" x="88.646" y="31.242"/>
-<element name="FUSE" library="temp_library" package="FUSE_1206" value="F1604CT-ND" x="-194.564" y="-879.348"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -4746,6 +4758,7 @@ einem neuen Namen ab.</description>
 </signal>
 <signal name="POE+">
 <contactref element="D1" pad="C"/>
+<contactref element="F1" pad="1"/>
 <contactref element="IC1" pad="11"/>
 <contactref element="D2" pad="3"/>
 <contactref element="LED1" pad="A"/>
@@ -4754,23 +4767,22 @@ einem neuen Namen ab.</description>
 <contactref element="C129" pad="1"/>
 <contactref element="C130" pad="1"/>
 <contactref element="C133" pad="1"/>
-<contactref element="FUSE" pad="A"/>
+<wire x1="-54.354" y1="-190.246" x2="-53.086" y2="-200.406" width="0" layer="19" extent="1-1"/>
 <wire x1="-29.278" y1="-187.96" x2="-54.354" y2="-190.246" width="0" layer="19" extent="1-1"/>
-<wire x1="-53.238" y1="-228.346" x2="-54.354" y2="-190.246" width="0" layer="19" extent="1-1"/>
-<wire x1="-59.436" y1="-230.14" x2="-53.238" y2="-228.346" width="0" layer="19" extent="1-1"/>
+<wire x1="-53.086" y1="-228.346" x2="-53.086" y2="-200.406" width="0" layer="19" extent="1-1"/>
+<wire x1="-59.436" y1="-230.14" x2="-53.086" y2="-228.346" width="0" layer="19" extent="1-1"/>
 <wire x1="-60.944" y1="-238.76" x2="-59.436" y2="-230.14" width="0" layer="19" extent="1-1"/>
 <wire x1="106.172" y1="52.07" x2="-29.278" y2="-187.96" width="0" layer="19" extent="1-1"/>
 <wire x1="-189.36" y1="-800.608" x2="-60.944" y2="-238.76" width="0" layer="19" extent="1-1"/>
 <wire x1="-189.626" y1="-805.688" x2="-189.36" y2="-800.608" width="0" layer="19" extent="1-1"/>
 <wire x1="-196.23" y1="-831.088" x2="-189.626" y2="-805.688" width="0" layer="19" extent="1-1"/>
-<wire x1="-195.986" y1="-879.348" x2="-196.23" y2="-831.088" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PORT_MAGNETICS+">
+<contactref element="F1" pad="2"/>
 <contactref element="C47" pad="1"/>
 <contactref element="X8" pad="15"/>
-<contactref element="FUSE" pad="C"/>
-<wire x1="-76.708" y1="-225.6028" x2="-193.142" y2="-879.348" width="0" layer="19" extent="1-1"/>
-<wire x1="-54.594" y1="-208.534" x2="-76.708" y2="-225.6028" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.594" y1="-208.534" x2="-30.226" y2="-200.406" width="0" layer="19" extent="1-1"/>
+<wire x1="-76.708" y1="-225.6028" x2="-54.594" y2="-208.534" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$24">
 <contactref element="L1" pad="1"/>
@@ -4790,8 +4802,8 @@ einem neuen Namen ab.</description>
 </signal>
 <signal name="N$23">
 <contactref element="L1" pad="2"/>
-<contactref element="LED1" pad="C"/>
-<wire x1="-50.394" y1="-228.346" x2="-51.308" y2="-223.52" width="0" layer="19" extent="1-1"/>
+<contactref element="LED1" pad="K"/>
+<wire x1="-50.546" y1="-228.346" x2="-51.308" y2="-223.52" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$26">
 <contactref element="IC2" pad="17"/>
@@ -5291,17 +5303,17 @@ einem neuen Namen ab.</description>
 <signal name="N$65">
 <contactref element="R54" pad="2"/>
 <contactref element="POE" pad="7"/>
-<wire x1="-176.022" y1="-662.995" x2="123.952" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="-176.022" y1="-661.46" x2="123.952" y2="52.07" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$66">
 <contactref element="R54" pad="1"/>
 <contactref element="POE" pad="6"/>
-<wire x1="-177.422" y1="-665.425" x2="131.572" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="-177.172" y1="-666.96" x2="131.572" y2="52.07" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$67">
 <contactref element="R54" pad="3"/>
 <contactref element="POE" pad="8"/>
-<wire x1="-174.622" y1="-665.425" x2="116.332" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="-174.872" y1="-666.96" x2="116.332" y2="52.07" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+8V">
 <contactref element="VR3" pad="4"/>
