@@ -1,0 +1,33 @@
+Version 4
+SymbolType CELL
+LINE Normal -16 32 -16 16
+LINE Normal 32 32 32 16
+LINE Normal 48 -16 24 -16
+LINE Normal -32 -16 -12 -16
+LINE Normal -12 -16 12 -36
+LINE Normal 24 32 24 24
+LINE Normal 28 28 20 28
+LINE Normal -8 32 -8 24
+LINE Normal 41 16 -24 16
+LINE Normal -24 -49 -24 16
+LINE Normal 41 -49 41 16
+LINE Normal 41 -49 -24 -49
+CIRCLE Normal 28 -12 20 -20
+CIRCLE Normal 8 -32 16 -40
+WINDOW 0 -33 -88 Left 2
+WINDOW 3 -30 -62 Left 2
+SYMATTR Value SPST
+SYMATTR Prefix S
+SYMATTR Description Voltage controlled switch
+PIN -32 -16 NONE 0
+PINATTR PinName A
+PINATTR SpiceOrder 1
+PIN 48 -16 NONE 0
+PINATTR PinName B
+PINATTR SpiceOrder 2
+PIN 32 32 NONE 0
+PINATTR PinName NC+
+PINATTR SpiceOrder 3
+PIN -16 32 NONE 0
+PINATTR PinName NC-
+PINATTR SpiceOrder 4
