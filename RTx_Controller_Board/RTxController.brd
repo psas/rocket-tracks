@@ -4625,51 +4625,6 @@ einem neuen Namen ab.</description>
 <wire x1="141.986" y1="76.454" x2="-189.626" y2="-805.688" width="0" layer="19" extent="1-1"/>
 <wire x1="106.172" y1="52.07" x2="141.986" y2="76.454" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="ETH_MII_RX_CLK">
-<contactref element="U1" pad="24"/>
-</signal>
-<signal name="ETH_MII_RX_DV">
-<contactref element="U1" pad="32"/>
-</signal>
-<signal name="ETH_MII_RX_ER">
-<contactref element="U1" pad="47"/>
-</signal>
-<signal name="ETH_MII_RXD0">
-<contactref element="U1" pad="33"/>
-</signal>
-<signal name="ETH_MII_RXD1">
-<contactref element="U1" pad="34"/>
-</signal>
-<signal name="ETH_MII_RXD2">
-<contactref element="U1" pad="35"/>
-</signal>
-<signal name="ETH_MII_RXD3">
-<contactref element="U1" pad="36"/>
-</signal>
-<signal name="ETH_MII_TX_CLK">
-<contactref element="U1" pad="18"/>
-</signal>
-<signal name="ETH_MII_TX_EN">
-<contactref element="U1" pad="48"/>
-</signal>
-<signal name="ETH_MII_TXD0">
-<contactref element="U1" pad="51"/>
-</signal>
-<signal name="ETH_MII_TXD1">
-<contactref element="U1" pad="52"/>
-</signal>
-<signal name="ETH_MII_TXD2">
-<contactref element="U1" pad="17"/>
-</signal>
-<signal name="ETH_MII_TXD3">
-<contactref element="U1" pad="95"/>
-</signal>
-<signal name="ETH_MII_CRS">
-<contactref element="U1" pad="23"/>
-</signal>
-<signal name="ETH_MII_COL">
-<contactref element="U1" pad="26"/>
-</signal>
 <signal name="ETH_MDC">
 <contactref element="U1" pad="16"/>
 <contactref element="U3" pad="11"/>
@@ -4733,9 +4688,6 @@ einem neuen Namen ab.</description>
 <contactref element="R20" pad="2"/>
 <contactref element="U1" pad="31"/>
 <wire x1="39.766" y1="18.288" x2="63.048" y2="21.236" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="ETH_MCO1">
-<contactref element="U1" pad="67"/>
 </signal>
 <signal name="N$43">
 <contactref element="R36" pad="2"/>
@@ -5063,28 +5015,44 @@ einem neuen Namen ab.</description>
 </signal>
 <signal name="ETH_CRS_DV">
 <contactref element="U3" pad="15"/>
+<contactref element="U1" pad="32"/>
+<wire x1="-170.692" y1="-893.998" x2="63.548" y2="21.236" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ETH_RXD0">
 <contactref element="U3" pad="13"/>
+<contactref element="U1" pad="33"/>
+<wire x1="-169.692" y1="-893.998" x2="64.048" y2="21.236" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ETH_RXD1">
 <contactref element="U3" pad="12"/>
+<contactref element="U1" pad="34"/>
+<wire x1="-169.082" y1="-894.608" x2="64.548" y2="21.236" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EPHY_NRST">
 <contactref element="U3" pad="24"/>
+<contactref element="U1" pad="97"/>
+<wire x1="-172.802" y1="-897.108" x2="62.048" y2="36.676" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ETH_TX_EN">
 <contactref element="U3" pad="19"/>
+<contactref element="U1" pad="48"/>
+<wire x1="-172.802" y1="-894.608" x2="71.548" y2="21.236" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ETH_TXD0">
 <contactref element="U3" pad="20"/>
+<contactref element="U1" pad="51"/>
+<wire x1="-172.802" y1="-895.108" x2="74.268" y2="22.956" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ETH_TXD1">
 <contactref element="U3" pad="21"/>
+<contactref element="U1" pad="52"/>
+<wire x1="-172.802" y1="-895.608" x2="74.268" y2="23.456" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ETH_MDINT">
 <contactref element="R56" pad="2"/>
 <contactref element="U3" pad="18"/>
+<contactref element="U1" pad="26"/>
+<wire x1="-183.72" y1="-905.002" x2="60.548" y2="21.236" width="0" layer="19" extent="1-1"/>
 <wire x1="-172.192" y1="-893.998" x2="-183.72" y2="-905.002" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDDA">
@@ -5094,9 +5062,13 @@ einem neuen Namen ab.</description>
 </signal>
 <signal name="ETH_RMII_REF_CLK">
 <contactref element="U3" pad="16"/>
+<contactref element="U1" pad="24"/>
+<wire x1="-171.192" y1="-893.998" x2="58.828" y2="23.456" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCO1-ETH-CLK">
 <contactref element="U3" pad="8"/>
+<contactref element="U1" pad="67"/>
+<wire x1="-169.082" y1="-896.608" x2="74.268" y2="30.956" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$79">
 <contactref element="U3" pad="9"/>
