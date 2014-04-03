@@ -670,6 +670,18 @@ From:  http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/D
 <wire x1="28.956" y1="30.48" x2="-28.956" y2="30.48" width="1.016" layer="22"/>
 <wire x1="28.956" y1="-30.48" x2="-28.956" y2="-30.48" width="1.016" layer="22"/>
 </package>
+<package name="ABM8G">
+<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="21"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="21"/>
+<smd name="3" x="1.1" y="0.85" dx="1.4" dy="1.2" layer="1"/>
+<smd name="2" x="1.1" y="-0.85" dx="1.4" dy="1.2" layer="1"/>
+<smd name="1" x="-1.1" y="-0.85" dx="1.4" dy="1.2" layer="1"/>
+<smd name="4" x="-1.1" y="0.85" dx="1.4" dy="1.2" layer="1"/>
+<text x="-2" y="2" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-2" y="-2.5" size="0.6096" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 <library name="con-subd">
@@ -3657,7 +3669,6 @@ einem neuen Namen ab.</description>
 <attribute name="MF" value="" x="58.42" y="85.598" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="58.42" y="85.598" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C45" library="rcl" package="C0402" value="10u" x="61.214" y="78.486"/>
 <element name="R21" library="rcl" package="R0402" value="22" x="51.816" y="75.184" rot="R180"/>
 <element name="R22" library="rcl" package="R0402" value="22" x="51.816" y="76.454" rot="R180"/>
 <element name="C46" library="rcl" package="C0402" value="10u" x="61.214" y="79.502"/>
@@ -3804,6 +3815,9 @@ einem neuen Namen ab.</description>
 <element name="R29" library="rcl" package="R0402" value="750" x="-242.57" y="-1014.984"/>
 <element name="R30" library="rcl" package="R0402" value="750" x="-242.57" y="-1019.81"/>
 <element name="R31" library="rcl" package="R0402" value="750" x="-242.57" y="-1024.636"/>
+<element name="XTAL1" library="motorFeedback" package="ABM8G" value="ABM8G" x="-246.126" y="-1023.874"/>
+<element name="C43" library="rcl" package="C0402" value="16p" x="-246.888" y="-1029.462"/>
+<element name="C45" library="rcl" package="C0402" value="16p" x="-246.888" y="-1033.018"/>
 </elements>
 <signals>
 <signal name="GND" airwireshidden="yes">
@@ -3855,7 +3869,6 @@ einem neuen Namen ab.</description>
 <contactref element="C42" pad="2"/>
 <contactref element="ADC4" pad="5"/>
 <contactref element="REF1" pad="4"/>
-<contactref element="C45" pad="2"/>
 <contactref element="X4" pad="5"/>
 <contactref element="U2" pad="4"/>
 <contactref element="C46" pad="2"/>
@@ -3953,6 +3966,8 @@ einem neuen Namen ab.</description>
 <contactref element="C97" pad="1"/>
 <contactref element="C98" pad="1"/>
 <contactref element="J22" pad="GNDDET"/>
+<contactref element="C43" pad="2"/>
+<contactref element="C45" pad="2"/>
 <wire x1="-188.326" y1="-810.26" x2="-188.326" y2="-814.832" width="0" layer="19" extent="1-1"/>
 <wire x1="-195.91" y1="-824.992" x2="-188.326" y2="-814.832" width="0" layer="19" extent="1-1"/>
 <wire x1="-194.222" y1="-867.41" x2="-195.91" y2="-824.992" width="0" layer="19" extent="1-1"/>
@@ -3968,6 +3983,8 @@ einem neuen Namen ab.</description>
 <wire x1="-173.912" y1="-900.43" x2="-177.116" y2="-900.43" width="0" layer="19" extent="1-1"/>
 <wire x1="-172.802" y1="-896.108" x2="-173.912" y2="-900.43" width="0" layer="19" extent="1-1"/>
 <wire x1="-170.942" y1="-895.858" x2="-172.802" y2="-896.108" width="0" layer="19" extent="1-1"/>
+<wire x1="-246.238" y1="-1029.462" x2="-196.01" y2="-905.002" width="0" layer="19" extent="1-1"/>
+<wire x1="-246.238" y1="-1033.018" x2="-246.238" y2="-1029.462" width="0" layer="19" extent="1-1"/>
 <wire x1="-119.038" y1="-612.14" x2="-188.326" y2="-810.26" width="0" layer="19" extent="1-1"/>
 <wire x1="37.454" y1="7.62" x2="-119.038" y2="-612.14" width="0" layer="19" extent="1-1"/>
 <wire x1="39.74" y1="7.62" x2="37.454" y2="7.62" width="0" layer="19" extent="1-1"/>
@@ -4087,10 +4104,9 @@ einem neuen Namen ab.</description>
 <wire x1="146.7612" y1="37.338" x2="142.86" y2="36.068" width="0" layer="19" extent="1-1"/>
 <wire x1="154.0764" y1="37.338" x2="146.7612" y2="37.338" width="0" layer="19" extent="1-1"/>
 <wire x1="146.228" y1="46.482" x2="146.7612" y2="37.338" width="0" layer="19" extent="1-1"/>
-<wire x1="61.864" y1="78.486" x2="59.094" y2="47.498" width="0" layer="19" extent="1-1"/>
-<wire x1="61.864" y1="79.502" x2="61.864" y2="78.486" width="0" layer="19" extent="1-1"/>
-<wire x1="57.666" y1="79.394" x2="61.864" y2="79.502" width="0" layer="19" extent="1-1"/>
+<wire x1="57.666" y1="79.394" x2="59.094" y2="47.498" width="0" layer="19" extent="1-1"/>
 <wire x1="56.82" y1="82.598" x2="57.666" y2="79.394" width="0" layer="19" extent="1-1"/>
+<wire x1="61.864" y1="79.502" x2="57.666" y2="79.394" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V" airwireshidden="yes">
 <contactref element="ADC1" pad="2"/>
@@ -4728,13 +4744,11 @@ einem neuen Namen ab.</description>
 <signal name="USB_VBUS">
 <contactref element="X4" pad="1"/>
 <contactref element="U2" pad="6"/>
-<contactref element="C45" pad="1"/>
 <contactref element="C46" pad="1"/>
 <contactref element="U1" pad="68"/>
-<wire x1="58.666" y1="79.394" x2="60.02" y2="82.598" width="0" layer="19" extent="1-1"/>
-<wire x1="60.564" y1="79.502" x2="58.666" y2="79.394" width="0" layer="19" extent="1-1"/>
-<wire x1="60.564" y1="78.486" x2="60.564" y2="79.502" width="0" layer="19" extent="1-1"/>
-<wire x1="74.268" y1="31.456" x2="58.666" y2="79.394" width="0" layer="19" extent="1-1"/>
+<wire x1="60.564" y1="79.502" x2="60.02" y2="82.598" width="0" layer="19" extent="1-1"/>
+<wire x1="58.666" y1="79.394" x2="60.564" y2="79.502" width="0" layer="19" extent="1-1"/>
+<wire x1="74.268" y1="31.456" x2="60.564" y2="79.502" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB_D-">
 <contactref element="R21" pad="2"/>
@@ -5352,6 +5366,20 @@ einem neuen Namen ab.</description>
 <contactref element="U1" pad="98"/>
 <contactref element="LED2" pad="C"/>
 <wire x1="61.548" y1="36.676" x2="-227.33" y2="-1005.598" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="OSC_IN">
+<contactref element="U1" pad="12"/>
+<contactref element="C43" pad="1"/>
+<contactref element="XTAL1" pad="1"/>
+<wire x1="-247.538" y1="-1029.462" x2="58.828" y2="29.456" width="0" layer="19" extent="1-1"/>
+<wire x1="-247.226" y1="-1024.724" x2="-247.538" y2="-1029.462" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="OSC_OUT">
+<contactref element="U1" pad="13"/>
+<contactref element="XTAL1" pad="3"/>
+<contactref element="C45" pad="1"/>
+<wire x1="-247.538" y1="-1033.018" x2="-245.026" y2="-1023.024" width="0" layer="19" extent="1-1"/>
+<wire x1="58.828" y1="28.956" x2="-245.026" y2="-1023.024" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
