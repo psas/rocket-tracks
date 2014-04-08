@@ -3818,6 +3818,7 @@ einem neuen Namen ab.</description>
 <element name="XTAL1" library="motorFeedback" package="ABM8G" value="ABM8G" x="4.572" y="85.598"/>
 <element name="C43" library="rcl" package="C0402" value="16p" x="3.81" y="80.01"/>
 <element name="C45" library="rcl" package="C0402" value="16p" x="12.7" y="80.01" rot="R270"/>
+<element name="R32" library="motorFeedback" package="R0402" value="33" x="-8.382" y="-12.192"/>
 </elements>
 <signals>
 <signal name="GND" airwireshidden="yes">
@@ -4673,7 +4674,6 @@ einem neuen Namen ab.</description>
 <contactref element="ADC2" pad="8"/>
 <contactref element="ADC1" pad="8"/>
 <contactref element="ADC4" pad="8"/>
-<contactref element="U1" pad="30"/>
 <wire x1="36.898" y1="19.05" x2="40.894" y2="19.05" width="0.3048" layer="1"/>
 <wire x1="40.894" y1="19.05" x2="41.148" y2="18.796" width="0.3048" layer="1"/>
 <wire x1="36.898" y1="35.052" x2="37.846" y2="35.052" width="0.3048" layer="1"/>
@@ -4687,8 +4687,9 @@ einem neuen Namen ab.</description>
 <wire x1="36.898" y1="26.416" x2="39.116" y2="26.416" width="0.3048" layer="1"/>
 <wire x1="39.116" y1="26.416" x2="40.894" y2="24.638" width="0.3048" layer="1"/>
 <wire x1="40.894" y1="24.638" x2="40.894" y2="19.05" width="0.3048" layer="1"/>
-<wire x1="41.148" y1="18.796" x2="60.77" y2="40.54" width="0" layer="19" extent="1-1"/>
-<wire x1="36.898" y1="42.418" x2="36.898" y2="35.052" width="0" layer="19" extent="1-1"/>
+<contactref element="R32" pad="1"/>
+<wire x1="36.898" y1="35.052" x2="36.898" y2="42.418" width="0" layer="19" extent="1-1"/>
+<wire x1="-9.032" y1="-12.192" x2="36.898" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI_MISO">
 <contactref element="R20" pad="2"/>
@@ -5288,6 +5289,11 @@ einem neuen Namen ab.</description>
 <contactref element="C45" pad="1"/>
 <wire x1="12.7" y1="80.66" x2="5.672" y2="86.448" width="0" layer="19" extent="1-1"/>
 <wire x1="57.05" y1="48.26" x2="12.7" y2="80.66" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$72">
+<contactref element="R32" pad="2"/>
+<contactref element="U1" pad="30"/>
+<wire x1="-7.732" y1="-12.192" x2="60.77" y2="40.54" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

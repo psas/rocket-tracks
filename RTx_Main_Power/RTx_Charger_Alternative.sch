@@ -2317,10 +2317,10 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tl331-q1.pdf"&gt; Data shee
 <text x="-8.89" y="7.62" size="1.27" layer="25">&gt;NAME</text>
 <text x="-8.89" y="-11.43" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="TERMINAL_RELAY">
-<pad name="P$1" x="0" y="0" drill="6.35" diameter="12.7"/>
-<text x="-2.54" y="6.35" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
+<package name="TERMINAL_BATTERY">
+<pad name="1" x="0" y="0" drill="6.35" diameter="19.05"/>
+<text x="-2.54" y="10.16" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-11.43" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -2414,14 +2414,14 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tl331-q1.pdf"&gt; Data shee
 </device>
 </devices>
 </deviceset>
-<deviceset name="TERMINAL">
+<deviceset name="TERMINAL_BATTERY">
 <gates>
 <gate name="G$1" symbol="TERMINAL_BATTERY" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TERMINAL_RELAY">
+<device name="" package="TERMINAL_BATTERY">
 <connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$1" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2447,11 +2447,11 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tl331-q1.pdf"&gt; Data shee
 <part name="Q1" library="temp_library" deviceset="STW11NM80" device="" value="STW11NM80"/>
 <part name="GND1" library="motorFeedback" deviceset="GND" device=""/>
 <part name="U$6" library="temp_library" deviceset="TEH70" device="" value="10"/>
-<part name="U$2" library="temp_library" deviceset="TERMINAL" device=""/>
-<part name="U$3" library="temp_library" deviceset="TERMINAL" device=""/>
-<part name="U$4" library="temp_library" deviceset="TERMINAL" device=""/>
-<part name="U$5" library="temp_library" deviceset="TERMINAL" device=""/>
-<part name="U$7" library="temp_library" deviceset="TERMINAL" device=""/>
+<part name="U$2" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
+<part name="U$3" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
+<part name="U$4" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
+<part name="U$5" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
+<part name="U$7" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
 <part name="R1" library="motorFeedback" deviceset="R-US_" device="R1206" value="10k"/>
 <part name="R2" library="motorFeedback" deviceset="R-US_" device="R1206" value="230k"/>
 </parts>
@@ -2491,7 +2491,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tl331-q1.pdf"&gt; Data shee
 <wire x1="208.28" y1="91.44" x2="205.74" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="VCC2" class="0">
 <segment>
 <wire x1="134.62" y1="93.98" x2="143.51" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="G$1" pin="P$1"/>
@@ -2502,23 +2502,27 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tl331-q1.pdf"&gt; Data shee
 <wire x1="134.62" y1="106.68" x2="109.22" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="93.98" x2="134.62" y2="106.68" width="0.1524" layer="91"/>
 <junction x="134.62" y="106.68"/>
+<label x="137.16" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="RELAY1" class="0">
 <segment>
 <wire x1="166.37" y1="93.98" x2="172.72" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="93.98" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="93.98" x2="172.72" y2="121.92" width="0.1524" layer="91"/>
-<junction x="172.72" y="93.98"/>
 <pinref part="U$6" gate="G$1" pin="P$2"/>
 <pinref part="U$7" gate="G$1" pin="P$1"/>
+<label x="172.72" y="109.22" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="+IN"/>
+<wire x1="177.8" y1="93.98" x2="172.72" y2="93.98" width="0.1524" layer="91"/>
+<junction x="172.72" y="93.98"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="RELAY2" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="D(2)"/>
 <wire x1="218.44" y1="99.06" x2="218.44" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="P$1"/>
+<label x="218.44" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -2544,23 +2548,24 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tl331-q1.pdf"&gt; Data shee
 <pinref part="U$6" gate="G$1" pin="P$3"/>
 <wire x1="154.94" y1="88.9" x2="154.94" y2="66.04" width="0.1524" layer="91"/>
 <junction x="154.94" y="66.04"/>
-<pinref part="U$3" gate="G$1" pin="P$1"/>
 <wire x1="154.94" y1="66.04" x2="142.24" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="142.24" y1="66.04" x2="134.62" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="66.04" x2="109.22" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="55.88" x2="134.62" y2="66.04" width="0.1524" layer="91"/>
-<junction x="134.62" y="66.04"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="66.04" x2="142.24" y2="71.12" width="0.1524" layer="91"/>
 <junction x="142.24" y="66.04"/>
+<pinref part="U$3" gate="G$1" pin="P$1"/>
+<wire x1="134.62" y1="66.04" x2="109.22" y2="66.04" width="0.1524" layer="91"/>
+<junction x="134.62" y="66.04"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="VCC1" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="P$1"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="88.9" x2="109.22" y2="88.9" width="0.1524" layer="91"/>
+<label x="116.84" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
