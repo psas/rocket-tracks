@@ -2305,20 +2305,34 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tl331-q1.pdf"&gt; Data shee
 <text x="-5.08" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 <text x="-5.08" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="WA-T247-101E">
-<pad name="P$1" x="-9.017" y="0" drill="1.6"/>
-<pad name="P$2" x="9.017" y="0" drill="1.6"/>
-<rectangle x1="-9.9695" y1="-2.032" x2="9.9695" y2="6.858" layer="21"/>
-<rectangle x1="-11.684" y1="-9.144" x2="-9.9695" y2="6.858" layer="21"/>
-<rectangle x1="9.9695" y1="-9.144" x2="11.684" y2="6.858" layer="21"/>
+<package name="TEH70">
 <pad name="2" x="0" y="-4.572" drill="1.3" shape="long" rot="R90"/>
 <pad name="3" x="5.461" y="-4.572" drill="1.3" shape="long" rot="R90"/>
 <pad name="1" x="-5.461" y="-4.572" drill="1.3" shape="long" rot="R90"/>
 <text x="-8.89" y="7.62" size="1.27" layer="25">&gt;NAME</text>
 <text x="-8.89" y="-11.43" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="WA-T247-101E">
+<pad name="HEATSINK1" x="-9.017" y="0" drill="1.6"/>
+<pad name="HEATSINK2" x="9.017" y="0" drill="1.6"/>
+<text x="-8.89" y="7.62" size="1.27" layer="25">&gt;NAME</text>
+<text x="-8.89" y="-11.43" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-11.684" y1="6.858" x2="11.684" y2="6.858" width="0.3048" layer="21"/>
+<wire x1="11.684" y1="6.858" x2="11.684" y2="-9.144" width="0.3048" layer="21"/>
+<wire x1="11.684" y1="-9.144" x2="9.906" y2="-9.144" width="0.3048" layer="21"/>
+<wire x1="9.906" y1="-9.144" x2="9.906" y2="-2.032" width="0.3048" layer="21"/>
+<wire x1="9.906" y1="-2.032" x2="-9.906" y2="-2.032" width="0.3048" layer="21"/>
+<wire x1="-9.906" y1="-2.032" x2="-9.906" y2="-9.144" width="0.3048" layer="21"/>
+<wire x1="-9.906" y1="-9.144" x2="-11.684" y2="-9.144" width="0.3048" layer="21"/>
+<wire x1="-11.684" y1="-9.144" x2="-11.684" y2="6.858" width="0.3048" layer="21"/>
+</package>
+<package name="TERMINAL_RELAY">
+<pad name="P$1" x="0" y="0" drill="2.8" diameter="6.4516"/>
+<text x="-2.54" y="6.35" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 <package name="TERMINAL_BATTERY">
-<pad name="1" x="0" y="0" drill="6.35" diameter="19.05"/>
+<pad name="1" x="0" y="0" drill="6.858" diameter="19.05" thermals="no"/>
 <text x="-2.54" y="10.16" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-11.43" size="1.27" layer="27">&gt;VALUE</text>
 </package>
@@ -2377,6 +2391,40 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tl331-q1.pdf"&gt; Data shee
 <text x="-2.54" y="-7.62" size="1.27" layer="94">&gt;VALUE</text>
 <pin name="P$1" x="0" y="0" length="point"/>
 </symbol>
+<symbol name="WA-T247-101E">
+<polygon width="0.254" layer="94">
+<vertex x="-12.7" y="-2.54"/>
+<vertex x="20.32" y="-2.54"/>
+<vertex x="20.32" y="15.24"/>
+<vertex x="17.78" y="15.24"/>
+<vertex x="17.78" y="2.54"/>
+<vertex x="12.7" y="2.54"/>
+<vertex x="12.7" y="15.24"/>
+<vertex x="10.16" y="15.24"/>
+<vertex x="10.16" y="2.54"/>
+<vertex x="5.08" y="2.54"/>
+<vertex x="5.08" y="15.24"/>
+<vertex x="2.54" y="15.24"/>
+<vertex x="2.54" y="2.54"/>
+<vertex x="-2.54" y="2.54"/>
+<vertex x="-2.54" y="15.24"/>
+<vertex x="-5.08" y="15.24"/>
+<vertex x="-5.08" y="2.54"/>
+<vertex x="-10.16" y="2.54"/>
+<vertex x="-10.16" y="15.24"/>
+<vertex x="-12.7" y="15.24"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="-12.7" y="2.54"/>
+<vertex x="-17.78" y="2.54"/>
+<vertex x="-17.78" y="15.24"/>
+<vertex x="-20.32" y="15.24"/>
+<vertex x="-20.32" y="-2.54"/>
+<vertex x="-12.7" y="-2.54"/>
+</polygon>
+<pin name="P$1" x="-12.7" y="-7.62" length="middle" rot="R90"/>
+<pin name="P$2" x="12.7" y="-7.62" length="middle" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="STW11NM80" prefix="MN">
@@ -2402,11 +2450,26 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tl331-q1.pdf"&gt; Data shee
 <gate name="G$1" symbol="TEH70" x="0" y="-0.508"/>
 </gates>
 <devices>
-<device name="" package="WA-T247-101E">
+<device name="" package="TEH70">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$2" pad="3"/>
 <connect gate="G$1" pin="P$3" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TERMINAL_RELAY">
+<gates>
+<gate name="G$1" symbol="TERMINAL_BATTERY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TERMINAL_RELAY">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2422,6 +2485,22 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tl331-q1.pdf"&gt; Data shee
 <device name="" package="TERMINAL_BATTERY">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WA-T247-101E">
+<gates>
+<gate name="G$1" symbol="WA-T247-101E" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="WA-T247-101E">
+<connects>
+<connect gate="G$1" pin="P$1" pad="HEATSINK1"/>
+<connect gate="G$1" pin="P$2" pad="HEATSINK2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2447,13 +2526,16 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tl331-q1.pdf"&gt; Data shee
 <part name="Q1" library="temp_library" deviceset="STW11NM80" device="" value="STW11NM80"/>
 <part name="GND1" library="motorFeedback" deviceset="GND" device=""/>
 <part name="R_CHARGE" library="temp_library" deviceset="TEH70" device="" value="10"/>
-<part name="VCC1" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
-<part name="BT-" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
-<part name="VCC2" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
+<part name="BAT+_UNSWITCHED" library="temp_library" deviceset="TERMINAL_RELAY" device="" value="TERMINAL"/>
+<part name="GND" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
+<part name="BAT+_SWITCHED" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
 <part name="RELAY-" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
-<part name="RELAY_A" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
+<part name="CAP+" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
 <part name="R1" library="motorFeedback" deviceset="R-US_" device="R1206" value="10k"/>
 <part name="R2" library="motorFeedback" deviceset="R-US_" device="R1206" value="230k"/>
+<part name="HEATSINK" library="temp_library" deviceset="WA-T247-101E" device=""/>
+<part name="GND2" library="motorFeedback" deviceset="GND" device=""/>
+<part name="GND3" library="motorFeedback" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2465,14 +2547,20 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tl331-q1.pdf"&gt; Data shee
 <instance part="R3" gate="G$1" x="200.66" y="91.44" rot="R180"/>
 <instance part="Q1" gate="G$1" x="210.82" y="99.06"/>
 <instance part="GND1" gate="1" x="134.62" y="66.04"/>
-<instance part="R_CHARGE" gate="G$1" x="154.94" y="99.06" rot="R90"/>
-<instance part="VCC1" gate="G$1" x="109.22" y="88.9"/>
-<instance part="BT-" gate="G$1" x="109.22" y="73.66"/>
-<instance part="VCC2" gate="G$1" x="109.22" y="104.14"/>
+<instance part="R_CHARGE" gate="G$1" x="154.94" y="99.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="149.352" y="95.758" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="162.56" y="95.504" size="1.27" layer="96" rot="R180"/>
+</instance>
+<instance part="BAT+_UNSWITCHED" gate="G$1" x="109.22" y="88.9"/>
+<instance part="GND" gate="G$1" x="109.22" y="73.66"/>
+<instance part="BAT+_SWITCHED" gate="G$1" x="109.22" y="104.14"/>
 <instance part="RELAY-" gate="G$1" x="218.44" y="116.84"/>
-<instance part="RELAY_A" gate="G$1" x="172.72" y="116.84"/>
+<instance part="CAP+" gate="G$1" x="172.72" y="116.84"/>
 <instance part="R1" gate="G$1" x="132.08" y="88.9" rot="R180"/>
 <instance part="R2" gate="G$1" x="142.24" y="81.28" rot="R270"/>
+<instance part="HEATSINK" gate="G$1" x="335.28" y="104.14"/>
+<instance part="GND2" gate="1" x="322.58" y="86.36"/>
+<instance part="GND3" gate="1" x="347.98" y="86.36"/>
 </instances>
 <busses>
 </busses>
@@ -2491,26 +2579,26 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tl331-q1.pdf"&gt; Data shee
 <wire x1="208.28" y1="91.44" x2="205.74" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VCC2" class="0">
+<net name="BAT+_SWITCHED" class="0">
 <segment>
 <wire x1="134.62" y1="99.06" x2="143.51" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="R_CHARGE" gate="G$1" pin="P$1"/>
 <pinref part="IC1" gate="G$1" pin="V+"/>
-<pinref part="VCC2" gate="G$1" pin="P$1"/>
+<pinref part="BAT+_SWITCHED" gate="G$1" pin="P$1"/>
 <wire x1="185.42" y1="99.06" x2="185.42" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="104.14" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="104.14" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="99.06" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
 <junction x="134.62" y="104.14"/>
-<label x="137.16" y="104.14" size="1.778" layer="95"/>
+<label x="119.634" y="104.902" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RELAY_A" class="0">
+<net name="CAP+" class="0">
 <segment>
 <wire x1="166.37" y1="99.06" x2="172.72" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="99.06" x2="172.72" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="R_CHARGE" gate="G$1" pin="P$2"/>
-<pinref part="RELAY_A" gate="G$1" pin="P$1"/>
+<pinref part="CAP+" gate="G$1" pin="P$1"/>
 <label x="172.72" y="106.68" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="+IN"/>
 <wire x1="177.8" y1="93.98" x2="172.72" y2="93.98" width="0.1524" layer="91"/>
@@ -2557,17 +2645,27 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tl331-q1.pdf"&gt; Data shee
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="73.66" x2="142.24" y2="76.2" width="0.1524" layer="91"/>
 <junction x="142.24" y="73.66"/>
-<pinref part="BT-" gate="G$1" pin="P$1"/>
+<pinref part="GND" gate="G$1" pin="P$1"/>
 <wire x1="134.62" y1="73.66" x2="109.22" y2="73.66" width="0.1524" layer="91"/>
 <junction x="134.62" y="73.66"/>
 </segment>
-</net>
-<net name="VCC1" class="0">
 <segment>
-<pinref part="VCC1" gate="G$1" pin="P$1"/>
+<pinref part="HEATSINK" gate="G$1" pin="P$1"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="322.58" y1="88.9" x2="322.58" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="HEATSINK" gate="G$1" pin="P$2"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="347.98" y1="88.9" x2="347.98" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="BAT+_UNSWITCHED" class="0">
+<segment>
+<pinref part="BAT+_UNSWITCHED" gate="G$1" pin="P$1"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="127" y1="88.9" x2="109.22" y2="88.9" width="0.1524" layer="91"/>
-<label x="116.84" y="88.9" size="1.778" layer="95"/>
+<label x="97.536" y="85.344" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
