@@ -35067,8 +35067,9 @@ Max
 <pinref part="J22" gate="J" pin="TMS"/>
 </segment>
 <segment>
-<wire x1="284.48" y1="55.88" x2="289.56" y2="55.88" width="0.1524" layer="91"/>
-<label x="289.56" y="55.88" size="1.27" layer="95" xref="yes"/>
+<wire x1="284.48" y1="55.88" x2="292.1" y2="55.88" width="0.1524" layer="91"/>
+<label x="292.1" y="55.88" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="-IO" pin="PA13/JTMS@72"/>
 </segment>
 </net>
 <net name="JTAG_TCK" class="0">
@@ -35078,8 +35079,9 @@ Max
 <pinref part="J22" gate="J" pin="TCK"/>
 </segment>
 <segment>
-<wire x1="284.48" y1="53.34" x2="289.56" y2="53.34" width="0.1524" layer="91"/>
-<label x="289.56" y="53.34" size="1.27" layer="95" xref="yes"/>
+<wire x1="284.48" y1="53.34" x2="292.1" y2="53.34" width="0.1524" layer="91"/>
+<label x="292.1" y="53.34" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="-IO" pin="PA14/JTCK@76"/>
 </segment>
 </net>
 <net name="JTAG_TDI" class="0">
@@ -35089,8 +35091,9 @@ Max
 <pinref part="J22" gate="J" pin="TDI"/>
 </segment>
 <segment>
-<wire x1="284.48" y1="63.5" x2="289.56" y2="63.5" width="0.1524" layer="91"/>
-<label x="289.56" y="63.5" size="1.27" layer="95" xref="yes"/>
+<wire x1="284.48" y1="63.5" x2="292.1" y2="63.5" width="0.1524" layer="91"/>
+<label x="292.1" y="63.5" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="-IO" pin="PA15/JTDI@77"/>
 </segment>
 </net>
 <net name="JTAG_TDO" class="0">
@@ -35100,8 +35103,9 @@ Max
 <pinref part="J22" gate="J" pin="TDO"/>
 </segment>
 <segment>
-<wire x1="284.48" y1="60.96" x2="289.56" y2="60.96" width="0.1524" layer="91"/>
-<label x="289.56" y="60.96" size="1.27" layer="95" xref="yes"/>
+<wire x1="284.48" y1="60.96" x2="292.1" y2="60.96" width="0.1524" layer="91"/>
+<label x="292.1" y="60.96" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="-IO" pin="PB3/JTDO@89"/>
 </segment>
 </net>
 <net name="EPHY_NRST" class="0">
