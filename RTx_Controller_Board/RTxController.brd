@@ -3901,7 +3901,6 @@ einem neuen Namen ab.</description>
 <contactref element="C132" pad="2"/>
 <contactref element="C135" pad="-"/>
 <contactref element="POE" pad="4"/>
-<contactref element="POE" pad="2"/>
 <contactref element="POE" pad="3"/>
 <contactref element="C131" pad="2"/>
 <contactref element="C73" pad="1"/>
@@ -3965,7 +3964,6 @@ einem neuen Namen ab.</description>
 <wire x1="94.996" y1="14.1" x2="98.044" y2="12.588" width="0" layer="19" extent="1-1"/>
 <wire x1="107.6706" y1="12.446" x2="101.092" y2="14.732" width="0" layer="19" extent="1-1"/>
 <wire x1="112.522" y1="7.442" x2="107.6706" y2="12.446" width="0" layer="19" extent="1-1"/>
-<wire x1="116.332" y1="3.81" x2="112.522" y2="7.442" width="0" layer="19" extent="1-1"/>
 <wire x1="109.474" y1="2.398" x2="112.522" y2="7.442" width="0" layer="19" extent="1-1"/>
 <wire x1="108.204" y1="2.398" x2="109.474" y2="2.398" width="0" layer="19" extent="1-1"/>
 <wire x1="109.296" y1="19.812" x2="103.632" y2="24" width="0" layer="19" extent="1-1"/>

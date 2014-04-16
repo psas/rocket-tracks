@@ -33289,6 +33289,7 @@ Max
 <wire x1="308.864" y1="244.856" x2="308.864" y2="217.932" width="0.1524" layer="97"/>
 <wire x1="341.884" y1="244.856" x2="341.884" y2="217.932" width="0.1524" layer="97"/>
 <wire x1="374.904" y1="244.856" x2="374.904" y2="217.932" width="0.1524" layer="97"/>
+<text x="248.92" y="83.82" size="1.778" layer="97">NC</text>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="0" y="0"/>
@@ -33563,12 +33564,8 @@ Max
 <segment>
 <pinref part="POE" gate="G$1" pin="-VIN@4"/>
 <wire x1="254" y1="63.5" x2="251.46" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="POE" gate="G$1" pin="ON/OFF@2"/>
-<wire x1="254" y1="83.82" x2="251.46" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="POE" gate="G$1" pin="CASE@3"/>
 <wire x1="251.46" y1="73.66" x2="254" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="83.82" x2="251.46" y2="73.66" width="0.1524" layer="91"/>
-<junction x="251.46" y="73.66"/>
 <wire x1="251.46" y1="73.66" x2="251.46" y2="63.5" width="0.1524" layer="91"/>
 <junction x="251.46" y="63.5"/>
 <pinref part="GND101" gate="1" pin="GND"/>
