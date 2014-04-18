@@ -14670,6 +14670,31 @@ From:  http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/D
 <text x="-5.08" y="-5.08" size="1.27" layer="95">&gt;NAME</text>
 <text x="-5.08" y="4.572" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="TLV1117">
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="-10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="8.382" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="OUTPUT@PAD" x="10.16" y="-2.54" length="short" direction="sup" rot="R180"/>
+<pin name="INPUT@3" x="-10.16" y="5.08" length="short" direction="sup"/>
+<pin name="ADJ/GND@1" x="-10.16" y="-5.08" length="short" direction="sup"/>
+<pin name="OUTPUT@2" x="10.16" y="2.54" length="short" direction="sup" rot="R180"/>
+</symbol>
+<symbol name="TLE4275-Q">
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="-10.16" y="-12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="10.922" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="DELAY@4" x="-12.7" y="-2.54" length="short" direction="out"/>
+<pin name="INPUT@1" x="-12.7" y="7.62" length="short" direction="sup"/>
+<pin name="GND@PAD" x="-12.7" y="-7.62" length="short" direction="sup"/>
+<pin name="OUTPUT@5" x="12.7" y="5.08" length="short" direction="sup" rot="R180"/>
+<pin name="RESET@2" x="-12.7" y="2.54" length="short" direction="out"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LPC2468" prefix="U">
@@ -20368,6 +20393,43 @@ http://www.ti.com/lit/ds/symlink/tlk110.pdf</description>
 <connect gate="G$1" pin="2@2" pad="2"/>
 <connect gate="G$1" pin="3@3" pad="3"/>
 <connect gate="G$1" pin="4@4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLV1117-33I">
+<gates>
+<gate name="G$1" symbol="TLV1117" x="0" y="0"/>
+</gates>
+<devices>
+<device name="KVU" package="PG-TO252-3-11">
+<connects>
+<connect gate="G$1" pin="ADJ/GND@1" pad="1"/>
+<connect gate="G$1" pin="INPUT@3" pad="3"/>
+<connect gate="G$1" pin="OUTPUT@2" pad="2"/>
+<connect gate="G$1" pin="OUTPUT@PAD" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLE4275-Q">
+<gates>
+<gate name="G$1" symbol="TLE4275-Q" x="0" y="0"/>
+</gates>
+<devices>
+<device name="KVU" package="PG-TO252-5-11">
+<connects>
+<connect gate="G$1" pin="DELAY@4" pad="4"/>
+<connect gate="G$1" pin="GND@PAD" pad="3"/>
+<connect gate="G$1" pin="INPUT@1" pad="1"/>
+<connect gate="G$1" pin="OUTPUT@5" pad="5"/>
+<connect gate="G$1" pin="RESET@2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
