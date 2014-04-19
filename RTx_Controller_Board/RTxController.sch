@@ -3074,19 +3074,6 @@ type 0309, grid 2.5 mm</description>
 <text x="-3.5052" y="-3.1242" size="1.016" layer="27" font="vector" rot="R90">&gt;VALUE</text>
 <text x="4.5212" y="-3.1242" size="1.016" layer="25" font="vector" rot="R90">&gt;NAME</text>
 </package>
-<package name="PG-TO252-5-11@1">
-<wire x1="-3.2512" y1="3.1242" x2="3.2512" y2="3.1242" width="0.127" layer="21"/>
-<wire x1="-3.2512" y1="3.0988" x2="-3.2512" y2="-3.1242" width="0.127" layer="21"/>
-<wire x1="-3.2512" y1="-3.1242" x2="3.2512" y2="-3.1242" width="0.127" layer="21"/>
-<wire x1="3.2512" y1="-3.1242" x2="3.2512" y2="3.1242" width="0.127" layer="21"/>
-<smd name="3" x="0" y="1.4986" dx="5.461" dy="6.096" layer="1" rot="R90"/>
-<smd name="4" x="1.143" y="-5.08" dx="2.54" dy="0.7112" layer="1" rot="R270"/>
-<smd name="5" x="2.286" y="-5.08" dx="2.54" dy="0.7112" layer="1" rot="R270"/>
-<smd name="2" x="-1.143" y="-5.08" dx="2.54" dy="0.7112" layer="1" rot="R270"/>
-<smd name="1" x="-2.286" y="-5.08" dx="2.54" dy="0.7112" layer="1" rot="R270"/>
-<text x="-3.5052" y="-3.1242" size="1.016" layer="27" font="vector" rot="R90">&gt;VALUE</text>
-<text x="4.5212" y="-3.1242" size="1.016" layer="25" font="vector" rot="R90">&gt;NAME</text>
-</package>
 <package name="CT3216">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
 chip
@@ -7791,11 +7778,11 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <pad name="18" x="-3.556" y="-20.32" drill="0.8" diameter="1.016"/>
 <pad name="19" x="3.556" y="-20.32" drill="0.8" diameter="1.016"/>
 <pad name="20" x="6.096" y="-20.32" drill="0.8" diameter="1.016"/>
-<rectangle x1="-8.9154" y1="7.874" x2="8.9154" y2="10.922" layer="41"/>
-<rectangle x1="5.9944" y1="4.0132" x2="8.9154" y2="7.874" layer="41"/>
-<rectangle x1="-8.9154" y1="4.0132" x2="-5.9944" y2="7.874" layer="41"/>
-<rectangle x1="-8.9154" y1="-20.066" x2="-6.5532" y2="-13.589" layer="41"/>
-<rectangle x1="6.5532" y1="-20.066" x2="8.9154" y2="-13.589" layer="41"/>
+<rectangle x1="-8.9154" y1="7.874" x2="8.9154" y2="10.922" layer="39"/>
+<rectangle x1="5.9944" y1="4.0132" x2="8.9154" y2="7.874" layer="39"/>
+<rectangle x1="-8.9154" y1="4.0132" x2="-5.9944" y2="7.874" layer="39"/>
+<rectangle x1="-8.9154" y1="-20.066" x2="-6.5532" y2="-13.589" layer="39"/>
+<rectangle x1="6.5532" y1="-20.066" x2="8.9154" y2="-13.589" layer="39"/>
 <wire x1="-8.1534" y1="10.922" x2="-8.1534" y2="-21.844" width="0.6096" layer="21"/>
 <wire x1="8.1534" y1="10.922" x2="8.1534" y2="-21.844" width="0.6096" layer="21"/>
 <wire x1="-8.1534" y1="10.922" x2="8.1534" y2="10.922" width="0.6096" layer="21"/>
@@ -8040,10 +8027,11 @@ From:  http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/D
 <hole x="-24.13" y="25.4" drill="2.8"/>
 <hole x="24.13" y="-25.4" drill="2.8"/>
 <hole x="-24.13" y="-25.4" drill="2.8"/>
-<wire x1="28.956" y1="30.48" x2="28.956" y2="-30.48" width="1.016" layer="22"/>
-<wire x1="-28.956" y1="30.48" x2="-28.956" y2="-30.48" width="1.016" layer="22"/>
-<wire x1="28.956" y1="30.48" x2="-28.956" y2="30.48" width="1.016" layer="22"/>
-<wire x1="28.956" y1="-30.48" x2="-28.956" y2="-30.48" width="1.016" layer="22"/>
+<wire x1="28.956" y1="30.48" x2="28.956" y2="-30.48" width="1.016" layer="21"/>
+<wire x1="-28.956" y1="30.48" x2="-28.956" y2="-30.48" width="1.016" layer="21"/>
+<wire x1="28.956" y1="30.48" x2="-28.956" y2="30.48" width="1.016" layer="21"/>
+<wire x1="28.956" y1="-30.48" x2="-28.956" y2="-30.48" width="1.016" layer="21"/>
+<rectangle x1="-30.226" y1="-31.75" x2="30.226" y2="31.75" layer="39"/>
 </package>
 <package name="16100">
 <wire x1="4.826" y1="1.016" x2="1.524" y2="1.016" width="0.127" layer="21"/>
@@ -11908,7 +11896,7 @@ From:  http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/D
 <gate name="G$1" symbol="TL751M08QKVURQ1" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PG-TO252-5-11@1">
+<device name="" package="PG-TO252-5-11">
 <connects>
 <connect gate="G$1" pin="!EN!@1" pad="1"/>
 <connect gate="G$1" pin="GND@3" pad="3"/>
