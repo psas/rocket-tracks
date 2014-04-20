@@ -8629,10 +8629,10 @@ From:  http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/D
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
 <text x="-7.62" y="-10.16" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="8.382" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="OUTPUT@PAD" x="10.16" y="-2.54" length="short" direction="sup" rot="R180"/>
+<pin name="OUTPUT@PAD" x="10.16" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <pin name="INPUT@3" x="-10.16" y="5.08" length="short" direction="sup"/>
 <pin name="ADJ/GND@1" x="-10.16" y="-5.08" length="short" direction="sup"/>
-<pin name="OUTPUT@2" x="10.16" y="2.54" length="short" direction="sup" rot="R180"/>
+<pin name="OUTPUT@2" x="10.16" y="2.54" length="short" direction="pwr" rot="R180"/>
 </symbol>
 <symbol name="TLE4275-Q">
 <wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
@@ -11923,7 +11923,7 @@ From:  http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/D
 </device>
 </devices>
 </deviceset>
-<deviceset name="TLV1117-33I">
+<deviceset name="TLV1117-33I" prefix="VR">
 <gates>
 <gate name="G$1" symbol="TLV1117" x="0" y="0"/>
 </gates>
@@ -11941,7 +11941,7 @@ From:  http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/D
 </device>
 </devices>
 </deviceset>
-<deviceset name="TLE4275-Q">
+<deviceset name="TLE4275-Q" prefix="VR">
 <gates>
 <gate name="G$1" symbol="TLE4275-Q" x="0" y="0"/>
 </gates>
@@ -28275,8 +28275,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </package>
 <package name="TERMINAL_RELAY">
 <pad name="P$1" x="0" y="0" drill="2.8" diameter="6.4516" thermals="no"/>
-<text x="-2.54" y="6.35" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-2.54" y="3.81" size="2.54" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -32362,10 +32361,10 @@ Source: 008-0260-0_E.pdf</description>
 <part name="R66" library="motorFeedback" deviceset="R-US_" device="R0402" value="33"/>
 <part name="R67" library="rcl_custom" deviceset="R-US_" device="0402-C-NOSILK" value="33"/>
 <part name="R68" library="motorFeedback" deviceset="R-US_" device="R0402" value="33"/>
-<part name="U$6" library="motorFeedback" deviceset="TLV1117-33I" device="KVU"/>
+<part name="VR6" library="motorFeedback" deviceset="TLV1117-33I" device="KVU"/>
 <part name="P+10" library="motorFeedback" deviceset="+3.3V" device=""/>
 <part name="GND54" library="motorFeedback" deviceset="GND" device=""/>
-<part name="U$8" library="motorFeedback" deviceset="TLE4275-Q" device="KVU"/>
+<part name="VR8" library="motorFeedback" deviceset="TLE4275-Q" device="KVU"/>
 <part name="C47" library="motorFeedback" deviceset="CPOL-US" device="B" value="10u"/>
 <part name="GND29" library="motorFeedback" deviceset="GND" device=""/>
 <part name="C49" library="motorFeedback" deviceset="C-EU" device="C0402" value="0.1u"/>
@@ -32373,8 +32372,8 @@ Source: 008-0260-0_E.pdf</description>
 <part name="P+14" library="motorFeedback" deviceset="+12V" device=""/>
 <part name="P+15" library="motorFeedback" deviceset="+5V" device=""/>
 <part name="GND68" library="motorFeedback" deviceset="GND" device=""/>
-<part name="U$9" library="temp_library" deviceset="TERMINAL" device=""/>
-<part name="U$10" library="temp_library" deviceset="TERMINAL" device=""/>
+<part name="B+" library="temp_library" deviceset="TERMINAL" device=""/>
+<part name="GND" library="temp_library" deviceset="TERMINAL" device=""/>
 <part name="U$11" library="motorFeedback" deviceset="+9-36V" device=""/>
 <part name="GND69" library="motorFeedback" deviceset="GND" device=""/>
 </parts>
@@ -33186,7 +33185,7 @@ Connector</text>
 <pinref part="JP5" gate="A" pin="3"/>
 </segment>
 </net>
-<net name="+3.3V" class="0">
+<net name="+3.3V" class="1">
 <segment>
 <wire x1="205.74" y1="109.22" x2="213.36" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="109.22" x2="213.36" y2="129.54" width="0.1524" layer="91"/>
@@ -33447,10 +33446,10 @@ Max
 <instance part="GND34" gate="1" x="228.6" y="55.88" rot="MR0"/>
 <instance part="GND100" gate="1" x="238.76" y="55.88" rot="MR0"/>
 <instance part="GND101" gate="1" x="251.46" y="55.88" rot="MR0"/>
-<instance part="U$6" gate="G$1" x="63.5" y="162.56"/>
+<instance part="VR6" gate="G$1" x="63.5" y="162.56"/>
 <instance part="P+10" gate="G$1" x="78.74" y="180.34"/>
 <instance part="GND54" gate="1" x="48.26" y="144.78" rot="MR0"/>
-<instance part="U$8" gate="G$1" x="149.86" y="160.02"/>
+<instance part="VR8" gate="G$1" x="149.86" y="160.02"/>
 <instance part="C47" gate="G$1" x="109.22" y="160.02"/>
 <instance part="GND29" gate="1" x="109.22" y="144.78" rot="MR0"/>
 <instance part="C49" gate="G$1" x="121.92" y="160.02"/>
@@ -33458,15 +33457,15 @@ Max
 <instance part="P+14" gate="1" x="109.22" y="180.34"/>
 <instance part="P+15" gate="1" x="167.64" y="180.34"/>
 <instance part="GND68" gate="1" x="132.08" y="144.78" rot="MR0"/>
-<instance part="U$9" gate="G$1" x="182.88" y="33.02"/>
-<instance part="U$10" gate="G$1" x="198.12" y="33.02"/>
+<instance part="B+" gate="G$1" x="182.88" y="33.02"/>
+<instance part="GND" gate="G$1" x="198.12" y="33.02"/>
 <instance part="U$11" gate="G$1" x="172.72" y="45.72"/>
 <instance part="GND69" gate="1" x="190.5" y="20.32"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="+3.3V" class="0">
+<net name="+3.3V" class="1">
 <segment>
 <wire x1="40.64" y1="215.9" x2="40.64" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="213.36" x2="48.26" y2="213.36" width="0.1524" layer="91"/>
@@ -33479,14 +33478,14 @@ Max
 <pinref part="C27" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="73.66" y1="165.1" x2="78.74" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="165.1" x2="78.74" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="P+10" gate="G$1" pin="+3.3V"/>
-<pinref part="U$6" gate="G$1" pin="OUTPUT@PAD"/>
+<pinref part="VR6" gate="G$1" pin="OUTPUT@PAD"/>
+<wire x1="78.74" y1="177.8" x2="78.74" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="165.1" x2="78.74" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="160.02" x2="73.66" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="VR6" gate="G$1" pin="OUTPUT@2"/>
+<wire x1="78.74" y1="165.1" x2="73.66" y2="165.1" width="0.1524" layer="91"/>
 <junction x="78.74" y="165.1"/>
-<pinref part="U$6" gate="G$1" pin="OUTPUT@2"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -33502,10 +33501,10 @@ Max
 <pinref part="C28" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U$8" gate="G$1" pin="OUTPUT@5"/>
 <pinref part="P+15" gate="1" pin="+5V"/>
-<wire x1="162.56" y1="165.1" x2="167.64" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="165.1" x2="167.64" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="VR8" gate="G$1" pin="OUTPUT@5"/>
+<wire x1="167.64" y1="177.8" x2="167.64" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="165.1" x2="162.56" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -33665,7 +33664,7 @@ Max
 </segment>
 <segment>
 <pinref part="GND54" gate="1" pin="GND"/>
-<pinref part="U$6" gate="G$1" pin="ADJ/GND@1"/>
+<pinref part="VR6" gate="G$1" pin="ADJ/GND@1"/>
 <wire x1="48.26" y1="147.32" x2="48.26" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="157.48" x2="53.34" y2="157.48" width="0.1524" layer="91"/>
 </segment>
@@ -33680,13 +33679,13 @@ Max
 <pinref part="GND63" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$8" gate="G$1" pin="GND@PAD"/>
+<pinref part="VR8" gate="G$1" pin="GND@PAD"/>
 <pinref part="GND68" gate="1" pin="GND"/>
 <wire x1="137.16" y1="152.4" x2="132.08" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="152.4" x2="132.08" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="P$1"/>
+<pinref part="GND" gate="G$1" pin="P$1"/>
 <wire x1="198.12" y1="33.02" x2="190.5" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="33.02" x2="190.5" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="GND69" gate="1" pin="GND"/>
@@ -33730,7 +33729,7 @@ Max
 <junction x="228.6" y="93.98"/>
 </segment>
 <segment>
-<pinref part="U$9" gate="G$1" pin="P$1"/>
+<pinref part="B+" gate="G$1" pin="P$1"/>
 <wire x1="182.88" y1="33.02" x2="172.72" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="33.02" x2="172.72" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="U$11" gate="G$1" pin="+9-36V"/>
@@ -33780,7 +33779,7 @@ Max
 <junction x="25.4" y="167.64"/>
 <wire x1="38.1" y1="167.64" x2="53.34" y2="167.64" width="0.1524" layer="91"/>
 <junction x="38.1" y="167.64"/>
-<pinref part="U$6" gate="G$1" pin="INPUT@3"/>
+<pinref part="VR6" gate="G$1" pin="INPUT@3"/>
 </segment>
 <segment>
 <wire x1="109.22" y1="177.8" x2="109.22" y2="167.64" width="0.1524" layer="91"/>
@@ -33793,7 +33792,7 @@ Max
 <junction x="109.22" y="167.64"/>
 <wire x1="121.92" y1="167.64" x2="137.16" y2="167.64" width="0.1524" layer="91"/>
 <junction x="121.92" y="167.64"/>
-<pinref part="U$8" gate="G$1" pin="INPUT@1"/>
+<pinref part="VR8" gate="G$1" pin="INPUT@1"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -34650,7 +34649,7 @@ Max
 <pinref part="R68" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="+3.3V" class="0">
+<net name="+3.3V" class="1">
 <segment>
 <pinref part="P+28" gate="G$1" pin="+3.3V"/>
 <wire x1="40.64" y1="218.44" x2="40.64" y2="236.22" width="0.1524" layer="91"/>
@@ -35890,7 +35889,7 @@ Seperation &lt; 0.25mm
 <wire x1="154.94" y1="167.64" x2="152.4" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+3.3V" class="0">
+<net name="+3.3V" class="1">
 <segment>
 <pinref part="R55" gate="R" pin="1"/>
 <wire x1="68.58" y1="231.14" x2="68.58" y2="228.6" width="0.15" layer="91"/>
@@ -36196,6 +36195,10 @@ Seperation &lt; 0.25mm
 <approved hash="102,1,205.74,48.26,VIO,+3.3V,,,,"/>
 <approved hash="102,1,200.66,48.26,VDD,+5V,,,,"/>
 <approved hash="102,1,195.58,48.26,REF,+5.000VREF,,,,"/>
+<approved hash="102,2,53.34,167.64,INPUT,+12V,,,,"/>
+<approved hash="102,2,53.34,157.48,ADJ/GND,GND,,,,"/>
+<approved hash="102,2,137.16,167.64,INPUT,+12V,,,,"/>
+<approved hash="102,2,162.56,165.1,OUTPUT,+5V,,,,"/>
 <approved hash="102,3,40.64,203.2,VBAT,N$43,,,,"/>
 <approved hash="102,3,40.64,165.1,VSS,GND,,,,"/>
 <approved hash="102,3,45.72,203.2,VDD,+3.3V,,,,"/>
@@ -36212,6 +36215,7 @@ Seperation &lt; 0.25mm
 <approved hash="102,3,58.42,203.2,VDD,+3.3V,,,,"/>
 <approved hash="202,4,289.56,157.48,X8,VC45_15,,,,"/>
 <approved hash="202,4,289.56,154.94,X8,VC78_16,,,,"/>
+<approved hash="202,2,254,83.82,POE,ON/OFF,,,,"/>
 <approved hash="104,2,254,93.98,POE,+VIN,+9-36V,,,"/>
 <approved hash="104,2,254,63.5,POE,-VIN,GND,,,"/>
 <approved hash="104,2,294.64,63.5,POE,-VOUT,POE-,,,"/>
@@ -36219,7 +36223,9 @@ Seperation &lt; 0.25mm
 <approved hash="104,4,142.24,208.28,U3,VDD_1.2,N$80,,,"/>
 <approved hash="104,4,132.08,208.28,U3,VDDIO,+3.3V,,,"/>
 <approved hash="104,4,137.16,147.32,U3,PAD_GND,GND,,,"/>
-<approved hash="113,3,372.11,82.804,LED1,,,,,"/>
+<approved hash="104,2,73.66,160.02,VR6,OUTPUT,+3.3V,,,"/>
+<approved hash="104,2,73.66,165.1,VR6,OUTPUT,+3.3V,,,"/>
+<approved hash="113,3,372.11,77.724,LED1,,,,,"/>
 <approved hash="113,3,372.11,116.518,LED2,,,,,"/>
 <approved hash="113,3,372.11,108.898,LED3,,,,,"/>
 <approved hash="113,3,372.11,101.278,LED4,,,,,"/>

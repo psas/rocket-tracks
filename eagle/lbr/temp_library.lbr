@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -110,8 +110,7 @@
 </package>
 <package name="TERMINAL_RELAY">
 <pad name="P$1" x="0" y="0" drill="2.8" diameter="6.4516" thermals="no"/>
-<text x="-2.54" y="6.35" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-2.54" y="3.81" size="2.54" layer="25">&gt;NAME</text>
 </package>
 <package name="G4W-2214P-US-HP">
 <wire x1="-15.24" y1="9.779" x2="15.24" y2="9.779" width="0.127" layer="21"/>
