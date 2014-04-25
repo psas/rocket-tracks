@@ -5898,16 +5898,8 @@ einem neuen Namen ab.</description>
 <wire x1="111.506" y1="68.758" x2="108.382" y2="68.758" width="1.016" layer="1"/>
 <wire x1="108.382" y1="68.758" x2="107.696" y2="68.072" width="1.016" layer="1"/>
 <contactref element="IC2" pad="6"/>
-<wire x1="122.99" y1="67.58" x2="125.222" y2="67.834" width="0" layer="19" extent="1-1"/>
-<wire x1="121.666" y1="69.596" x2="121.65" y2="69.58" width="0" layer="19" extent="1-1"/>
-<wire x1="119.634" y1="67.564" x2="119.65" y2="67.58" width="0" layer="19" extent="1-1"/>
-<wire x1="121.65" y1="66.24" x2="122.15" y2="66.24" width="0" layer="19" extent="1-1"/>
-<wire x1="122.174" y1="62.65" x2="122.15" y2="66.24" width="0" layer="19" extent="1-1"/>
-<wire x1="115.062" y1="69.612" x2="119.634" y2="69.596" width="0" layer="19" extent="1-1"/>
-<wire x1="104.14" y1="51.816" x2="107.696" y2="68.072" width="0" layer="19" extent="1-1"/>
-<wire x1="132.461" y1="46.355" x2="123.444" y2="62.738" width="0" layer="19" extent="1-1"/>
-<wire x1="133.477" y1="46.355" x2="133.48" y2="46.352" width="0" layer="19" extent="1-1"/>
-<wire x1="134.493" y1="46.355" x2="133.48" y2="46.352" width="0" layer="19" extent="1-1"/>
+<wire x1="121.65" y1="66.24" x2="121.65" y2="67.548" width="0.254" layer="1"/>
+<wire x1="121.65" y1="67.548" x2="121.666" y2="67.564" width="0.254" layer="1"/>
 </signal>
 <signal name="POE+">
 <contactref element="POE" pad="9"/>
