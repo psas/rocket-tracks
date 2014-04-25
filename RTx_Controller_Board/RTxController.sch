@@ -33114,6 +33114,7 @@ Source: 008-0260-0_E.pdf</description>
 <part name="GND69" library="motorFeedback" deviceset="GND" device=""/>
 <part name="C52" library="motorFeedback" deviceset="CPOL-US" device="B" value="47u 100V"/>
 <part name="C46" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="TP8" library="testpad" deviceset="TP" device="TP06R"/>
 </parts>
 <sheets>
 <sheet>
@@ -36371,6 +36372,10 @@ Seperation &lt; 0.25mm
 <attribute name="VALUE" x="86.36" y="201.93" size="1.778" layer="96"/>
 </instance>
 <instance part="C52" gate="G$1" x="129.54" y="68.58"/>
+<instance part="TP8" gate="G$1" x="226.06" y="27.94" smashed="yes" rot="R270">
+<attribute name="NAME" x="227.33" y="26.67" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="224.79" y="26.67" size="1.778" layer="97" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -36912,6 +36917,13 @@ Seperation &lt; 0.25mm
 <pinref part="R67" gate="R" pin="1"/>
 <wire x1="93.98" y1="205.74" x2="96.52" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="205.74" x2="96.52" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TP8" class="0">
+<segment>
+<pinref part="TP8" gate="G$1" pin="TP"/>
+<pinref part="IC2" gate="G$1" pin="PWMEN"/>
+<wire x1="215.9" y1="27.94" x2="223.52" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
