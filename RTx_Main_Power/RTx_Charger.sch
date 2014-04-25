@@ -2326,11 +2326,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tl331-q1.pdf"&gt; Data shee
 <wire x1="-9.906" y1="-9.144" x2="-11.684" y2="-9.144" width="0.3048" layer="21"/>
 <wire x1="-11.684" y1="-9.144" x2="-11.684" y2="6.858" width="0.3048" layer="21"/>
 </package>
-<package name="TERMINAL_RELAY">
-<pad name="P$1" x="0" y="0" drill="2.8" diameter="6.4516" thermals="no"/>
-<text x="-2.54" y="3.81" size="2.54" layer="25">&gt;NAME</text>
-</package>
-<package name="TERMINAL_BATTERY">
+<package name="TERMINAL_STUD">
 <pad name="1" x="0" y="0" drill="9.779" diameter="19.05" thermals="no"/>
 <text x="-2.54" y="10.16" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-11.43" size="1.27" layer="27">&gt;VALUE</text>
@@ -2386,6 +2382,11 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tl331-q1.pdf"&gt; Data shee
 <pad name="5" x="-7.62" y="-5.08" drill="1.27"/>
 <text x="-11.43" y="10.16" size="1.27" layer="25">&gt;NAME</text>
 <text x="-11.43" y="-11.43" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="TERMINAL_NO-STUD">
+<pad name="1" x="0" y="0" drill="6.858" diameter="19.05" thermals="no"/>
+<text x="-2.54" y="10.16" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-11.43" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -2556,27 +2557,12 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tl331-q1.pdf"&gt; Data shee
 </device>
 </devices>
 </deviceset>
-<deviceset name="TERMINAL_RELAY">
-<gates>
-<gate name="G$1" symbol="TERMINAL_BATTERY" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TERMINAL_RELAY">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TERMINAL_BATTERY">
 <gates>
 <gate name="G$1" symbol="TERMINAL_BATTERY" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TERMINAL_BATTERY">
+<device name="" package="TERMINAL_STUD">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 </connects>
@@ -2646,6 +2632,29 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tl331-q1.pdf"&gt; Data shee
 </device>
 </devices>
 </deviceset>
+<deviceset name="TERMINAL">
+<gates>
+<gate name="G$1" symbol="TERMINAL_BATTERY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="STUD" package="TERMINAL_STUD">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NO_STUD" package="TERMINAL_NO-STUD">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -2664,10 +2673,10 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tl331-q1.pdf"&gt; Data shee
 <part name="Q1" library="temp_library" deviceset="STW11NM80" device="" value="STW11NM80"/>
 <part name="GND1" library="motorFeedback" deviceset="GND" device=""/>
 <part name="R_CHARGE" library="temp_library" deviceset="TEH70" device="" value="10"/>
-<part name="BAT+_UNSWITCHED" library="temp_library" deviceset="TERMINAL_RELAY" device="" value="TERMINAL"/>
+<part name="BAT+_UNSWITCHED" library="temp_library" deviceset="TERMINAL" device="STUD" value="TERMINAL"/>
 <part name="GND" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
-<part name="E-STOP_SWITCHED" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
-<part name="RELAY2-" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
+<part name="E-STOP_SWITCHED" library="temp_library" deviceset="TERMINAL" device="NO_STUD" value="TERMINAL"/>
+<part name="RELAY2-" library="temp_library" deviceset="TERMINAL" device="NO_STUD" value="TERMINAL"/>
 <part name="CAP+" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
 <part name="R1" library="motorFeedback" deviceset="R-US_" device="R1206" value="10k"/>
 <part name="R2" library="motorFeedback" deviceset="R-US_" device="R1206" value="230k"/>
@@ -2675,10 +2684,10 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tl331-q1.pdf"&gt; Data shee
 <part name="GND2" library="motorFeedback" deviceset="GND" device=""/>
 <part name="GND3" library="motorFeedback" deviceset="GND" device=""/>
 <part name="FUSE" library="temp_library" deviceset="FUSE" device="ATO_FUSEHOLDER" value="ATO_FUSEHOLDER"/>
-<part name="BAT_SWITCHED" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
+<part name="BAT_SWITCHED" library="temp_library" deviceset="TERMINAL" device="NO_STUD" value="TERMINAL"/>
 <part name="E-STOP_PWR" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
-<part name="RELAY1+" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
-<part name="HC_RELAY-" library="temp_library" deviceset="TERMINAL_BATTERY" device="" value="TERMINAL"/>
+<part name="RELAY1+" library="temp_library" deviceset="TERMINAL" device="NO_STUD" value="TERMINAL"/>
+<part name="HC_RELAY-" library="temp_library" deviceset="TERMINAL" device="NO_STUD" value="TERMINAL"/>
 <part name="RELAY" library="temp_library" deviceset="G4W-1114P-US-TV8-HP" device=""/>
 </parts>
 <sheets>
