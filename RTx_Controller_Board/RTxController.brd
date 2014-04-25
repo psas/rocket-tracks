@@ -10,10 +10,10 @@
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="yes"/>
-<layer number="3" name="Route3" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="3" name="Route3" color="14" fill="1" visible="no" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -22,12 +22,12 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -43,7 +43,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -209,16 +209,16 @@
 <wire x1="31.242" y1="29.464" x2="32.004" y2="30.226" width="0" layer="41"/>
 <wire x1="32.004" y1="30.226" x2="33.274" y2="30.226" width="0" layer="41"/>
 <wire x1="33.274" y1="30.226" x2="33.274" y2="30.734" width="0" layer="41"/>
-<text x="120.65" y="75.946" size="0.8128" layer="25">D3</text>
+<text x="120.65" y="75.946" size="0.635" layer="25" font="vector" ratio="20">D3</text>
 <wire x1="41.91" y1="55.118" x2="44.45" y2="55.118" width="0.4064" layer="21"/>
-<text x="54.356" y="15.24" size="3.81" layer="22" rot="MR0">RTx Controller</text>
-<text x="20.066" y="15.24" size="3.81" layer="21">RTx Controller</text>
-<text x="53.848" y="11.938" size="1.9304" layer="22" rot="MR0">Rob Gaskell</text>
-<text x="53.848" y="8.89" size="1.9304" layer="22" rot="MR0">Robin Davis</text>
-<text x="53.848" y="5.588" size="1.9304" layer="22" rot="MR0">Robert Corkran</text>
-<text x="20.32" y="11.684" size="1.9304" layer="21">Rob Gaskell</text>
-<text x="20.32" y="8.382" size="1.9304" layer="21">Robin Davis</text>
-<text x="20.066" y="5.08" size="1.9304" layer="21">Robert Corkran</text>
+<text x="54.356" y="15.24" size="0.635" layer="22" font="vector" ratio="20" rot="MR0">RTx Controller</text>
+<text x="20.066" y="15.24" size="0.635" layer="21" font="vector" ratio="20">RTx Controller</text>
+<text x="53.848" y="11.938" size="0.635" layer="22" font="vector" ratio="20" rot="MR0">Rob Gaskell</text>
+<text x="53.848" y="8.89" size="0.635" layer="22" font="vector" ratio="20" rot="MR0">Robin Davis</text>
+<text x="53.848" y="5.588" size="0.635" layer="22" font="vector" ratio="20" rot="MR0">Robert Corkran</text>
+<text x="20.32" y="11.684" size="0.635" layer="21" font="vector" ratio="20">Rob Gaskell</text>
+<text x="20.32" y="8.382" size="0.635" layer="21" font="vector" ratio="20">Robin Davis</text>
+<text x="20.066" y="5.08" size="0.635" layer="21" font="vector" ratio="20">Robert Corkran</text>
 </plain>
 <libraries>
 <library name="motorFeedback">
@@ -3615,102 +3615,102 @@ einem neuen Namen ab.</description>
 </autorouter>
 <elements>
 <element name="ADC1" library="motorFeedback" package="MSOP-10" value="AD7685RM-10" x="34.798" y="46.99" smashed="yes">
-<attribute name="NAME" x="33.4742" y="44.4328" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="33.4742" y="44.4328" size="0.635" layer="25" font="vector" ratio="20"/>
 </element>
 <element name="ADC2" library="motorFeedback" package="MSOP-10" value="AD7685RM-10" x="34.798" y="39.624" smashed="yes">
 <attribute name="VALUE" x="33.398" y="41.224" size="0.5" layer="27" font="vector"/>
-<attribute name="NAME" x="33.398" y="37.016" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="33.398" y="37.016" size="0.635" layer="25" font="vector" ratio="20"/>
 </element>
 <element name="ADC3" library="motorFeedback" package="MSOP-10" value="AD7685RM-10" x="34.798" y="30.988" smashed="yes">
 <attribute name="VALUE" x="33.398" y="32.588" size="0.5" layer="27" font="vector"/>
-<attribute name="NAME" x="33.4742" y="28.507" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="33.4742" y="28.507" size="0.635" layer="25" font="vector" ratio="20"/>
 </element>
 <element name="C1" library="motorFeedback" package="C1206" value="22u" x="34.6456" y="49.53" smashed="yes" rot="R180">
-<attribute name="NAME" x="35.9156" y="51.435" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="35.9156" y="51.435" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="35.9156" y="51.943" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C2" library="motorFeedback" package="C1206" value="22u" x="34.6456" y="42.164" smashed="yes" rot="R180">
-<attribute name="NAME" x="36.6776" y="44.069" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="36.6776" y="44.069" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="35.9156" y="44.577" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C3" library="motorFeedback" package="C1206" value="22u" x="34.6456" y="33.528" smashed="yes" rot="R180">
-<attribute name="NAME" x="35.9156" y="32.385" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="35.9156" y="32.385" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="35.9156" y="35.941" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C4" library="motorFeedback" package="C0402" value="0.1u" x="31.5722" y="48.5394" smashed="yes" rot="R90">
-<attribute name="NAME" x="30.9372" y="48.8442" size="0.8128" layer="25" ratio="12" rot="R90"/>
+<attribute name="NAME" x="30.9372" y="48.8442" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="33.4772" y="47.9044" size="1.016" layer="27" ratio="12" rot="R90"/>
 </element>
 <element name="C5" library="motorFeedback" package="C0402" value="0.1u" x="38.354" y="48.768" smashed="yes">
-<attribute name="NAME" x="38.608" y="49.4284" size="0.8128" layer="25" ratio="12"/>
+<attribute name="NAME" x="38.608" y="49.4284" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="37.719" y="46.863" size="1.016" layer="27" ratio="12"/>
 </element>
 <element name="C6" library="motorFeedback" package="C0402" value="0.1u" x="31.5976" y="41.2242" smashed="yes" rot="R90">
-<attribute name="NAME" x="31.1658" y="42.3672" size="0.635" layer="25" ratio="12" rot="R90"/>
+<attribute name="NAME" x="31.1658" y="42.3672" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="33.5026" y="40.5892" size="1.016" layer="27" ratio="12" rot="R90"/>
 </element>
 <element name="C7" library="motorFeedback" package="C0402" value="0.1u" x="38.354" y="41.402" smashed="yes">
-<attribute name="NAME" x="38.4302" y="42.0624" size="0.8128" layer="25" ratio="12"/>
+<attribute name="NAME" x="38.4302" y="42.0624" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="37.719" y="39.497" size="1.016" layer="27" ratio="12"/>
 </element>
 <element name="C8" library="motorFeedback" package="C0402" value="0.1u" x="31.5976" y="32.5882" smashed="yes" rot="R90">
-<attribute name="NAME" x="30.9626" y="32.6136" size="0.8128" layer="25" ratio="12" rot="R90"/>
+<attribute name="NAME" x="30.9626" y="32.6136" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="33.5026" y="31.9532" size="1.016" layer="27" ratio="12" rot="R90"/>
 </element>
 <element name="C9" library="motorFeedback" package="C0402" value="0.1u" x="38.354" y="32.766" smashed="yes">
-<attribute name="NAME" x="38.735" y="31.242" size="0.8128" layer="25" ratio="12"/>
+<attribute name="NAME" x="38.735" y="31.242" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="37.719" y="30.861" size="1.016" layer="27" ratio="12"/>
 </element>
 <element name="R1" library="motorFeedback" package="R0402" value="680" x="16.51" y="48.6918" smashed="yes">
-<attribute name="NAME" x="15.875" y="49.4538" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="15.875" y="49.4538" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="15.875" y="46.6598" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="R2" library="motorFeedback" package="R0402" value="2.2k" x="21.59" y="48.6918" smashed="yes">
-<attribute name="NAME" x="20.955" y="49.4538" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="20.955" y="49.4538" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="20.955" y="46.6598" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="R3" library="motorFeedback" package="R0402" value="1.2k" x="24.13" y="48.6918" smashed="yes">
-<attribute name="NAME" x="22.987" y="49.4538" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="22.987" y="49.4538" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="23.495" y="46.6598" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="R10" library="motorFeedback" package="R0402" value="10k" x="30.8356" y="57.2516" smashed="yes">
-<attribute name="NAME" x="29.9466" y="55.7276" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="29.9466" y="55.7276" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="30.2006" y="55.2196" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="C23" library="motorFeedback" package="C0402" value="0.1u" x="26.162" y="57.912" smashed="yes" rot="R90">
-<attribute name="NAME" x="26.5684" y="54.737" size="0.8128" layer="25" ratio="12" rot="R90"/>
+<attribute name="NAME" x="26.5684" y="54.737" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="28.067" y="57.277" size="1.016" layer="27" ratio="12" rot="R90"/>
 </element>
 <element name="C24" library="motorFeedback" package="C1206" value="10u" x="15.494" y="59.944" smashed="yes" rot="R90">
-<attribute name="NAME" x="15.4686" y="62.738" size="0.8128" layer="25" rot="R90"/>
+<attribute name="NAME" x="15.4686" y="62.738" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="17.907" y="58.674" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C25" library="motorFeedback" package="C0402" value="0.1u" x="17.018" y="59.182" smashed="yes" rot="R90">
-<attribute name="NAME" x="17.5006" y="60.6806" size="0.8128" layer="25" ratio="12" rot="R90"/>
+<attribute name="NAME" x="17.5006" y="60.6806" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="18.923" y="58.547" size="1.016" layer="27" ratio="12" rot="R90"/>
 </element>
 <element name="C10" library="motorFeedback" package="C1206" value="10u" x="19.177" y="47.371" smashed="yes" rot="R270">
-<attribute name="NAME" x="17.272" y="47.117" size="0.8128" layer="25" rot="R270"/>
+<attribute name="NAME" x="17.272" y="47.117" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="16.764" y="48.641" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C11" library="motorFeedback" package="C1206" value="10u" x="23.114" y="45.72" smashed="yes" rot="R270">
-<attribute name="NAME" x="21.209" y="46.482" size="0.8128" layer="25" rot="R270"/>
+<attribute name="NAME" x="21.209" y="46.482" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="20.701" y="46.99" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C12" library="motorFeedback" package="C0805" value="1u" x="26.416" y="49.4538" smashed="yes" rot="R90">
-<attribute name="NAME" x="26.8732" y="52.07" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="26.8732" y="52.07" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="28.702" y="48.5648" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C13" library="motorFeedback" package="C0805" value="0.47u" x="28.194" y="49.4538" smashed="yes" rot="R90">
-<attribute name="NAME" x="29.4132" y="52.07" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="29.4132" y="52.07" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="30.48" y="48.5648" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R4" library="motorFeedback" package="R0402" value="680" x="15.24" y="37.846" smashed="yes">
-<attribute name="NAME" x="14.605" y="38.608" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="14.605" y="38.608" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="14.605" y="35.814" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="R5" library="motorFeedback" package="R0402" value="2.2k" x="20.32" y="37.846" smashed="yes">
-<attribute name="NAME" x="19.685" y="38.608" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="19.685" y="38.608" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="19.685" y="35.814" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="R6" library="motorFeedback" package="R0402" value="1.2k" x="22.86" y="37.846" smashed="yes">
@@ -3718,19 +3718,19 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="22.225" y="35.814" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="C14" library="motorFeedback" package="C1206" value="10u" x="17.78" y="39.116" smashed="yes" rot="R90">
-<attribute name="NAME" x="18.796" y="42.291" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="18.796" y="42.291" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="20.193" y="37.846" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C15" library="motorFeedback" package="C1206" value="10u" x="23.114" y="40.894" smashed="yes" rot="R90">
-<attribute name="NAME" x="21.971" y="39.624" size="0.8128" layer="25" rot="R90"/>
+<attribute name="NAME" x="21.971" y="39.624" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="25.527" y="39.624" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C16" library="motorFeedback" package="C0805" value="1u" x="25.146" y="37.084" smashed="yes" rot="R270">
-<attribute name="NAME" x="23.622" y="36.957" size="0.635" layer="25" rot="R270"/>
+<attribute name="NAME" x="23.622" y="36.957" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="22.86" y="37.973" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C17" library="motorFeedback" package="C0805" value="0.47u" x="26.924" y="37.084" smashed="yes" rot="R270">
-<attribute name="NAME" x="27.94" y="37.973" size="0.8128" layer="25" rot="R270"/>
+<attribute name="NAME" x="27.94" y="37.973" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="24.638" y="37.973" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R7" library="motorFeedback" package="R0402" value="680" x="16.51" y="32.766" smashed="yes">
@@ -3746,259 +3746,259 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="23.495" y="30.734" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="C18" library="motorFeedback" package="C1206" value="10u" x="19.05" y="31.496" smashed="yes" rot="R270">
-<attribute name="NAME" x="18.034" y="28.067" size="0.8128" layer="25"/>
+<attribute name="NAME" x="18.034" y="28.067" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="16.637" y="32.766" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C19" library="motorFeedback" package="C1206" value="10u" x="23.114" y="29.718" smashed="yes" rot="R270">
-<attribute name="NAME" x="21.209" y="30.734" size="0.8128" layer="25" rot="R270"/>
+<attribute name="NAME" x="21.209" y="30.734" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="20.701" y="30.988" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C20" library="motorFeedback" package="C0805" value="1u" x="26.416" y="33.528" smashed="yes" rot="R90">
-<attribute name="NAME" x="25.4762" y="33.5026" size="0.635" layer="25" rot="R90"/>
+<attribute name="NAME" x="25.4762" y="33.5026" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="28.702" y="32.639" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C21" library="motorFeedback" package="C0805" value="0.47u" x="28.194" y="33.528" smashed="yes" rot="R90">
-<attribute name="NAME" x="29.718" y="33.401" size="0.635" layer="25" rot="R90"/>
+<attribute name="NAME" x="29.718" y="33.401" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="30.48" y="32.639" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C28" library="motorFeedback" package="C0402" value="0.1u" x="78.867" y="20.066" smashed="yes" rot="R90">
-<attribute name="NAME" x="79.375" y="16.637" size="0.8128" layer="25" ratio="12" rot="R90"/>
+<attribute name="NAME" x="79.375" y="16.637" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="80.772" y="19.431" size="1.016" layer="27" ratio="12" rot="R90"/>
 </element>
 <element name="C29" library="motorFeedback" package="C0402" value="0.1u" x="79.121" y="34.544" smashed="yes" rot="R90">
-<attribute name="NAME" x="79.629" y="31.115" size="0.8128" layer="25" ratio="12" rot="R90"/>
+<attribute name="NAME" x="79.629" y="31.115" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="81.026" y="33.909" size="1.016" layer="27" ratio="12" rot="R90"/>
 </element>
 <element name="C26" library="motorFeedback" package="C1206" value="22u" x="80.772" y="20.828" smashed="yes" rot="R90">
-<attribute name="NAME" x="81.153" y="16.256" size="0.8128" layer="25" rot="R90"/>
+<attribute name="NAME" x="81.153" y="16.256" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="83.185" y="19.558" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C27" library="motorFeedback" package="C1206" value="22u" x="81.28" y="35.306" smashed="yes" rot="R90">
-<attribute name="NAME" x="82.296" y="32.639" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="82.296" y="32.639" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="83.693" y="34.036" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C30" library="motorFeedback" package="PANASONIC_B" value="10u" x="101.092" y="35.306" smashed="yes" rot="R180">
-<attribute name="NAME" x="97.042" y="37.456" size="0.8128" layer="25" rot="R270"/>
+<attribute name="NAME" x="99.958" y="37.606" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="103.242" y="38.581" size="1.016" layer="27" rot="R180"/>
 </element>
 <element name="C22" library="motorFeedback" package="C0603" value="0.33u" x="33.528" y="56.896" smashed="yes" rot="R270">
-<attribute name="NAME" x="33.274" y="55.245" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
+<attribute name="NAME" x="33.274" y="55.245" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="31.496" y="57.785" size="1.016" layer="27" font="vector" ratio="12" rot="R270"/>
 </element>
 <element name="C31" library="motorFeedback" package="C0402" value="0.1u" x="97.536" y="36.5506" smashed="yes" rot="R270">
-<attribute name="NAME" x="97.028" y="39.9796" size="0.8128" layer="25" ratio="12" rot="R270"/>
+<attribute name="NAME" x="97.028" y="39.9796" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="95.631" y="37.1856" size="1.016" layer="27" ratio="12" rot="R270"/>
 </element>
 <element name="VR2" library="motorFeedback" package="PFM-7" value="LMZ14202HTZ" x="121.412" y="18.288" smashed="yes" rot="R180">
-<attribute name="NAME" x="114.808" y="23.2156" size="0.8128" layer="25" rot="R270"/>
+<attribute name="NAME" x="114.808" y="23.2156" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="126.746" y="23.2156" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R11" library="motorFeedback" package="R0603" value="34k" x="117.348" y="30.48" smashed="yes" rot="R270">
-<attribute name="NAME" x="116.967" y="34.925" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
+<attribute name="NAME" x="116.967" y="34.925" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="115.316" y="31.369" size="1.016" layer="27" font="vector" ratio="12" rot="R270"/>
 </element>
 <element name="R12" library="motorFeedback" package="R0603" value="249k" x="124.968" y="28.702" smashed="yes" rot="R180">
-<attribute name="NAME" x="129.413" y="29.083" size="0.8128" layer="25" font="vector" ratio="12" rot="R180"/>
+<attribute name="NAME" x="129.413" y="29.083" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="125.857" y="30.734" size="1.016" layer="27" font="vector" ratio="12" rot="R180"/>
 </element>
 <element name="R13" library="motorFeedback" package="R0603" value="150k" x="124.968" y="31.242" smashed="yes" rot="R180">
-<attribute name="NAME" x="129.413" y="31.623" size="0.8128" layer="25" font="vector" ratio="12" rot="R180"/>
+<attribute name="NAME" x="129.413" y="31.623" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="125.857" y="33.274" size="1.016" layer="27" font="vector" ratio="12" rot="R180"/>
 </element>
 <element name="R14" library="motorFeedback" package="R0603" value="10k" x="121.92" y="31.496" smashed="yes" rot="R270">
-<attribute name="NAME" x="121.539" y="35.941" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
+<attribute name="NAME" x="121.539" y="35.941" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="119.888" y="32.385" size="1.016" layer="27" font="vector" ratio="12" rot="R270"/>
 </element>
 <element name="R15" library="motorFeedback" package="R0603" value="2.43k" x="114.6048" y="31.2928" smashed="yes">
-<attribute name="NAME" x="113.2078" y="32.4358" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="113.2078" y="32.4358" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="113.7158" y="29.2608" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="C32" library="motorFeedback" package="C0402" value="0.022u" x="118.11" y="28.448" smashed="yes" rot="R180">
-<attribute name="NAME" x="116.459" y="28.956" size="0.8128" layer="25" ratio="12" rot="R180"/>
+<attribute name="NAME" x="116.459" y="28.956" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="118.745" y="30.353" size="1.016" layer="27" ratio="12" rot="R180"/>
 </element>
 <element name="C33" library="motorFeedback" package="C0402" value="4700p" x="120.142" y="29.21" smashed="yes" rot="R270">
-<attribute name="NAME" x="119.634" y="33.401" size="0.8128" layer="25" ratio="12" rot="R270"/>
+<attribute name="NAME" x="119.634" y="33.401" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="118.237" y="29.845" size="1.016" layer="27" ratio="12" rot="R270"/>
 </element>
 <element name="C34" library="motorFeedback" package="PANASONIC_B" value="22u 50V" x="130.556" y="24.892" smashed="yes" rot="R270">
-<attribute name="NAME" x="132.856" y="27.042" size="0.8128" layer="25" rot="R270"/>
+<attribute name="NAME" x="132.856" y="27.042" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="127.281" y="27.042" size="1.016" layer="27" rot="R270"/>
 </element>
 <element name="C35" library="motorFeedback" package="PANASONIC_B" value="47u 16V" x="111.76" y="24.892" smashed="yes" rot="R270">
-<attribute name="NAME" x="108.4212" y="27.042" size="0.8128" layer="25" rot="R270"/>
+<attribute name="NAME" x="108.4212" y="27.042" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="108.485" y="27.042" size="1.016" layer="27" rot="R270"/>
 </element>
 <element name="OPAMP1" library="motorFeedback" package="SOIC8" value="AD8616R-8" x="27.94" y="43.307" smashed="yes" rot="R180">
-<attribute name="NAME" x="24.384" y="44.577" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
+<attribute name="NAME" x="24.384" y="44.577" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="OPAMP2" library="motorFeedback" package="SOIC8" value="AD8616R-8" x="27.94" y="27.305" smashed="yes" rot="R180">
-<attribute name="NAME" x="24.384" y="29.083" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
+<attribute name="NAME" x="24.384" y="29.083" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="R17" library="motorFeedback" package="R0402" value="680" x="15.24" y="21.844" smashed="yes">
-<attribute name="NAME" x="14.605" y="22.606" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="14.605" y="22.606" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="14.605" y="19.812" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="R18" library="motorFeedback" package="R0402" value="2.2k" x="20.32" y="21.844" smashed="yes">
-<attribute name="NAME" x="19.685" y="22.606" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="19.685" y="22.606" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="19.685" y="19.812" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="R19" library="motorFeedback" package="R0402" value="1.2k" x="22.86" y="21.844" smashed="yes">
-<attribute name="NAME" x="22.225" y="22.606" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="22.225" y="22.606" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="22.225" y="19.812" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="C36" library="motorFeedback" package="C1206" value="10u" x="17.78" y="23.114" smashed="yes" rot="R90">
-<attribute name="NAME" x="16.637" y="21.844" size="0.8128" layer="25" rot="R90"/>
+<attribute name="NAME" x="16.637" y="21.844" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="20.193" y="21.844" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C37" library="motorFeedback" package="C1206" value="10u" x="23.114" y="24.892" smashed="yes" rot="R90">
-<attribute name="NAME" x="21.971" y="24.13" size="0.8128" layer="25" rot="R90"/>
+<attribute name="NAME" x="21.971" y="24.13" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="25.527" y="23.622" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C38" library="motorFeedback" package="C0805" value="1u" x="25.146" y="21.082" smashed="yes" rot="R270">
-<attribute name="NAME" x="26.162" y="21.971" size="0.8128" layer="25" rot="R270"/>
+<attribute name="NAME" x="24.003" y="20.574" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="22.86" y="21.971" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C39" library="motorFeedback" package="C0805" value="0.47u" x="26.924" y="21.082" smashed="yes" rot="R270">
-<attribute name="NAME" x="27.94" y="21.971" size="0.8128" layer="25" rot="R270"/>
+<attribute name="NAME" x="27.94" y="21.971" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="24.638" y="21.971" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="ADC4" library="motorFeedback" package="MSOP-10" value="AD7685RM-10" x="34.798" y="23.622" smashed="yes">
 <attribute name="VALUE" x="33.398" y="25.222" size="0.5" layer="27" font="vector"/>
-<attribute name="NAME" x="33.398" y="21.014" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="33.398" y="21.014" size="0.635" layer="25" font="vector" ratio="20"/>
 </element>
 <element name="C40" library="motorFeedback" package="C1206" value="22u" x="34.6456" y="26.162" smashed="yes" rot="R180">
-<attribute name="NAME" x="36.9316" y="28.067" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="36.9316" y="28.067" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="35.9156" y="28.575" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C41" library="motorFeedback" package="C0402" value="0.1u" x="31.5976" y="25.1968" smashed="yes" rot="R90">
-<attribute name="NAME" x="30.8356" y="24.5618" size="0.8128" layer="25" ratio="12" rot="R90"/>
+<attribute name="NAME" x="30.8356" y="24.5618" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="33.5026" y="24.5618" size="1.016" layer="27" ratio="12" rot="R90"/>
 </element>
 <element name="C42" library="motorFeedback" package="C0402" value="0.1u" x="38.354" y="25.4" smashed="yes">
-<attribute name="NAME" x="39.497" y="25.146" size="0.8128" layer="25" ratio="12"/>
+<attribute name="NAME" x="39.497" y="25.146" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="37.719" y="23.495" size="1.016" layer="27" ratio="12"/>
 </element>
 <element name="R20" library="motorFeedback" package="R0402" value="33" x="40.132" y="23.114" smashed="yes">
-<attribute name="NAME" x="39.243" y="21.59" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="39.243" y="21.59" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="39.497" y="21.082" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="REF1" library="motorFeedback" package="SOIC8" value="ADR435RM-8" x="21.59" y="57.912" smashed="yes" rot="R270">
-<attribute name="NAME" x="20.2692" y="60.7314" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="20.2692" y="60.7314" size="0.635" layer="25" font="vector" ratio="20"/>
 </element>
 <element name="X4" library="con-cypressindustries" package="32005-301" value="MINI-USB-32005-301" x="71.628" y="75.438" smashed="yes" rot="R270">
 <attribute name="OC_NEWARK" value="unknown" x="71.628" y="75.438" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="71.628" y="75.438" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="71.628" y="75.438" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="71.628" y="75.438" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="65.151" y="75.057" size="1.27" layer="25"/>
+<attribute name="NAME" x="65.151" y="75.057" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="64.643" y="79.883" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R21" library="rcl" package="R0402" value="22" x="71.6026" y="60.452" smashed="yes" rot="R270">
-<attribute name="NAME" x="70.2056" y="61.595" size="0.8128" layer="25" rot="R270"/>
+<attribute name="NAME" x="70.2056" y="61.595" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="69.6976" y="61.087" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R22" library="rcl" package="R0402" value="22" x="72.39" y="57.912" smashed="yes" rot="R270">
-<attribute name="NAME" x="71.1708" y="58.7756" size="0.635" layer="25" rot="R270"/>
+<attribute name="NAME" x="71.1708" y="58.7756" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="70.485" y="58.547" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="X8" library="motorFeedback" package="MAGJACK-RJ45" value="0826-1X1T-GJ-F" x="150.114" y="70.612" smashed="yes" rot="MR90">
-<attribute name="NAME" x="159.893" y="60.325" size="0.8128" layer="22" rot="MR90"/>
+<attribute name="NAME" x="159.893" y="60.325" size="0.635" layer="22" font="vector" ratio="20" rot="MR90"/>
 </element>
 <element name="U1" library="motorFeedback" package="LQFP-100" value="STM32F407ZXT" x="64.77" y="48.26" smashed="yes">
-<attribute name="NAME" x="56.563" y="54.848" size="0.8128" layer="25"/>
+<attribute name="NAME" x="56.563" y="54.848" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="59.635" y="47.165" size="1.27" layer="27"/>
 </element>
 <element name="C78" library="motorFeedback" package="C0402" value="0.1u" x="54.356" y="50.038" smashed="yes" rot="R180">
-<attribute name="NAME" x="52.832" y="50.546" size="0.4064" layer="25" ratio="12" rot="R270"/>
+<attribute name="NAME" x="52.832" y="50.546" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="54.991" y="51.943" size="1.016" layer="27" ratio="12" rot="R180"/>
 </element>
 <element name="C79" library="motorFeedback" package="C0402" value="0.1u" x="58.928" y="58.674" smashed="yes" rot="R90">
-<attribute name="NAME" x="60.452" y="57.785" size="0.8128" layer="25" ratio="12" rot="R90"/>
+<attribute name="NAME" x="60.452" y="57.785" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="60.833" y="58.039" size="1.016" layer="27" ratio="12" rot="R90"/>
 </element>
 <element name="C80" library="motorFeedback" package="C0402" value="0.1u" x="54.356" y="45.466" smashed="yes" rot="R180">
-<attribute name="NAME" x="52.8574" y="45.9994" size="0.4064" layer="25" ratio="12" rot="R270"/>
+<attribute name="NAME" x="52.8574" y="45.9994" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="54.991" y="47.371" size="1.016" layer="27" ratio="12" rot="R180"/>
 </element>
 <element name="C81" library="motorFeedback" package="C0402" value="0.1u" x="57.658" y="38.354" smashed="yes" rot="R270">
-<attribute name="NAME" x="57.2262" y="39.5224" size="0.4064" layer="25" ratio="12"/>
+<attribute name="NAME" x="57.2262" y="39.5224" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="55.753" y="38.989" size="1.016" layer="27" ratio="12" rot="R270"/>
 </element>
 <element name="C82" library="motorFeedback" package="C0402" value="0.1u" x="71.628" y="37.846" smashed="yes" rot="R270">
-<attribute name="NAME" x="70.9168" y="35.9918" size="0.635" layer="25" ratio="12"/>
+<attribute name="NAME" x="70.9168" y="35.9918" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="69.723" y="38.481" size="1.016" layer="27" ratio="12" rot="R270"/>
 </element>
 <element name="C83" library="motorFeedback" package="C0402" value="0.1u" x="73.914" y="55.88" smashed="yes" rot="R90">
-<attribute name="NAME" x="74.8792" y="56.9722" size="0.635" layer="25" ratio="12" rot="R90"/>
+<attribute name="NAME" x="74.8792" y="56.9722" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="75.819" y="55.245" size="1.016" layer="27" ratio="12" rot="R90"/>
 </element>
 <element name="C84" library="motorFeedback" package="C0402" value="0.1u" x="56.642" y="38.354" smashed="yes" rot="R270">
-<attribute name="NAME" x="56.1086" y="39.4716" size="0.4064" layer="25" ratio="12"/>
+<attribute name="NAME" x="56.1086" y="39.4716" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="54.737" y="38.989" size="1.016" layer="27" ratio="12" rot="R270"/>
 </element>
 <element name="C85" library="motorFeedback" package="C0603" value="4.7u" x="57.404" y="58.928" smashed="yes" rot="R90">
-<attribute name="NAME" x="56.642" y="58.801" size="0.8128" layer="25" font="vector" ratio="12" rot="R90"/>
+<attribute name="NAME" x="56.642" y="58.801" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="59.436" y="58.039" size="1.016" layer="27" font="vector" ratio="12" rot="R90"/>
 </element>
 <element name="C86" library="motorFeedback" package="C0402" value="2.2u" x="75.184" y="55.372" smashed="yes" rot="R90">
-<attribute name="NAME" x="76.3016" y="56.4642" size="0.635" layer="25" ratio="12" rot="R90"/>
+<attribute name="NAME" x="76.3016" y="56.4642" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="77.089" y="54.737" size="1.016" layer="27" ratio="12" rot="R90"/>
 </element>
 <element name="C87" library="motorFeedback" package="C0402" value="2.2u" x="69.596" y="38.608" smashed="yes" rot="R180">
-<attribute name="NAME" x="70.0278" y="37.9222" size="0.635" layer="25" ratio="12" rot="R180"/>
+<attribute name="NAME" x="70.0278" y="37.9222" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="70.231" y="40.513" size="1.016" layer="27" ratio="12" rot="R180"/>
 </element>
 <element name="C88" library="motorFeedback" package="C0402" value="0.1u" x="54.356" y="42.418" smashed="yes" rot="R180">
-<attribute name="NAME" x="55.5244" y="42.926" size="0.4064" layer="25" ratio="12" rot="R270"/>
+<attribute name="NAME" x="55.5244" y="42.926" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="54.991" y="44.323" size="1.016" layer="27" ratio="12" rot="R180"/>
 </element>
 <element name="C89" library="motorFeedback" package="C0402" value="1.0u" x="54.356" y="49.022" smashed="yes" rot="R180">
-<attribute name="NAME" x="55.499" y="49.4792" size="0.4064" layer="25" ratio="12" rot="R270"/>
+<attribute name="NAME" x="55.499" y="49.4792" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="54.991" y="50.927" size="1.016" layer="27" ratio="12" rot="R180"/>
 </element>
 <element name="C90" library="motorFeedback" package="C0402" value="0.1u" x="54.356" y="43.434" smashed="yes" rot="R180">
-<attribute name="NAME" x="52.832" y="43.9674" size="0.4064" layer="25" ratio="12" rot="R270"/>
+<attribute name="NAME" x="52.832" y="43.9674" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="54.991" y="45.339" size="1.016" layer="27" ratio="12" rot="R180"/>
 </element>
 <element name="C91" library="motorFeedback" package="C0402" value="1.0u" x="54.356" y="44.45" smashed="yes" rot="R180">
-<attribute name="NAME" x="55.5244" y="44.9834" size="0.4064" layer="25" ratio="12" rot="R270"/>
+<attribute name="NAME" x="55.5244" y="44.9834" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="54.991" y="46.355" size="1.016" layer="27" ratio="12" rot="R180"/>
 </element>
 <element name="C92" library="motorFeedback" package="C0402" value="NU" x="90.932" y="64.77" smashed="yes" rot="R270">
-<attribute name="NAME" x="89.408" y="65.659" size="0.8128" layer="25" ratio="12" rot="R270"/>
+<attribute name="NAME" x="89.408" y="65.659" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="89.027" y="65.405" size="1.016" layer="27" ratio="12" rot="R270"/>
 </element>
 <element name="R36" library="motorFeedback" package="R0603" value="0" x="52.578" y="51.562" smashed="yes">
-<attribute name="NAME" x="50.927" y="50.165" size="0.635" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="50.927" y="50.165" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="51.689" y="49.53" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="R38" library="motorFeedback" package="R0603" value="10k" x="62.484" y="57.912" smashed="yes">
-<attribute name="NAME" x="61.595" y="58.801" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="61.595" y="58.801" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="61.595" y="55.88" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="SW1" library="motorFeedback" package="COM08720" value="COM08720" x="97.028" y="66.04" smashed="yes" rot="R180">
-<attribute name="NAME" x="98.425" y="70.104" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="98.425" y="70.104" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="100.203" y="63.5" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C93" library="motorFeedback" package="C0603" value="0.1u" x="69.088" y="21.082" smashed="yes">
-<attribute name="NAME" x="68.199" y="19.558" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="68.199" y="19.558" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="68.199" y="19.05" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="C94" library="motorFeedback" package="C0603" value="0.1u" x="65.024" y="21.082" smashed="yes">
-<attribute name="NAME" x="63.881" y="19.558" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="63.881" y="19.558" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="64.135" y="19.05" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="C95" library="motorFeedback" package="C0603" value="0.1u" x="60.96" y="21.082" smashed="yes" rot="R180">
-<attribute name="NAME" x="61.849" y="20.32" size="0.8128" layer="25" font="vector" ratio="12" rot="R180"/>
+<attribute name="NAME" x="61.849" y="20.32" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="61.849" y="23.114" size="1.016" layer="27" font="vector" ratio="12" rot="R180"/>
 </element>
 <element name="C96" library="motorFeedback" package="C0603" value="0.1u" x="56.642" y="21.082" smashed="yes" rot="R180">
-<attribute name="NAME" x="57.531" y="20.32" size="0.8128" layer="25" font="vector" ratio="12" rot="R180"/>
+<attribute name="NAME" x="57.531" y="20.32" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="57.531" y="23.114" size="1.016" layer="27" font="vector" ratio="12" rot="R180"/>
 </element>
 <element name="C101" library="motorFeedback" package="C0603" value="0.1u" x="35.052" y="74.422" smashed="yes">
-<attribute name="NAME" x="33.655" y="75.184" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="33.655" y="75.184" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="34.163" y="72.39" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="C102" library="motorFeedback" package="C0603" value="0.1u" x="30.48" y="73.152" smashed="yes">
@@ -4046,321 +4046,321 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="90.551" y="70.612" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="R50" library="motorFeedback" package="R0603" value="200" x="90.678" y="70.104" smashed="yes" rot="R270">
-<attribute name="NAME" x="91.567" y="70.993" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
+<attribute name="NAME" x="91.567" y="70.993" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="88.646" y="70.993" size="1.016" layer="27" font="vector" ratio="12" rot="R270"/>
 </element>
 <element name="POE" library="motorFeedback" package="CHB75W" value="CHB75W" x="121.92" y="27.686" smashed="yes" rot="MR270"/>
 <element name="R54" library="pot" package="3223W" value="10k" x="118.364" y="51.816" smashed="yes">
-<attribute name="NAME" x="116.7765" y="54.0385" size="0.8128" layer="25"/>
+<attribute name="NAME" x="116.7765" y="54.0385" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="116.459" y="48.3235" size="1.27" layer="27"/>
 </element>
 <element name="VR3" library="motorFeedback" package="PG-TO252-5-11" value="TL751M08QKVURQ1" x="89.154" y="7.874" smashed="yes" rot="R270">
 <attribute name="VALUE" x="86.0298" y="11.3792" size="1.016" layer="27" font="vector"/>
-<attribute name="NAME" x="87.2998" y="3.0988" size="1.27" layer="25" font="vector"/>
+<attribute name="NAME" x="87.2998" y="3.0988" size="0.635" layer="25" font="vector" ratio="20"/>
 </element>
 <element name="C125" library="motorFeedback" package="PANASONIC_B" value="10u" x="87.63" y="15.24" smashed="yes" rot="R180">
-<attribute name="NAME" x="92.216" y="17.136" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="92.216" y="17.136" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="89.78" y="18.515" size="1.016" layer="27" rot="R180"/>
 </element>
 <element name="C126" library="motorFeedback" package="C0402" value="0.1u" x="85.344" y="11.938" smashed="yes" rot="R180">
-<attribute name="NAME" x="83.693" y="12.192" size="0.8128" layer="25" ratio="12" rot="R180"/>
+<attribute name="NAME" x="83.693" y="12.192" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="85.979" y="13.843" size="1.016" layer="27" ratio="12" rot="R180"/>
 </element>
 <element name="R37" library="motorFeedback" package="R0603" value="200" x="87.376" y="70.104" smashed="yes" rot="R270">
-<attribute name="NAME" x="88.265" y="70.993" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
+<attribute name="NAME" x="88.265" y="70.993" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="85.344" y="70.993" size="1.016" layer="27" font="vector" ratio="12" rot="R270"/>
 </element>
 <element name="R39" library="motorFeedback" package="R0603" value="200" x="85.09" y="70.104" smashed="yes" rot="R270">
-<attribute name="NAME" x="83.439" y="71.247" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
+<attribute name="NAME" x="83.439" y="71.247" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="83.058" y="70.993" size="1.016" layer="27" font="vector" ratio="12" rot="R270"/>
 </element>
 <element name="R40" library="motorFeedback" package="R0603" value="200" x="81.788" y="70.104" smashed="yes" rot="R270">
-<attribute name="NAME" x="80.137" y="71.247" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
+<attribute name="NAME" x="80.137" y="71.247" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="79.756" y="70.993" size="1.016" layer="27" font="vector" ratio="12" rot="R270"/>
 </element>
 <element name="R41" library="motorFeedback" package="R0603" value="200" x="57.15" y="70.866" smashed="yes" rot="R270">
-<attribute name="NAME" x="58.039" y="72.009" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
+<attribute name="NAME" x="58.039" y="72.009" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="55.118" y="71.755" size="1.016" layer="27" font="vector" ratio="12" rot="R270"/>
 </element>
 <element name="R42" library="motorFeedback" package="R0603" value="200" x="53.086" y="70.866" smashed="yes" rot="R270">
-<attribute name="NAME" x="53.975" y="72.009" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
+<attribute name="NAME" x="53.975" y="72.009" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="51.054" y="71.755" size="1.016" layer="27" font="vector" ratio="12" rot="R270"/>
 </element>
 <element name="R43" library="motorFeedback" package="R0603" value="200" x="50.292" y="70.866" smashed="yes" rot="R270">
-<attribute name="NAME" x="48.641" y="72.009" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
+<attribute name="NAME" x="48.641" y="72.009" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="48.26" y="71.755" size="1.016" layer="27" font="vector" ratio="12" rot="R270"/>
 </element>
 <element name="R44" library="motorFeedback" package="R0603" value="200" x="46.482" y="70.866" smashed="yes" rot="R270">
-<attribute name="NAME" x="44.831" y="72.009" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
+<attribute name="NAME" x="44.831" y="72.009" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="44.45" y="71.755" size="1.016" layer="27" font="vector" ratio="12" rot="R270"/>
 </element>
 <element name="R45" library="motorFeedback" package="R0603" value="200" x="57.15" y="24.13" smashed="yes" rot="R90">
-<attribute name="NAME" x="56.261" y="23.241" size="0.8128" layer="25" font="vector" ratio="12" rot="R90"/>
+<attribute name="NAME" x="56.261" y="23.241" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="59.182" y="23.241" size="1.016" layer="27" font="vector" ratio="12" rot="R90"/>
 </element>
 <element name="R46" library="motorFeedback" package="R0603" value="200" x="61.468" y="24.13" smashed="yes" rot="R90">
-<attribute name="NAME" x="60.579" y="23.241" size="0.8128" layer="25" font="vector" ratio="12" rot="R90"/>
+<attribute name="NAME" x="60.579" y="23.241" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="63.5" y="23.241" size="1.016" layer="27" font="vector" ratio="12" rot="R90"/>
 </element>
 <element name="R47" library="motorFeedback" package="R0603" value="200" x="64.516" y="24.13" smashed="yes" rot="R90">
-<attribute name="NAME" x="63.627" y="23.241" size="0.8128" layer="25" font="vector" ratio="12" rot="R90"/>
+<attribute name="NAME" x="63.627" y="23.241" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="66.548" y="23.241" size="1.016" layer="27" font="vector" ratio="12" rot="R90"/>
 </element>
 <element name="R48" library="motorFeedback" package="R0603" value="200" x="68.58" y="24.13" smashed="yes" rot="R90">
-<attribute name="NAME" x="67.691" y="23.241" size="0.8128" layer="25" font="vector" ratio="12" rot="R90"/>
+<attribute name="NAME" x="67.691" y="23.241" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="70.612" y="23.241" size="1.016" layer="27" font="vector" ratio="12" rot="R90"/>
 </element>
 <element name="R49" library="motorFeedback" package="R0603" value="200" x="23.622" y="70.612" smashed="yes" rot="R270">
-<attribute name="NAME" x="21.971" y="71.755" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
+<attribute name="NAME" x="21.971" y="71.755" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="21.59" y="71.501" size="1.016" layer="27" font="vector" ratio="12" rot="R270"/>
 </element>
 <element name="R51" library="motorFeedback" package="R0603" value="200" x="26.67" y="70.358" smashed="yes" rot="R270">
-<attribute name="NAME" x="27.559" y="71.501" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
+<attribute name="NAME" x="27.559" y="71.501" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="24.638" y="71.247" size="1.016" layer="27" font="vector" ratio="12" rot="R270"/>
 </element>
 <element name="R52" library="motorFeedback" package="R0603" value="200" x="29.972" y="70.358" smashed="yes" rot="R270">
-<attribute name="NAME" x="30.861" y="71.247" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
+<attribute name="NAME" x="30.861" y="71.247" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="27.94" y="71.247" size="1.016" layer="27" font="vector" ratio="12" rot="R270"/>
 </element>
 <element name="R53" library="motorFeedback" package="R0603" value="200" x="34.29" y="71.628" smashed="yes" rot="R270">
-<attribute name="NAME" x="35.179" y="72.771" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
+<attribute name="NAME" x="35.179" y="72.771" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="32.258" y="72.517" size="1.016" layer="27" font="vector" ratio="12" rot="R270"/>
 </element>
 <element name="C127" library="motorFeedback" package="C0402" value="0.1u" x="78.8924" y="7.2136" smashed="yes" rot="R90">
-<attribute name="NAME" x="79.1464" y="3.2766" size="0.8128" layer="25" ratio="12" rot="R90"/>
+<attribute name="NAME" x="79.1464" y="3.2766" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="80.7974" y="6.5786" size="1.016" layer="27" ratio="12" rot="R90"/>
 </element>
 <element name="C128" library="motorFeedback" package="C1206" value="22u" x="80.8736" y="8.001" smashed="yes" rot="R90">
-<attribute name="NAME" x="81.2546" y="2.667" size="0.8128" layer="25" rot="R90"/>
+<attribute name="NAME" x="81.2546" y="2.667" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="83.2866" y="6.731" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C129" library="motorFeedback" package="C1206" value="10u 50V" x="135.89" y="47.752" smashed="yes" rot="R270">
-<attribute name="NAME" x="137.033" y="49.022" size="0.8128" layer="25" rot="R270"/>
+<attribute name="NAME" x="137.033" y="49.022" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="133.477" y="49.022" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C130" library="motorFeedback" package="C0402" value="0.1u 50V" x="137.668" y="48.006" smashed="yes" rot="R270">
-<attribute name="NAME" x="138.43" y="48.641" size="0.8128" layer="25" ratio="12" rot="R270"/>
+<attribute name="NAME" x="138.43" y="48.641" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="135.763" y="48.641" size="1.016" layer="27" ratio="12" rot="R270"/>
 </element>
 <element name="C131" library="motorFeedback" package="C0402" value="0.1u 50V" x="138.684" y="6.858" smashed="yes" rot="R180">
-<attribute name="NAME" x="137.541" y="7.112" size="0.8128" layer="25" ratio="12" rot="R180"/>
+<attribute name="NAME" x="137.541" y="7.112" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="139.319" y="8.763" size="1.016" layer="27" ratio="12" rot="R180"/>
 </element>
 <element name="C132" library="motorFeedback" package="C0402" value="0.1u 50V" x="138.684" y="5.588" smashed="yes" rot="R180">
-<attribute name="NAME" x="137.541" y="5.842" size="0.8128" layer="25" ratio="12" rot="R180"/>
+<attribute name="NAME" x="137.541" y="5.842" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="139.319" y="7.493" size="1.016" layer="27" ratio="12" rot="R180"/>
 </element>
 <element name="C135" library="motorFeedback" package="PANASONIC_B" value="47u 50V" x="137.668" y="9.906" smashed="yes">
-<attribute name="NAME" x="135.518" y="13.222" size="1.27" layer="25"/>
+<attribute name="NAME" x="135.518" y="13.222" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="135.518" y="6.631" size="1.016" layer="27"/>
 </element>
 <element name="C133" library="motorFeedback" package="C0402" value="0.1u 50V" x="138.7094" y="48.006" smashed="yes" rot="R270">
-<attribute name="NAME" x="139.4714" y="48.641" size="0.8128" layer="25" ratio="12" rot="R270"/>
+<attribute name="NAME" x="139.4714" y="48.641" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="136.8044" y="48.641" size="1.016" layer="27" ratio="12" rot="R270"/>
 </element>
 <element name="C55" library="motorFeedback" package="C0805" value="1u" x="10.414" y="36.576" smashed="yes" rot="R90">
-<attribute name="NAME" x="9.398" y="35.687" size="0.8128" layer="25" rot="R90"/>
+<attribute name="NAME" x="9.398" y="35.687" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="12.7" y="35.687" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C72" library="motorFeedback" package="C1206" value="22u" x="12.7" y="34.29" smashed="yes" rot="R270">
-<attribute name="NAME" x="13.843" y="35.56" size="0.8128" layer="25" rot="R270"/>
+<attribute name="NAME" x="13.843" y="35.56" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="10.287" y="35.56" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R16" library="motorFeedback" package="R0402" value="19.1k" x="30.8356" y="58.293" smashed="yes">
-<attribute name="NAME" x="29.8196" y="58.928" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="29.8196" y="58.928" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="30.2006" y="56.261" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="J22" library="headers" package="1.27MM_2X5" value="Debug Header" x="78.994" y="63.754" smashed="yes" rot="R180">
-<attribute name="NAME" x="80.14" y="59.657" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="80.14" y="59.657" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="80.14" y="67.054" size="0.6096" layer="27" rot="R180"/>
 </element>
 <element name="C54" library="rcl_custom" package="0402-C-NOSILK" value="100n" x="136.398" y="75.946" smashed="yes" rot="R180">
-<attribute name="NAME" x="137.452" y="77.228" size="0.8128" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="137.452" y="77.228" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="137.198" y="77.746" size="1" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="L3" library="rcl_custom" package="0805-C-NOSILK" value="FB0805/600R/200mA(201209-601)" x="137.922" y="68.326" smashed="yes" rot="R90">
-<attribute name="NAME" x="137.022" y="67.78" size="0.8128" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="137.022" y="67.78" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="139.822" y="67.526" size="1" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="C73" library="rcl_custom" package="1206-C" value="22u" x="130.302" y="54.864" smashed="yes">
-<attribute name="NAME" x="131.2544" y="53.8156" size="0.8128" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="131.2544" y="53.8156" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="129.502" y="52.664" size="1" layer="27" ratio="10"/>
 </element>
 <element name="R55" library="rcl_custom" package="0402-C-NOSILK" value="1k" x="93.218" y="59.2582" smashed="yes" rot="R90">
-<attribute name="NAME" x="92.468" y="58.4582" size="0.8128" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="92.468" y="58.4582" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="95.018" y="58.4582" size="1" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="R56" library="rcl_custom" package="0402-C-NOSILK" value="1k" x="124.714" y="45.6438" smashed="yes" rot="R90">
-<attribute name="NAME" x="123.964" y="44.8438" size="0.8128" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="123.964" y="44.8438" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="126.514" y="44.8438" size="1" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="R59" library="rcl_custom" package="0402-C-NOSILK" value="1k" x="138.176" y="60.96" smashed="yes">
-<attribute name="NAME" x="138.9254" y="60.5162" size="0.635" layer="25" ratio="10"/>
+<attribute name="NAME" x="138.9254" y="60.5162" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="137.376" y="59.16" size="1" layer="27" ratio="10"/>
 </element>
 <element name="U3" library="ksz8081" package="QFN-24" value="KSZ8081" x="135.128" y="60.198" smashed="yes" rot="R180"/>
 <element name="R60" library="rcl_custom" package="0402-C-NOSILK" value="6.49k" x="128.016" y="60.452" smashed="yes">
-<attribute name="NAME" x="125.438" y="60.186" size="0.635" layer="25" ratio="10"/>
+<attribute name="NAME" x="125.438" y="60.186" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="127.216" y="58.652" size="1" layer="27" ratio="10"/>
 </element>
 <element name="C75" library="rcl_custom" package="0402-C-NOSILK" value="100n" x="132.334" y="56.6166" smashed="yes">
-<attribute name="NAME" x="131.1782" y="56.908" size="0.635" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="131.1782" y="56.908" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="131.534" y="54.8166" size="1" layer="27" ratio="10"/>
 </element>
 <element name="C76" library="rcl_custom" package="0402-C-NOSILK" value="100n" x="138.938" y="62.992" smashed="yes" rot="R90">
-<attribute name="NAME" x="140.0422" y="62.192" size="0.635" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="140.0422" y="62.192" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="140.738" y="62.192" size="1" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="C77" library="rcl_custom" package="0402-C-NOSILK" value="2.2u" x="137.922" y="62.992" smashed="yes" rot="R90">
-<attribute name="NAME" x="138.976" y="62.115" size="0.635" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="138.976" y="62.115" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="139.722" y="62.192" size="1" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="C97" library="rcl_custom" package="1206-C" value="22u" x="138.684" y="65.532" smashed="yes" rot="R180">
-<attribute name="NAME" x="135.77" y="66.586" size="0.8128" layer="25" ratio="10" rot="R270"/>
+<attribute name="NAME" x="135.77" y="66.586" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="139.484" y="67.732" size="1" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C98" library="rcl_custom" package="0402-C-NOSILK" value="100n" x="136.652" y="63.246" smashed="yes" rot="R180">
-<attribute name="NAME" x="137.4266" y="64.3756" size="0.635" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="137.4266" y="64.3756" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="137.452" y="65.046" size="1" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C99" library="rcl_custom" package="0402-C-NOSILK" value="100n" x="133.858" y="76.962" smashed="yes" rot="R180">
-<attribute name="NAME" x="134.912" y="78.244" size="0.8128" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="134.912" y="78.244" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="134.658" y="78.762" size="1" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="IC2" library="temp_library" package="TQFN-28" value="MAX5984A" x="120.65" y="68.58" smashed="yes">
 <attribute name="VARIANT" value="C" x="120.65" y="68.58" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C44" library="motorFeedback" package="C0805K" value="100nF" x="125.222" y="68.834" smashed="yes" rot="R270">
-<attribute name="NAME" x="126.351" y="69.834" size="0.8128" layer="25" rot="R270"/>
+<attribute name="NAME" x="126.351" y="69.834" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="123.322" y="69.834" size="1.016" layer="27" rot="R270"/>
 </element>
 <element name="R_LED" library="motorFeedback" package="R0603" value="1k" x="122.174" y="72.644" smashed="yes">
-<attribute name="NAME" x="123.825" y="72.263" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="123.825" y="72.263" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="121.285" y="70.612" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="L2" library="motorFeedback" package="0204V" value="10m, 21mA" x="115.57" y="62.992" smashed="yes" rot="R180">
-<attribute name="NAME" x="116.1796" y="64.6176" size="0.8128" layer="25" ratio="12" rot="R180"/>
+<attribute name="NAME" x="116.1796" y="64.6176" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="117.7036" y="65.3034" size="1.27" layer="27" ratio="12" rot="R180"/>
 </element>
 <element name="C48" library="motorFeedback" package="C0805K" value="0.1uf 100V" x="115.062" y="70.612" smashed="yes" rot="R270">
-<attribute name="NAME" x="115.808" y="73.039" size="0.635" layer="25" rot="R180"/>
+<attribute name="NAME" x="115.808" y="73.039" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="113.162" y="71.612" size="1.016" layer="27" rot="R270"/>
 </element>
 <element name="D3" library="temp_library" package="SOD-123" value="1N4448" x="122.936" y="74.93" smashed="yes" rot="R180"/>
 <element name="D4" library="diode" package="SMBJ" value="SMAJ58A" x="108.204" y="76.708" smashed="yes" rot="R180">
-<attribute name="NAME" x="107.061" y="78.74" size="1.27" layer="25"/>
+<attribute name="NAME" x="107.061" y="78.74" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="110.109" y="80.518" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C51" library="motorFeedback" package="C0805K" value="0.1uf 100V" x="106.934" y="73.66" smashed="yes" rot="R180">
-<attribute name="NAME" x="105.043" y="72.914" size="0.8128" layer="25" rot="R90"/>
+<attribute name="NAME" x="105.043" y="72.914" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="107.934" y="75.56" size="1.016" layer="27" rot="R180"/>
 </element>
 <element name="D5" library="temp_library" package="SOD-123" value="1N4448" x="105.918" y="66.802" smashed="yes"/>
 <element name="R99" library="motorFeedback" package="R0603" value="2.2M" x="106.68" y="71.628" smashed="yes" rot="R180">
-<attribute name="NAME" x="105.283" y="72.009" size="0.8128" layer="25" font="vector" ratio="12" rot="R180"/>
+<attribute name="NAME" x="105.283" y="72.009" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="107.569" y="73.66" size="1.016" layer="27" font="vector" ratio="12" rot="R180"/>
 </element>
 <element name="R23" library="motorFeedback" package="R0603" value="1k" x="120.396" y="63.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="120.015" y="62.103" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
+<attribute name="NAME" x="120.015" y="62.103" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="118.364" y="64.389" size="1.016" layer="27" font="vector" ratio="12" rot="R270"/>
 </element>
 <element name="R24" library="motorFeedback" package="R0603" value="1k" x="122.174" y="63.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="121.793" y="62.103" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
+<attribute name="NAME" x="121.793" y="62.103" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="120.142" y="64.389" size="1.016" layer="27" font="vector" ratio="12" rot="R270"/>
 </element>
 <element name="LED1" library="LED_RGB_PLCC6" package="PLCC-6" value="" x="68.072" y="33.528" smashed="yes">
-<attribute name="NAME" x="66.842" y="30.548" size="0.8128" layer="25"/>
+<attribute name="NAME" x="66.842" y="30.548" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="65.572" y="30.528" size="1" layer="27"/>
 </element>
 <element name="R25" library="rcl" package="R0402" value="750" x="71.374" y="33.274" smashed="yes" rot="R270">
-<attribute name="NAME" x="72.009" y="34.163" size="0.8128" layer="25" rot="R270"/>
+<attribute name="NAME" x="72.009" y="34.163" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="69.469" y="33.909" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R26" library="rcl" package="R0402" value="750" x="63.754" y="32.512" smashed="yes">
-<attribute name="NAME" x="62.8142" y="31.0388" size="0.8128" layer="25"/>
+<attribute name="NAME" x="62.8142" y="31.0388" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="63.119" y="30.607" size="1.27" layer="27"/>
 </element>
 <element name="R27" library="rcl" package="R0402" value="750" x="63.754" y="34.544" smashed="yes">
-<attribute name="NAME" x="63.2968" y="35.1536" size="0.8128" layer="25"/>
+<attribute name="NAME" x="63.2968" y="35.1536" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="63.119" y="32.639" size="1.27" layer="27"/>
 </element>
 <element name="TP1" library="testpad" package="TP06R" value="TPTP06R" x="53.4416" y="56.7944" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="53.4416" y="54.8894" size="1" layer="37"/>
-<attribute name="NAME" x="53.9036" y="56.1785" size="0.8128" layer="25"/>
+<attribute name="NAME" x="53.9036" y="56.1785" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="53.1876" y="56.4134" size="0.0254" layer="27"/>
 </element>
 <element name="TP2" library="testpad" package="TP06R" value="TPTP06R" x="45.212" y="55.245" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="47.117" y="55.245" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="41.5099" y="54.945" size="0.8128" layer="25" rot="R90"/>
+<attribute name="NAME" x="41.5099" y="54.945" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="45.593" y="54.991" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP3" library="testpad" package="TP06R" value="TPTP06R" x="68.961" y="60.071" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="68.961" y="58.166" size="1" layer="37"/>
-<attribute name="NAME" x="68.3069" y="59.517" size="0.8128" layer="25" rot="R90"/>
+<attribute name="NAME" x="68.3069" y="59.517" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="68.707" y="59.69" size="0.0254" layer="27"/>
 </element>
 <element name="TP4" library="testpad" package="TP06R" value="TPTP06R" x="55.88" y="50.8" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="55.88" y="48.895" size="1" layer="37"/>
-<attribute name="NAME" x="55.326" y="51.2001" size="0.4064" layer="25"/>
+<attribute name="NAME" x="55.326" y="51.2001" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="55.626" y="50.419" size="0.0254" layer="27"/>
 </element>
 <element name="TP5" library="testpad" package="TP06R" value="TPTP06R" x="66.7004" y="37.5412" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="66.7004" y="35.6362" size="1" layer="37"/>
-<attribute name="NAME" x="66.1987" y="37.1904" size="0.8128" layer="25" rot="R90"/>
+<attribute name="NAME" x="66.1987" y="37.1904" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="66.4464" y="37.1602" size="0.0254" layer="27"/>
 </element>
 <element name="TP6" library="testpad" package="TP06R" value="TPTP06R" x="76.0222" y="42.9006" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="76.0222" y="40.9956" size="1" layer="37"/>
-<attribute name="NAME" x="76.3333" y="43.4642" size="0.8128" layer="25" rot="R90"/>
+<attribute name="NAME" x="76.3333" y="43.4642" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="75.7682" y="42.5196" size="0.0254" layer="27"/>
 </element>
 <element name="TP7" library="testpad" package="TP06R" value="TPTP06R" x="51.562" y="40.132" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="51.562" y="38.227" size="1" layer="37"/>
-<attribute name="NAME" x="52.624" y="39.4779" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="52.624" y="39.4779" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="51.308" y="39.751" size="0.0254" layer="27"/>
 </element>
 <element name="LED2" library="led" package="CHIP-LED0603" value="" x="51.562" y="57.404" smashed="yes" rot="R270">
-<attribute name="NAME" x="50.419" y="58.039" size="0.8128" layer="25"/>
+<attribute name="NAME" x="50.419" y="58.039" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="50.927" y="55.499" size="1.27" layer="27"/>
 </element>
 <element name="LED3" library="led" package="CHIP-LED0603" value="" x="51.562" y="56.134" smashed="yes" rot="R270">
-<attribute name="NAME" x="52.959" y="55.245" size="0.8128" layer="25"/>
+<attribute name="NAME" x="52.959" y="55.245" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="50.927" y="54.229" size="1.27" layer="27"/>
 </element>
 <element name="LED4" library="led" package="CHIP-LED0603" value="" x="51.562" y="54.356" smashed="yes" rot="R270">
-<attribute name="NAME" x="52.832" y="53.975" size="0.8128" layer="25"/>
+<attribute name="NAME" x="52.832" y="53.975" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="50.927" y="52.451" size="1.27" layer="27"/>
 </element>
 <element name="LED5" library="led" package="CHIP-LED0603" value="" x="51.562" y="53.086" smashed="yes" rot="R270">
-<attribute name="NAME" x="52.8828" y="52.6796" size="0.8128" layer="25"/>
+<attribute name="NAME" x="52.8828" y="52.6796" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="50.927" y="51.181" size="1.27" layer="27"/>
 </element>
 <element name="R28" library="rcl" package="R0402" value="750" x="48.768" y="57.404" smashed="yes">
-<attribute name="NAME" x="44.323" y="57.023" size="0.8128" layer="25"/>
+<attribute name="NAME" x="44.323" y="57.023" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="48.133" y="55.499" size="1.27" layer="27"/>
 </element>
 <element name="R29" library="rcl" package="R0402" value="750" x="48.768" y="56.134" smashed="yes">
-<attribute name="NAME" x="44.323" y="55.753" size="0.8128" layer="25"/>
+<attribute name="NAME" x="44.323" y="55.753" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="48.133" y="54.229" size="1.27" layer="27"/>
 </element>
 <element name="R30" library="rcl" package="R0402" value="750" x="48.768" y="54.356" smashed="yes">
-<attribute name="NAME" x="44.323" y="53.975" size="0.8128" layer="25"/>
+<attribute name="NAME" x="44.323" y="53.975" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="48.133" y="52.451" size="1.27" layer="27"/>
 </element>
 <element name="R31" library="rcl" package="R0402" value="750" x="48.768" y="53.086" smashed="yes">
-<attribute name="NAME" x="44.577" y="52.705" size="0.8128" layer="25"/>
+<attribute name="NAME" x="44.577" y="52.705" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="48.133" y="51.181" size="1.27" layer="27"/>
 </element>
 <element name="C43" library="rcl" package="C0402" value="16p" x="48.006" y="48.2854" smashed="yes" rot="R270">
-<attribute name="NAME" x="46.609" y="49.4284" size="0.8128" layer="25" rot="R270"/>
+<attribute name="NAME" x="46.609" y="49.4284" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="46.101" y="48.9204" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C45" library="rcl" package="C0402" value="16p" x="51.308" y="42.672" smashed="yes" rot="R180">
-<attribute name="NAME" x="52.197" y="42.037" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="52.197" y="42.037" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="51.943" y="44.577" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R32" library="motorFeedback" package="R0402" value="33" x="60.452" y="37.084" smashed="yes" rot="R90">
-<attribute name="NAME" x="61.0362" y="38.6588" size="0.4064" layer="25" font="vector" ratio="12" rot="R180"/>
+<attribute name="NAME" x="61.0362" y="38.6588" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="62.484" y="36.449" size="1.016" layer="27" font="vector" ratio="12" rot="R90"/>
 </element>
 <element name="Q1" library="crystal" package="CTS406" value="" x="50.8" y="46.736" smashed="yes" rot="R270">
@@ -4368,111 +4368,117 @@ einem neuen Namen ab.</description>
 <attribute name="MPN" value="" x="50.8" y="46.736" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="50.8" y="46.736" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="50.8" y="46.736" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="47.244" y="46.228" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="47.244" y="46.228" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="46.99" y="49.276" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="JP1" library="pinhead" package="1X06" value="" x="89.154" y="76.454" smashed="yes" rot="MR0">
-<attribute name="NAME" x="90.2462" y="72.4408" size="1.27" layer="26" ratio="10" rot="MR0"/>
+<attribute name="NAME" x="90.2462" y="72.4408" size="0.635" layer="26" font="vector" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="96.774" y="73.279" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="JP2" library="pinhead" package="1X06" value="" x="55.118" y="76.454" smashed="yes" rot="MR180">
-<attribute name="NAME" x="54.0258" y="73.8632" size="1.27" layer="26" ratio="10" rot="MR180"/>
+<attribute name="NAME" x="54.0258" y="73.8632" size="0.635" layer="26" font="vector" ratio="20" rot="MR180"/>
 <attribute name="VALUE" x="47.498" y="79.629" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="JP3" library="pinhead" package="1X06" value="" x="65.786" y="16.764" smashed="yes" rot="MR0">
-<attribute name="NAME" x="67.3862" y="13.0048" size="1.27" layer="26" ratio="10" rot="MR0"/>
+<attribute name="NAME" x="67.3862" y="13.0048" size="0.635" layer="26" font="vector" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="73.406" y="13.589" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="JP4" library="pinhead" package="1X06" value="" x="25.654" y="76.454" smashed="yes" rot="MR0">
-<attribute name="NAME" x="27.0002" y="72.9488" size="1.27" layer="26" ratio="10" rot="MR0"/>
+<attribute name="NAME" x="27.0002" y="72.9488" size="0.635" layer="26" font="vector" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="33.274" y="73.279" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="JP5" library="pinhead" package="1X06" value="" x="4.318" y="45.212" smashed="yes" rot="MR90">
-<attribute name="NAME" x="6.9088" y="44.1198" size="1.27" layer="26" ratio="10" rot="MR90"/>
+<attribute name="NAME" x="6.9088" y="44.1198" size="0.635" layer="26" font="vector" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="1.143" y="37.592" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="JP6" library="pinhead" package="1X06" value="" x="4.318" y="27.432" smashed="yes" rot="MR90">
-<attribute name="NAME" x="7.4168" y="27.1018" size="1.27" layer="26" ratio="10" rot="MR90"/>
+<attribute name="NAME" x="7.4168" y="27.1018" size="0.635" layer="26" font="vector" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="1.143" y="19.812" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="R33" library="motorFeedback" package="R0402" value="33" x="59.182" y="37.846" smashed="yes" rot="R90">
-<attribute name="NAME" x="58.6994" y="38.989" size="0.4064" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="58.6994" y="38.989" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="61.214" y="37.211" size="1.016" layer="27" font="vector" ratio="12" rot="R90"/>
 </element>
 <element name="R34" library="rcl_custom" package="0402-C-NOSILK" value="33" x="129.54" y="57.658" smashed="yes" rot="R180">
-<attribute name="NAME" x="130.4162" y="58.813" size="0.635" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="130.4162" y="58.813" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="130.34" y="59.458" size="1" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="R35" library="rcl_custom" package="0402-C-NOSILK" value="33" x="132.334" y="57.658" smashed="yes" rot="R180">
-<attribute name="NAME" x="131.28" y="58.154" size="0.635" layer="25" ratio="10"/>
+<attribute name="NAME" x="131.28" y="58.154" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="133.134" y="59.458" size="1" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="R57" library="motorFeedback" package="R0402" value="33" x="71.882" y="41.91" smashed="yes" rot="MR180">
-<attribute name="NAME" x="70.485" y="40.894" size="1.016" layer="26" font="vector" ratio="12" rot="MR180"/>
+<attribute name="NAME" x="70.485" y="40.894" size="0.635" layer="26" font="vector" ratio="20" rot="MR180"/>
 <attribute name="VALUE" x="71.247" y="43.942" size="1.016" layer="28" font="vector" ratio="12" rot="MR180"/>
 </element>
 <element name="R58" library="motorFeedback" package="R0402" value="33" x="74.4728" y="42.164" smashed="yes">
-<attribute name="NAME" x="73.3044" y="42.7736" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="73.3044" y="42.7736" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="73.8378" y="40.132" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="R61" library="motorFeedback" package="R0402" value="33" x="75.184" y="40.894" smashed="yes">
-<attribute name="NAME" x="74.2696" y="39.4716" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="74.2696" y="39.4716" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="74.549" y="38.862" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="R63" library="rcl_custom" package="0402-C-NOSILK" value="33" x="136.144" y="56.642" smashed="yes" rot="R270">
-<attribute name="NAME" x="135.878" y="55.664" size="0.8128" layer="25" ratio="10" rot="R270"/>
+<attribute name="NAME" x="135.878" y="55.664" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="134.344" y="57.442" size="1" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="R62" library="rcl_custom" package="0402-C-NOSILK" value="33" x="135.128" y="55.88" smashed="yes" rot="R270">
-<attribute name="NAME" x="134.7096" y="55.0798" size="0.8128" layer="25" ratio="10" rot="R270"/>
+<attribute name="NAME" x="134.7096" y="55.0798" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="133.328" y="56.68" size="1" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="R64" library="rcl_custom" package="0402-C-NOSILK" value="33" x="134.112" y="55.88" smashed="yes" rot="R270">
-<attribute name="NAME" x="133.592" y="55.156" size="0.8128" layer="25" ratio="10" rot="R270"/>
+<attribute name="NAME" x="133.592" y="55.156" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="132.312" y="56.68" size="1" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="R65" library="motorFeedback" package="R0402" value="33" x="63.5" y="47.752" smashed="yes" rot="MR180">
-<attribute name="NAME" x="61.087" y="49.53" size="1.016" layer="26" font="vector" ratio="12" rot="MR180"/>
+<attribute name="NAME" x="61.087" y="49.53" size="0.635" layer="26" font="vector" ratio="20" rot="MR180"/>
 <attribute name="VALUE" x="62.865" y="49.784" size="1.016" layer="28" font="vector" ratio="12" rot="MR180"/>
 </element>
 <element name="R66" library="motorFeedback" package="R0402" value="33" x="59.69" y="41.91" smashed="yes" rot="MR180">
-<attribute name="NAME" x="58.039" y="40.894" size="1.016" layer="26" font="vector" ratio="12" rot="MR180"/>
+<attribute name="NAME" x="58.039" y="40.894" size="0.635" layer="26" font="vector" ratio="20" rot="MR180"/>
 <attribute name="VALUE" x="59.055" y="43.942" size="1.016" layer="28" font="vector" ratio="12" rot="MR180"/>
 </element>
 <element name="R67" library="rcl_custom" package="0402-C-NOSILK" value="33" x="129.5908" y="59.69" smashed="yes" rot="R180">
-<attribute name="NAME" x="132.1688" y="59.956" size="0.635" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="132.1688" y="59.956" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="130.3908" y="61.49" size="1" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="R68" library="motorFeedback" package="R0402" value="33" x="75.184" y="50.8" smashed="yes">
-<attribute name="NAME" x="74.2188" y="51.435" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="74.2188" y="51.435" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="74.549" y="48.768" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="VR6" library="motorFeedback" package="PG-TO252-3-11" value="TLV1117-33IKVU" x="88.9" y="35.306" smashed="yes">
 <attribute name="VALUE" x="84.3026" y="39.0398" size="1.016" layer="28" font="vector" ratio="14"/>
-<attribute name="NAME" x="86.8426" y="38.9636" size="0.8128" layer="25" font="vector" ratio="14"/>
+<attribute name="NAME" x="86.8426" y="38.9636" size="0.635" layer="25" font="vector" ratio="20"/>
 </element>
 <element name="VR8" library="motorFeedback" package="PG-TO252-5-11" value="TLE4275-QKVU" x="89.154" y="21.59" smashed="yes" rot="R270">
 <attribute name="VALUE" x="86.0298" y="25.0952" size="1.016" layer="27" font="vector"/>
-<attribute name="NAME" x="95.1992" y="20.4978" size="1.27" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="95.1992" y="20.4978" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="C47" library="motorFeedback" package="PANASONIC_B" value="10u" x="86.36" y="28.956" smashed="yes" rot="R180">
-<attribute name="NAME" x="81.802" y="30.09" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="81.802" y="30.09" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="88.51" y="32.231" size="1.016" layer="27" rot="R180"/>
 </element>
 <element name="C49" library="motorFeedback" package="C0402" value="0.1u" x="85.09" y="25.654" smashed="yes">
-<attribute name="NAME" x="86.487" y="25.4" size="0.8128" layer="25" ratio="12"/>
+<attribute name="NAME" x="86.487" y="25.4" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="84.455" y="23.749" size="1.016" layer="27" ratio="12"/>
 </element>
 <element name="B+" library="temp_library" package="TERMINAL_RELAY" value="TERMINAL" x="156.718" y="19.812" smashed="yes">
-<attribute name="NAME" x="151.384" y="19.812" size="2.54" layer="25" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="151.384" y="19.812" size="0.635" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="154.178" y="12.192" size="1.27" layer="27"/>
 </element>
 <element name="GND" library="temp_library" package="TERMINAL_RELAY" value="TERMINAL" x="156.718" y="34.29" smashed="yes">
-<attribute name="NAME" x="151.384" y="34.29" size="2.54" layer="25" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="151.384" y="34.29" size="0.635" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="154.178" y="26.67" size="1.27" layer="27"/>
 </element>
-<element name="C52" library="motorFeedback" package="PANASONIC_B" value="47u 100V" x="111.506" y="70.358" rot="R90"/>
-<element name="C46" library="rcl" package="C0603" value="" x="74.422" y="68.072"/>
+<element name="C52" library="motorFeedback" package="PANASONIC_B" value="47u 100V" x="111.506" y="70.358" smashed="yes" rot="R90">
+<attribute name="NAME" x="109.206" y="68.208" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="VALUE" x="114.781" y="68.208" size="1.016" layer="27" rot="R90"/>
+</element>
+<element name="C46" library="rcl" package="C0603" value="" x="74.422" y="68.072" smashed="yes">
+<attribute name="NAME" x="73.787" y="68.707" size="0.635" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="73.787" y="66.167" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -7749,39 +7755,6 @@ einem neuen Namen ab.</description>
 <approved hash="5,1,fbc7ff58a09113ed"/>
 <approved hash="18,29,b397d558417d6588"/>
 <approved hash="18,29,fca0b57cf57dbca1"/>
-<approved hash="18,29,388d18461846388d"/>
-<approved hash="18,29,3c8e1d0a9d0abc8e"/>
-<approved hash="18,29,bac29b3f1b3f3ac2"/>
-<approved hash="18,29,b15892919291b158"/>
-<approved hash="18,29,2da80c248c24ada8"/>
-<approved hash="18,29,3e141e909e90be14"/>
-<approved hash="18,29,a10183fe03fe2101"/>
-<approved hash="18,29,a27a8db38db3a27a"/>
-<approved hash="18,29,b0e790dc10dc30e7"/>
-<approved hash="18,29,29af0b600b6029af"/>
-<approved hash="18,29,2f3609b289b2af36"/>
-<approved hash="18,29,abdc95d915d92bdc"/>
-<approved hash="18,29,d89107ca00a46dd2"/>
-<approved hash="18,29,a203c07abc7edc1f"/>
-<approved hash="18,29,e01cf25dce592300"/>
-<approved hash="18,29,f881d6c22ade0485"/>
-<approved hash="18,29,44100e3aafe19f91"/>
-<approved hash="18,29,522a5be99fcbbe17"/>
-<approved hash="18,29,48f9760ad7d1eb08"/>
-<approved hash="18,29,d9d9096b9c859ce9"/>
-<approved hash="18,29,518b0646a79d8236"/>
-<approved hash="18,29,c22c820aa3d195dd"/>
-<approved hash="18,29,de4793deb2059862"/>
-<approved hash="18,29,d7b64f20cb64622c"/>
-<approved hash="18,29,2a96d4815ff968f1"/>
-<approved hash="18,29,ca2afb4062e73473"/>
-<approved hash="18,29,d655ea80732739d8"/>
-<approved hash="18,29,5c801e800727470d"/>
-<approved hash="18,29,501966807f6733a4"/>
-<approved hash="18,29,45fe6ec077672e3f"/>
-<approved hash="18,29,58941f70df719895"/>
-<approved hash="18,29,1751929312939751"/>
-<approved hash="18,29,5a4edf885f88da4e"/>
 <approved hash="18,30,dd3720dadf4497c8"/>
 <approved hash="18,30,88b4d3792376ce56"/>
 <approved hash="18,30,d3d9d345916189fc"/>
@@ -7930,37 +7903,70 @@ einem neuen Namen ab.</description>
 <approved hash="18,30,3361c750722ff61c"/>
 <approved hash="18,30,88c368501f9b25ed"/>
 <approved hash="18,30,d8265e59d326255b"/>
+<approved hash="18,29,b0e790dc10dc30e7"/>
+<approved hash="18,29,b15892919291b158"/>
+<approved hash="18,29,2da80c248c24ada8"/>
+<approved hash="18,29,bac29b3f1b3f3ac2"/>
+<approved hash="18,29,abdc95d915d92bdc"/>
+<approved hash="18,29,29af0b600b6029af"/>
+<approved hash="18,29,388d18461846388d"/>
+<approved hash="18,29,a27a8db38db3a27a"/>
+<approved hash="18,29,3e141e909e90be14"/>
+<approved hash="18,29,2f3609b289b2af36"/>
+<approved hash="18,29,a10183fe03fe2101"/>
+<approved hash="18,29,3c8e1d0a9d0abc8e"/>
+<approved hash="18,29,d89107ca00a46dd2"/>
+<approved hash="18,29,a203c07abc7edc1f"/>
+<approved hash="18,29,e01cf25dce592300"/>
+<approved hash="18,29,f881d6c22ade0485"/>
+<approved hash="18,29,de4793deb2059862"/>
+<approved hash="18,29,518b0646a79d8236"/>
+<approved hash="18,29,d9d9096b9c859ce9"/>
+<approved hash="18,29,c22c820aa3d195dd"/>
+<approved hash="18,29,48f9760ad7d1eb08"/>
+<approved hash="18,29,522a5be99fcbbe17"/>
+<approved hash="18,29,44100e3aafe19f91"/>
+<approved hash="18,29,2a96d4815ff968f1"/>
+<approved hash="18,29,d7b64f20cb64622c"/>
+<approved hash="18,29,ca2afb4062e73473"/>
+<approved hash="18,29,d655ea80732739d8"/>
+<approved hash="18,29,5c801e800727470d"/>
+<approved hash="18,29,45fe6ec077672e3f"/>
+<approved hash="18,29,501966807f6733a4"/>
+<approved hash="18,29,58941f70df719895"/>
+<approved hash="18,29,1751929312939751"/>
+<approved hash="18,29,5a4edf885f88da4e"/>
 <approved hash="5,1,a8958718fd68c8a2"/>
 <approved hash="5,1,9a3eb4b7c2b4fa46"/>
 <approved hash="5,1,1d58830fb3fa4af6"/>
 <approved hash="5,1,15686f54dff3c2e6"/>
 <approved hash="5,1,19e8ddb4ec134f56"/>
-<approved hash="5,1,d8d46d2982b801a1"/>
 <approved hash="5,1,842fedd9824bdd59"/>
 <approved hash="5,1,eaf2ede98273b38c"/>
+<approved hash="5,1,d8d46d2982b801a1"/>
 <approved hash="5,1,56ca6dd982708f87"/>
 <approved hash="19,1,e87c141c1612ea72"/>
 <approved hash="19,1,58241844186e580e"/>
 <approved hash="19,1,fd345d545994f9f4"/>
-<approved hash="5,1,cdb7e66945a61a88"/>
-<approved hash="5,1,c7abe699456610a4"/>
 <approved hash="5,1,e7eae69b455a30db"/>
+<approved hash="5,1,c7abe699456610a4"/>
+<approved hash="5,1,cdb7e66945a61a88"/>
 <approved hash="5,1,c0bde695454a1792"/>
-<approved hash="5,1,40e43f939b5a30d5"/>
-<approved hash="5,1,60a53f919b6610aa"/>
 <approved hash="5,1,67b33f9d9b4a179c"/>
-<approved hash="5,1,36403cd8239793ea"/>
+<approved hash="5,1,60a53f919b6610aa"/>
 <approved hash="5,1,6ab93f619ba61a86"/>
+<approved hash="5,1,36403cd8239793ea"/>
+<approved hash="5,1,40e43f939b5a30d5"/>
 <approved hash="19,1,1c3f3c5f3c7e1c1e"/>
-<approved hash="5,1,fbe3bf3b425bf528"/>
 <approved hash="5,1,f11acc0531058ccf"/>
+<approved hash="5,1,fbe3bf3b425bf528"/>
 <approved hash="19,1,f0b8d0d8dd9bfdfb"/>
 <approved hash="19,1,d9b079507d95dd75"/>
 <approved hash="5,1,05624631b8a11fd8"/>
 <approved hash="5,1,f81c0bd044df53aa"/>
 <approved hash="19,1,181fddffc03b05db"/>
-<approved hash="19,1,8eb199499e5289aa"/>
 <approved hash="19,1,8f71988999fa8e02"/>
+<approved hash="19,1,8eb199499e5289aa"/>
 <approved hash="19,1,3770c888c9f5360d"/>
 <approved hash="19,1,36b0c948ce5d31a5"/>
 <approved hash="5,1,c429bb227f69bd8a"/>
