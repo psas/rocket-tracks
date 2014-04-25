@@ -29031,7 +29031,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pin name="DET" x="17.78" y="10.16" length="middle" rot="R180"/>
 <pin name="ILIM1" x="17.78" y="5.08" length="middle" rot="R180"/>
 <pin name="ILIM2" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="PWMEN" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="2-EVENT" x="17.78" y="-5.08" length="middle" rot="R180"/>
 <wire x1="-12.7" y1="30.48" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-10.16" x2="12.7" y2="30.48" width="0.254" layer="94"/>
@@ -29065,6 +29065,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <devices>
 <device name="" package="TQFN-28">
 <connects>
+<connect gate="G$1" pin="2-EVENT" pad="6"/>
 <connect gate="G$1" pin="AGND" pad="21"/>
 <connect gate="G$1" pin="DET" pad="23"/>
 <connect gate="G$1" pin="EN" pad="14"/>
@@ -29076,7 +29077,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <connect gate="G$1" pin="OSC" pad="19"/>
 <connect gate="G$1" pin="OUT" pad="26 27"/>
 <connect gate="G$1" pin="OUTP" pad="25"/>
-<connect gate="G$1" pin="PWMEN" pad="6"/>
 <connect gate="G$1" pin="VEE" pad="1 2 3 8 9 10 11 15 PAD"/>
 <connect gate="G$1" pin="VEE_DIG" pad="12"/>
 </connects>
@@ -33040,7 +33040,7 @@ Source: 008-0260-0_E.pdf</description>
 <part name="GND56" library="motorFeedback" deviceset="GND" device=""/>
 <part name="GND57" library="motorFeedback" deviceset="GND" device=""/>
 <part name="GND58" library="motorFeedback" deviceset="GND" device=""/>
-<part name="IC2" library="temp_library" deviceset="MAX5984" device="" value="MAX5984C"/>
+<part name="IC2" library="temp_library" deviceset="MAX5984" device="" value="MAX5984A"/>
 <part name="C44" library="motorFeedback" deviceset="C-EU" device="C0805K" value="100nF"/>
 <part name="R_LED" library="motorFeedback" deviceset="R-US_" device="R0603" value="1k"/>
 <part name="L2" library="motorFeedback" deviceset="L-US" device="0204V" value="10m, 21mA"/>
@@ -33114,7 +33114,6 @@ Source: 008-0260-0_E.pdf</description>
 <part name="GND69" library="motorFeedback" deviceset="GND" device=""/>
 <part name="C52" library="motorFeedback" deviceset="CPOL-US" device="B" value="47u 100V"/>
 <part name="C46" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="TP8" library="testpad" deviceset="TP" device="TP06R"/>
 </parts>
 <sheets>
 <sheet>
@@ -36268,7 +36267,6 @@ Seperation &lt; 0.25mm
 Seperation &lt; 0.25mm
 0.25mm traces</text>
 <text x="193.04" y="177.8" size="1.778" layer="97">Seperation of Tx/Rx differential pairs &gt; 0.5mm</text>
-<text x="213.36" y="25.4" size="1.778" layer="97">(NC)</text>
 </plain>
 <instances>
 <instance part="U$5" gate="G$1" x="0" y="0"/>
@@ -36372,10 +36370,6 @@ Seperation &lt; 0.25mm
 <attribute name="VALUE" x="86.36" y="201.93" size="1.778" layer="96"/>
 </instance>
 <instance part="C52" gate="G$1" x="129.54" y="68.58"/>
-<instance part="TP8" gate="G$1" x="226.06" y="27.94" smashed="yes" rot="R270">
-<attribute name="NAME" x="227.33" y="26.67" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="224.79" y="26.67" size="1.778" layer="97" rot="R270"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -36724,11 +36718,15 @@ Seperation &lt; 0.25mm
 <wire x1="233.68" y1="38.1" x2="226.06" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="38.1" x2="238.76" y2="38.1" width="0.1524" layer="91"/>
 <junction x="233.68" y="38.1"/>
-<wire x1="238.76" y1="38.1" x2="238.76" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="38.1" x2="238.76" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="27.94" x2="238.76" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="17.78" x2="162.56" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="17.78" x2="162.56" y2="27.94" width="0.1524" layer="91"/>
 <junction x="162.56" y="27.94"/>
 <pinref part="C52" gate="G$1" pin="-"/>
+<pinref part="IC2" gate="G$1" pin="2-EVENT"/>
+<wire x1="215.9" y1="27.94" x2="238.76" y2="27.94" width="0.1524" layer="91"/>
+<junction x="238.76" y="27.94"/>
 </segment>
 </net>
 <net name="POE_LED-" class="0">
@@ -36917,13 +36915,6 @@ Seperation &lt; 0.25mm
 <pinref part="R67" gate="R" pin="1"/>
 <wire x1="93.98" y1="205.74" x2="96.52" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="205.74" x2="96.52" y2="198.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="TP8" class="0">
-<segment>
-<pinref part="TP8" gate="G$1" pin="TP"/>
-<pinref part="IC2" gate="G$1" pin="PWMEN"/>
-<wire x1="215.9" y1="27.94" x2="223.52" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

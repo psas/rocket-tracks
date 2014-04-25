@@ -4227,7 +4227,7 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="134.912" y="78.244" size="0.8128" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="134.658" y="78.762" size="1" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="IC2" library="temp_library" package="TQFN-28" value="MAX5984C" x="120.65" y="68.58" smashed="yes">
+<element name="IC2" library="temp_library" package="TQFN-28" value="MAX5984A" x="120.65" y="68.58" smashed="yes">
 <attribute name="VARIANT" value="C" x="120.65" y="68.58" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C44" library="motorFeedback" package="C0805K" value="100nF" x="125.222" y="68.834" smashed="yes" rot="R270">
@@ -4473,9 +4473,6 @@ einem neuen Namen ab.</description>
 </element>
 <element name="C52" library="motorFeedback" package="PANASONIC_B" value="47u 100V" x="111.506" y="70.358" rot="R90"/>
 <element name="C46" library="rcl" package="C0603" value="" x="74.422" y="68.072"/>
-<element name="TP8" library="testpad" package="TP06R" value="TPTP06R" x="123.444" y="64.516">
-<attribute name="TP_SIGNAL_NAME" value="" x="123.19" y="64.516" size="1.778" layer="27" display="off"/>
-</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -5900,6 +5897,17 @@ einem neuen Namen ab.</description>
 <via x="107.696" y="68.072" extent="1-16" drill="0.6"/>
 <wire x1="111.506" y1="68.758" x2="108.382" y2="68.758" width="1.016" layer="1"/>
 <wire x1="108.382" y1="68.758" x2="107.696" y2="68.072" width="1.016" layer="1"/>
+<contactref element="IC2" pad="6"/>
+<wire x1="122.99" y1="67.58" x2="125.222" y2="67.834" width="0" layer="19" extent="1-1"/>
+<wire x1="121.666" y1="69.596" x2="121.65" y2="69.58" width="0" layer="19" extent="1-1"/>
+<wire x1="119.634" y1="67.564" x2="119.65" y2="67.58" width="0" layer="19" extent="1-1"/>
+<wire x1="121.65" y1="66.24" x2="122.15" y2="66.24" width="0" layer="19" extent="1-1"/>
+<wire x1="122.174" y1="62.65" x2="122.15" y2="66.24" width="0" layer="19" extent="1-1"/>
+<wire x1="115.062" y1="69.612" x2="119.634" y2="69.596" width="0" layer="19" extent="1-1"/>
+<wire x1="104.14" y1="51.816" x2="107.696" y2="68.072" width="0" layer="19" extent="1-1"/>
+<wire x1="132.461" y1="46.355" x2="123.444" y2="62.738" width="0" layer="19" extent="1-1"/>
+<wire x1="133.477" y1="46.355" x2="133.48" y2="46.352" width="0" layer="19" extent="1-1"/>
+<wire x1="134.493" y1="46.355" x2="133.48" y2="46.352" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="POE+">
 <contactref element="POE" pad="9"/>
@@ -7285,15 +7293,6 @@ einem neuen Namen ab.</description>
 <vertex x="141.732" y="54.356"/>
 <vertex x="128.016" y="54.356"/>
 </polygon>
-</signal>
-<signal name="TP8">
-<contactref element="TP8" pad="TP"/>
-<contactref element="IC2" pad="6"/>
-<wire x1="121.65" y1="66.24" x2="121.65" y2="65.548" width="0.254" layer="1"/>
-<wire x1="121.65" y1="65.548" x2="121.92" y2="65.278" width="0.254" layer="1"/>
-<wire x1="121.92" y1="65.278" x2="122.936" y2="65.278" width="0.254" layer="1"/>
-<wire x1="122.936" y1="65.278" x2="123.444" y2="64.77" width="0.254" layer="1"/>
-<wire x1="123.444" y1="64.77" x2="123.444" y2="64.516" width="0.254" layer="1"/>
 </signal>
 </signals>
 <errors>
