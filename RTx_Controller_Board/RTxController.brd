@@ -5115,7 +5115,7 @@ einem neuen Namen ab.</description>
 <wire x1="23.4696" y1="47.8536" x2="23.4696" y2="48.6814" width="0.6096" layer="1"/>
 <wire x1="23.4696" y1="48.6814" x2="23.48" y2="48.6918" width="0.6096" layer="1"/>
 </signal>
-<signal name="N$6">
+<signal name="LAT_AXIS_IN">
 <contactref element="R1" pad="1"/>
 <contactref element="JP5" pad="4"/>
 <wire x1="15.86" y1="48.6918" x2="9.8298" y2="48.6918" width="0.6096" layer="1"/>
@@ -5229,7 +5229,7 @@ einem neuen Namen ab.</description>
 <wire x1="23.48" y1="32.766" x2="23.48" y2="32.022" width="0.6096" layer="1"/>
 <wire x1="23.48" y1="32.022" x2="23.114" y2="31.118" width="0.6096" layer="1"/>
 </signal>
-<signal name="N$14">
+<signal name="AXIS3_IN">
 <contactref element="R7" pad="1"/>
 <contactref element="JP6" pad="4"/>
 <wire x1="4.318" y1="28.702" x2="11.796" y2="28.702" width="0.6096" layer="1"/>
@@ -5687,7 +5687,7 @@ einem neuen Namen ab.</description>
 <wire x1="22.21" y1="22.588" x2="23.114" y2="23.492" width="0.6096" layer="1"/>
 <wire x1="22.21" y1="21.844" x2="20.97" y2="21.844" width="0.6096" layer="1"/>
 </signal>
-<signal name="N$7">
+<signal name="AXIS4_IN">
 <contactref element="R17" pad="1"/>
 <contactref element="JP6" pad="3"/>
 <wire x1="4.318" y1="26.162" x2="10.272" y2="26.162" width="0.6096" layer="1"/>
@@ -6663,7 +6663,7 @@ einem neuen Namen ab.</description>
 <wire x1="64.4906" y1="60.1726" x2="64.27" y2="59.952" width="0.3048" layer="1"/>
 <wire x1="64.27" y1="59.952" x2="64.27" y2="55.98" width="0.3048" layer="1"/>
 </signal>
-<signal name="N$9">
+<signal name="VERT_AXIS_IN">
 <contactref element="R4" pad="1"/>
 <contactref element="JP5" pad="3"/>
 <wire x1="14.59" y1="37.846" x2="14.59" y2="38.242" width="0.6096" layer="1"/>

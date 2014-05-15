@@ -40053,7 +40053,7 @@ Connector</text>
 <pinref part="C11" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="LAT_AXIS_IN" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="218.44" x2="27.94" y2="218.44" width="0.1524" layer="91"/>
@@ -40176,7 +40176,7 @@ Connector</text>
 <pinref part="C19" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="AXIS3_IN" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="101.6" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
@@ -40251,7 +40251,7 @@ Connector</text>
 <pinref part="C37" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="AXIS4_IN" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="43.18" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
@@ -40359,7 +40359,7 @@ Connector</text>
 <junction x="38.1" y="157.48"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="VERT_AXIS_IN" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="160.02" x2="15.24" y2="160.02" width="0.1524" layer="91"/>
